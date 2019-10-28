@@ -1,0 +1,283 @@
+# Copyright (c) 2008, 2011 Actian Corporation. All Rights Reserved
+##
+##  Name: lnx.rc
+##
+##  Purpose:
+##	Template for Ingres, LSB compliant init script for Linux.
+##	Modified and installed under /etc/rc.d by mkrc
+##
+##  History:
+##	12-Mar-2004 (hanje04)
+##	    SIR 111952
+##	    Created.
+##	01-Apr-2004 (hanje04)
+##	    Redirect all syscheck output to /dev/null
+##	03-Apr-2004 (hanje04)
+##	    Unset BASH_ENV to stop permission denied errors when 
+##	    su-ing.
+##	29-Apr-2004 (bonro01)
+##	    Allow Ingres to be installed as a user other than 'ingres'
+##	04-May-2004 (hanje04)
+##	    Only run ingstop if installation is up.
+##	20-May-2004 (hanje04)
+##	    Use ls -ld instead of just -l when determining installation
+##	    owner. Not everything in the $II_SYSTEM/ingres directory is
+##	    guaranteed to be owned by II_USERID.
+##	17-Aug-2004 (hanje04)
+##	    Use owner of ingstart to determine owner of installation instead
+##	    of $II_SYSTEM/ingres as this could be a link owned by anyone.
+##	    This is a temporary fix, will add config param to hold the 
+##	    installation owner's userid.
+##	18-Aug-2004 (hanje04)
+##	    Use config parameters to determine user installation owner.
+##	    Script should run from $II_SYSTEM/ingres.
+##	07-Feb-2005 (hanje04)
+##	    SIR 113851
+##	    If Unicenter is installed, shutdown any unicenter processes
+##	    dependent on the installation before shutting down.
+##	    Also improve error checking.
+##	    Use -kill when shutting down ingres from this script
+##	    Ensure we shutdown correctly on RH by noting our presence in
+##	    /var/lock/subsys.
+##	18-Apr-2005 (hanje04)
+##	    Set checkconfig start sequence to be 90 to allow products
+##	    to be dependent on it. Also improve dependencies on OS services.
+##	05-May-2005 (hanje04)
+##	    Status check should return 7 if Ingres isn't running even though
+##	    $INGSTATUS returns OK (0).
+##	11-May-2005 (hanje04)
+##	    Add +ypbind to Required-Start so that Ingres can start when
+##	    the ingres user is an NIS user.
+##	16-Jun-2005 (hanje04)
+##	    BUG 114444
+##	    chkconfig stop sequence also needs to be 90 (obviously, DOH!)
+##	17-Jun-2005 (hanje04)
+##	    BUG 114702
+##	    Use ingstatus not iinamu to check for active servers. iinamu
+##	    only works when iigcn is running.
+##	24-Aug-2005 (hanje04)
+##	    BUG 115088
+##	    Change Default-Stop setting to be complimentary to Default-Start
+##	    otherwise script gets ignored by chkconfig on RHEL 4.0 update 1
+##	    Also add 4 the list of start levels.
+##	20-May-2006 (hanje04)
+##	    BUG 116174
+##	    Split up SuSE and RedHat config as they can conflict causing the
+##	    script to be installed incorrectly.
+##	05-Jun-2007 (hanje04)
+##	    BUG 119214
+##	    Force script to be Bash to prevent errors when /bin/sh is linked
+##	    to /bin/dash
+##	22-Feb-2008 (bonro01)
+##	    Make Ingres release name generic.
+##	    Fix documented start/stop levels which should be 235.
+##	    Fix start/stop priority numbers which should be complementary
+##	    values so that Ingres is started last and stopped first.
+##	22-Oct-2009 (hanje04)
+##	    Bug 122782
+##	    Add SYSCHECKV variable to run syscheck -v before starting Ingres.
+##	    If it fails, dump the output to stderr and bail.
+##	22-Jan-2010 (hanje04)
+##	    SIR 123296
+##	    Update script to include support for running the setup. This will
+##	    be the default method for running setup from RPM and DEBs packages.
+##	    Fix up script to run correctly in chroot environment too which was
+##	    mainly replacing su calls with runuser.
+##	02-Jun-2010 (hanje04)
+##	    BUG 123856
+##	    Use su if we can't find runuser
+##	17-Jun-2010 (hanje04)
+##	    BUG 123941
+##	    "action" doesn't like "eval" being used on RHEL 4. Seems to be fine
+##	    without it
+##	28-Jun-2010 (hanje04)
+##	    BUG 123941
+##	    Write out command for INGSTART and INGSTOP to temp file before 
+##	    running them using action to work around differences in the 
+##	    implementation of "action" between RHEL 4,5 & 6.
+##	14-Jul-2010 (hanje04)
+##	    BUG 124083
+##	    Add presetup step to run iiposttrans from here instead of RPM.
+##	17-Jan-2011 (hanje04)
+##	    BUG 124931
+##	    Use ingstatus to check for running installs not just the entry
+##	    in /var/lock/subsys. Otherwise we miss those started with ingstart
+##	30-Sep-2011 (hanje04)
+##	    Bug 125805
+##	    Mantis 2495
+##	    Move common code/functionality to iiinitdlib and iirunsvc
+##	    Replace actions with new relavent function calls.
+##	07-Oct-2011 (hanje04)
+##	    Bug 125668
+##	    Move redirection on ingstart/stop output to iirunsvc
+##
+#
+# /etc/init.d/ingresINST_ID
+#
+# chkconfig header
+#
+# chkconfig: 235 90 10
+# Description:    Start Ingres RDBMS - INST_ID instance
+#
+### BEGIN INIT INFO
+# Short-Description:    Start Ingres RDBMS - INST_ID instance
+# Provides:       ingresINST_ID
+# Required-Start: $local_fs $network $remote_fs +ypbind
+# Required-Stop: $local_fs $network $remote_fs +ypbind
+# Default-Start: 2 3 5
+# Default-Stop:  0 1 4 6
+### END INIT INFO
+# Ingres environment for INST_ID installation
+export II_SYSTEM=INST_LOC
+
+. ${II_SYSTEM}/ingres/files/rcfiles/iiinitdlib || exit 5
+
+# Sanity checks
+uid=`id | cut -d= -f2 | cut -d\( -f1`
+if [ $uid != 0 ] ; then
+    echo "Only 'root' can control this service"
+    save_status -v 4
+    $exit
+fi
+
+# Check if we're setup
+SETUP=false
+ingdir=/var/lib/ingres/INST_ID
+if [ -f ${ingdir}/setup.todo ] && [ `cat ${ingdir}/setup.todo | wc -l` = 0 ]
+then
+    SETUP=true
+fi
+
+# Check if installation is active
+ACTIVE=0
+if [ -f /var/lock/subsys/ingresINST_ID ] 
+then
+    ACTIVE=1
+else
+    check_status > /tmp/ingstat$$
+    [ `grep -c running /tmp/ingstat$$` -gt 0 ] && ACTIVE=1
+    rm -f /tmp/ingstat$$
+fi
+
+case "$1" in
+    start)
+	# check we're setup first
+        if ! $SETUP ; then
+	    echo "Ingres, instance INST_ID has not been setup"
+	    $0 configure
+	    rc=$?
+	    if [ $rc != 0 ] ; then
+		save_status -v $?
+		$exit
+	    fi
+ 	fi
+	startmsg="Starting Ingres, instance INST_ID"
+	# if we are already running, report it and exit cleanly
+	[ $ACTIVE != 0 ] && {
+--REDHAT_CFG
+	action "$startmsg": true
+--REDHAT_CFG_END
+--SUSE_CFG
+	$echon $startmsg
+--SUSE_CFG_END
+	save_status -v 0 
+	$exit
+	}
+
+	# Make sure kernel settings are updated if needed
+	run_syscheck >> /dev/null 2>&1
+	[ $? != 0 ] && {
+	echo "Applying kernel setting in /etc/sysctl.conf..."
+	/sbin/sysctl -p
+	}
+
+	# Syscheck again and exit if we fail
+	run_syscheck >> /tmp/syscheck.$$ 2>&1
+	rc=$?
+	if [ $rc != 0 ] ; then
+	    cat /tmp/syscheck.$$ 1>&2 # send to STDERR
+	    rm -f /tmp/syscheck.$$
+	else
+	    # Start Ingres
+--REDHAT_CFG
+	    action "$startmsg": run_ingstart
+	    rc=$?
+--REDHAT_CFG_END
+--SUSE_CFG
+	    $echon $startmsg
+	    run_ingstart
+--SUSE_CFG_END
+	    rc=$?
+	
+	    # Remember status and be verbose
+	    [ -d /var/lock/subsys ] && touch /var/lock/subsys/ingresINST_ID
+	fi
+	save_status -v $rc
+	;;
+    stop)
+	# Stop Ingres
+	stpmsg="Stopping Ingres, instance INST_ID"
+--REDHAT_CFG
+	if [ $ACTIVE = 0 ] ; then
+	    action "$stpmsg": true
+	    rc=0
+	else
+	    action "$stpmsg": run_ingstop
+	    rc=$?
+	fi
+--REDHAT_CFG_END
+--SUSE_CFG
+	$echon $stpmsg
+	rc=0
+	[ $ACTIVE != 0 ] && 
+	{
+	    run_ingstop
+	    rc=$?
+	}
+--SUSE_CFG_END
+	# Remember status and be verbose
+	[ "$rc" = "0" ] && rm -f /var/lock/subsys/ingresINST_ID 2>/dev/null
+	save_status -v $rc
+	;;
+    try-restart)
+	## Stop the service and if this succeeds (i.e. the 
+	## service was running before), start it again.
+	## Note: try-restart is not (yet) part of LSB (as of 0.7.5)
+	$0 status >/dev/null &&  $0 restart
+	rc=$?
+
+	# Remember status and be quiet
+	save_status $rc
+	;;
+    restart|force-reload)
+	echo "Restarting Ingres, instance INST_ID"
+	$0 stop && $0 start
+	rc=$?
+	save_status $rc
+	;;
+    reload)
+	save_status -v 3
+	;;
+    check|status)
+	check_status
+	rc=$? 
+        # Status check should return 7 if not running
+        [ $ACTIVE = 0 ] && rc=7
+	save_status -v $rc
+	;;
+    configure)
+	respfile=${2:-}
+	run_setup $respfile
+	rc=$?
+	if [ $rc = 0 ] ; then
+	    save_status -v 0
+	else
+	    save_status -v 6
+	fi
+	;;
+    *)
+	echo  "Usage: $0 {start|stop|status|reload|restart|try-restart|force-reload|configure [response file]}"
+	$exit
+	;;
+esac
+$exit

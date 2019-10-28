@@ -1,0 +1,203 @@
+/*
+** Copyright (c) 2007, 2011 Actian Corporation
+*/
+/*
+**
+** DEB Control file configuration
+**
+** Generate DEB control files from template spec files using the
+** options listed here.
+**
+*******
+** Referenced files:
+**  ${deb_basename}[-${deb_specname}].template
+**
+** Generated files:
+**  ${deb_basename}-${deb_version}[-${deb_specname}][-${deb_release}].spec
+**
+** Referenced files (generated spec files and their references) are
+** located under:
+**  BUILDROOT/${deb_prefix}/<ingres manifest file path+name>
+**
+** History:
+**	06-Jun-2007 (hanje04)
+**	    SIR 118420
+**	    Created.
+**	10-Mar-2008 (bonro01)
+**	    Include Spatial object package into standard ingbuild, RPM and DEB
+**	    install images instead of having a separate package.
+**      11-Aug-2008 (hweho01)
+**          Change product name from Ingres 2006 to Ingres.
+**	22-Jun-2009 (kschendel) SIR 122138
+**	    Hybrid add-on symbol changed, fix here.  Use BUILD_ICE.
+**      29-Sep-2010 (thich01)
+**          Change versions to 10.1.
+**	01-Apr-2011 (hanje04)
+**	    Fix up for IVW
+**	04-Aug-2011 (hanje04)
+**	    Tokenize major and minor version numbers so we can build for
+**	    VW OR Ingres
+**	30-Sep-2011 (bonro01)
+**	    Define demodb only for Ingres not Vectorwise
+**	02-Oct-2011 (hanje04)
+**	     Bug 125688
+**	     Add remote manager service if R_MGMTSVC is defined
+*/
+
+
+/* packaging tool info */
+$sub %summary_tag% <skip>
+$sub %priority_tag% Priority:
+$sub %pkgname_tag% Package:
+$sub %version_tag% Version:
+$sub %release_tag% <skip>
+$sub %license_tag% <skip>
+$sub %group_tag% Section:
+$sub %source_tag% <skip>
+$sub %patch_tag% <skip>
+$sub %maintainer_tag% Maintainer:
+$sub %url_tag% <skip>
+$sub %buildroot_tag% <skip>
+$sub %prefix_tag% <skip>
+$sub %rpmprereq_tag% <skip>
+$sub %autoreq_tag% <skip>
+$sub %define_tag% <skip>
+$sub %debprereq_tag% Pre-Depends:
+$sub %debreq_tag% Depends:
+$sub %rpmprovides_tag% <skip>
+$sub %debprovides_tag% Provides:
+$sub %replaces_tag% <skip>
+$sub %rpm_descrip_tag% <skip>
+$sub %deb_descrip_tag% Description:
+$sub %arch_tag% Architecture:
+/* dummy tag, value replaced with list */
+$sub %pkg_sulist% setuplist
+
+/* product info */
+$sub %product_name% (PROD1NAME)
+$sub %product_brandname% Ingres
+$sub %product_version% ING_MAJ_VERS
+$sub %product_release% ING_MIN_VERS
+# ifdef conf_IVW
+$sub %rpm_product% (PROD1NAME) Next Generation Analytic Database Technology
+# else
+$sub %rpm_product% (PROD1NAME) Business Open Source Database
+# endif
+$sub %rpm_basename% (PROD_PKGNAME)
+$sub %rpm_version% ING_MAJ_VERS.ING_MIN_VERS.BUILD_NO-1
+$sub %rpm_release% BUILD_NO 
+$sub %rpm_doc_prefix% /usr/share/doc
+$sub %rpm_vendor% Actian Corporation <support@actian.com>
+$sub %rpm_license% gpl
+$sub %rpm_copyright% Copyright © 2005-2011 Actian Corporation. All Rights Reserved.
+$sub %rpm_group% non-free/database
+$esub %deb_arch% DEB_BUILD_ARCH
+
+/* package info */
+$spec
+$feature basic
+$feature setupsup
+$feature config
+$feature generr
+$feature formtool
+$feature tm
+$feature qr_run
+$feature esqlsup
+$feature esqlc
+$feature esqlcc
+# ifdef R_ADA
+$feature esqlada
+# endif /* R_ADA */
+# ifdef R_COBOL
+$feature esqlcob
+# endif /* R_COBOL */
+# ifdef R_FORTRAN
+$feature esqlfor
+# endif /* R_FORTRAN */
+# ifdef R_PASCAL
+$feature esqlpas
+# endif /* R_PASCAL */
+# ifdef R_MGMTSVC
+$feature mgmtsvc
+# endif
+
+
+$spec i18n
+$feature i18n
+
+#ifdef R_EMBEDDED
+$spec EI
+$feature basic
+$feature setupsup
+$feature config
+$feature generr
+$feature formtool
+$feature tm
+$feature basic
+#endif
+
+$spec dbms
+$feature dbms
+$feature dbatools
+#ifndef conf_IVW
+$feature demodb
+#endif /* conf_IVW */
+$feature montools
+$feature rmcmd
+# ifdef R_UADTSUP
+$feature uadtsup
+# endif /* R_UADTSUP */
+# ifdef R_TUXEDO
+$feature tuxedo
+# endif /* R_TUXEDO */
+# ifdef R_OME
+$feature ome
+# endif /* R_OME */
+# ifdef R_C2AUDIT
+$feature c2audit
+# endif /* R_C2AUDIT */
+# ifdef R_SPATIAL
+$feature spatial
+# endif /* SPATIAL */
+
+# ifndef conf_IVW
+$spec abf
+$feature abf
+$feature vision
+# endif
+
+# ifdef R_NET
+$spec net
+$feature net
+$feature das
+# ifdef R_BRIDGE
+$feature bridge
+# endif /* R_BRIDGE */
+# endif /* R_NET */
+
+# ifdef R_ODBC
+# ifndef conf_IVW
+$spec odbc
+# endif
+$feature odbc
+# endif /* R_ODBC */
+
+# ifndef conf_IVW
+# ifdef R_STAR
+$spec star
+$feature star
+# endif /* R_STAR */
+# endif /* ! conf_IVW */
+
+$spec documentation
+$feature documentation
+
+# ifdef R_MDB
+$spec mdb
+$feature mdb
+# endif
+
+# ifdef conf_BUILD_ARCH_64_32
+$spec 32bit
+$feature supp32
+# endif

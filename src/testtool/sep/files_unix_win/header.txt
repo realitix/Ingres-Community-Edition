@@ -1,0 +1,11 @@
+	Suite         :
+	Database      :
+	Tables        :
+	Filled Files  :
+	Copied Files  :
+	Output Files  :
+	Prerequisites :
+	Synopsis      :
+
+	Known Issues  :
+

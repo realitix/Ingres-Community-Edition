@@ -1,0 +1,58 @@
+/*
+** Copyright (c) 2005 Actian Corporation
+*/
+/*
+** Generic part file for collation
+*/
+
+/*
+** History
+**	07-Mar-2005
+**	    Created.
+**	12-mar-2007 (gupsh01)
+**	    Added specialcasing.txt file.
+**	31-aug-2007 (gupsh01)
+**	    Added unicode_french collation.
+**      15-Apr-2010 (hanal04) SIR 121823
+**          Added udefault5.uce to avoid unexpected duplicate errors seen
+**          when using the outdated udefault.uce. See KB Doc 417763.
+**	13-May-2011 (kiria01) SIR 125342
+**	    Added wordbreakproperty.txt
+*/
+
+PART   collation32
+
+/*
+** ingres!files!collation!lp32
+*/
+
+   DIRECTORY (PROD2NAME)!files!collation!lp32
+# ifdef VMS
+   BUILD_DIR (front_path)!install!'front_vers'!files!collation
+# else /* VMS */
+   BUILD_DIR (ING_BUILD)!files!collation!lp32
+# endif /* VMS */
+      FILE multi
+      FILE spanish
+      FILE multi.dsc
+      FILE spanish.dsc
+      FILE udefault.uce
+      FILE udefault
+      FILE udefault5.uce
+      FILE udefault5
+      FILE unicode_french.uce
+      FILE unicode_french
+      FILE udata.ucd
+      FILE specialcasing.txt
+      FILE wordbreakproperty.txt
+/*
+** ingres!utility!lp32
+*/
+
+   DIRECTORY (PROD2NAME)!utility!lp32
+# ifdef VMS
+   BUILD_DIR (jpt_adf_bin)
+# else /* VMS */
+   BUILD_DIR (ING_BUILD)!utility!lp32
+# endif /* VMS */
+      EXECUTABLE aducompile

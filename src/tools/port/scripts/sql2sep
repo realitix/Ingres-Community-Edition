@@ -1,0 +1,91 @@
+#!/usr/bin/perl
+
+# Simple converter from SQL to SEP
+
+# Use scenario:
+#
+#   export SEPPARAMDB=ivw_test
+#   sql2sep < ini.sql > ini.sep
+#   destroydb $SEPPARAMDB ; createdb $SEPPARAMDB 
+#   sep -mo ini.sep    # Remember to press Q
+#   mv ini.upd final.sep
+#   destroydb $SEPPARAMDB ; createdb $SEPPARAMDB 
+#   sep -b final.sep
+#   if [ -e final.log ] ; then echo "ERROR" ; else echo "OK"; fi
+
+
+sub usage()
+{
+	die "Usage: $0 [-f fillfile]+ ... < file.sql > file.sep \n";
+}
+
+$fills = "";
+$fill_content="";
+
+while ($p = shift) {
+	if ($p eq "-f") {
+		$p = shift;
+		$fills .= "$p ";
+		$fill_content .= "? fill $p\n!!\n";
+		open FILL, "<$p" or die "Can't open $p";
+		while (<FILL>) {
+			$fill_content .= "$_";
+		}
+		close FILL;
+		`cp $p $p.backup`;
+		$fill_content .= "!!\n";
+	} else {
+		usage;
+	}
+}
+
+$fills="none" if $fills eq "";
+
+$date_str=`date +%e-%b-%Y`;
+chomp $date_str;
+$user_str=`whoami`;
+chomp $user_str;
+print <<"EOS";
+/*
+    Copyright (c) 2010 Actian Corporation
+
+
+
+	Test Name    :
+	User Name    : $user_str
+ 
+	Test ID      : 
+	Module       :
+	Purpose      :
+	Input Files  : none
+	Output Files : $fills
+	Database     : SEPPARAMDB
+	Tables       :
+	Synopsis     : 
+	History      :
+          $date_str   created by $user_str (using sql2sep)
+*/
+$fill_content? sql -s SEPPARAMDB
+<<
+>>
+EOS
+
+$cont = 0;
+while (<>) {
+	if (/^(.+)$/) { # non empty line
+		if (/vectorwise_default/i) {
+			print STDERR "WARNING: shouldn't have 'set [no]vectorwise_default' in tests\n";
+		}
+		$wascont = $cont;
+		$line = $1;
+		print $cont ? "  " : "* ";
+		$cont = ! /\\g\s*$/;
+		print $line;
+		$drop = (!$wascont && !$cont && /drop table .*/i) ? "~\n" : "";
+		print $cont ? "-\n" : "\n<<\n$drop>>\n";
+	} else {
+		print;
+	}
+}
+
+print "* \\q\n<<\n>>\n";

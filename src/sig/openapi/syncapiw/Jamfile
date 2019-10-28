@@ -1,0 +1,25 @@
+#
+# Jamfile file for sig!openapi!syncapiw
+#
+# History:
+#	21-jan-2005 (srisu02)
+#	    Add conditional block for invocations for VMS scripts
+#	    Remove sample_build.com, syncapiw.com from generic block
+#	28-jan-2005 (abbjo03)
+#	    Fix 21-jan change: IISIGSH needs second argument (target directory).
+
+SubDir ING_SRC sig openapi syncapiw ;
+
+IISUBSYS sig openapi syncapiw ;
+
+IISIGFILES syncapiw : apiconn.c apievent.c apiproc.c apiquery.c
+	apisupp.c apitran.c sapiw.h
+	sapiwi.h syncapiw.mak testsapi.c ;
+
+IISIGFILES syncapiw : <sig!openapi!syncapiw>readme.txt ;
+
+if $(VMS)
+{
+    IISIGSH syncapiw syncapiw : syncapiw$(SUFSH) ;
+    IISIGSH sample_build syncapiw : sample_build$(SUFSH) ;
+}

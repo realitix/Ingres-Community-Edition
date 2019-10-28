@@ -1,0 +1,19 @@
+#
+# Jamfile file for front!embed!fortran
+#
+#	23-Nov-2010 (kschendel)
+#	    Drop obsolete vax/dg8 nooptims.
+
+SubDir ING_SRC front embed fortran ;
+
+IISUBSYS front embed fortran ;
+
+IIBINEXE eqf : formain.c ;
+IINEEDLIBS eqf : FORTRANLIB EQUELLIB UGLIB FMTLIB AFELIB 
+	ADFLIB COMPATLIB ;
+IINEEDOBJ eqf : eqglobs.c eqdata.c ugdata.c ;
+IIUNDEFS eqf : tok_keytab yylex yyparse ;
+
+IILIBRARY FORTRANLIB : fortran.sy ftokens.st forutil.c
+	forgen.c ;
+

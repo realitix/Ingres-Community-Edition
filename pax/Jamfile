@@ -1,0 +1,27 @@
+##
+## Jamfile for build pax
+## 
+## History:
+##	01-Nov-2004 (hanje04)
+##	    Created.
+
+## Output dir
+MakeLocate pax : bin ;
+
+## Set build flags per platform
+switch $(OSFULL[1])
+{
+   case LINUXX86 :  PAXCCFLAGS = -Ibsd -O2 -D_PATH_DEFTAPE='\"/dev/st0\"' 
+				-D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 ;
+		    PAXLDFLAGS = -s ;
+	 case  * : EXIT $(OSFULL) not supported ;
+}
+
+## Flags, include dirs etc.
+SubDirHdrs bsd ;
+SubDirCcFlags $(PAXCCFLAGS) ;
+LINKFLAGS on pax = $(PAXLDFLAGS) ;
+
+Main pax : ar_io.c ar_subs.c buf_subs.c cache.c cpio.c file_subs.c ftree.c
+	gen_subs.c getoldopt.c options.c pat_rep.c pax.c sel_subs.c tables.c
+	tar.c tty_subs.c bsd/fts.c  bsd/strlcpy.c  bsd/strmode.c  bsd/vis.c ;

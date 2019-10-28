@@ -1,0 +1,15 @@
+#
+# Jamfile file for common!toolsapi!main
+#
+
+SubDir ING_SRC common toolsapi main ;
+
+IISUBSYS common toolsapi main ;
+
+if $(BUILD_MGMTSVC)
+{
+    IIJniBinExe iimgmtsvr : discover.cpp execute.cpp execute_java.cpp util.cpp ;
+}
+
+
+

@@ -1,0 +1,85 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "svriia", "svriia.vcproj", "{21939397-4587-415C-A863-1FB914839E90}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		AIX_Release|Win32 = AIX_Release|Win32
+		AIX_Release|x64 = AIX_Release|x64
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		DebugAMD64|Win32 = DebugAMD64|Win32
+		DebugAMD64|x64 = DebugAMD64|x64
+		DebugU|Win32 = DebugU|Win32
+		DebugU|x64 = DebugU|x64
+		HPUX_Debug|Win32 = HPUX_Debug|Win32
+		HPUX_Debug|x64 = HPUX_Debug|x64
+		HPUX_Release|Win32 = HPUX_Release|Win32
+		HPUX_Release|x64 = HPUX_Release|x64
+		Linux_Debug|Win32 = Linux_Debug|Win32
+		Linux_Debug|x64 = Linux_Debug|x64
+		Linux_Release|Win32 = Linux_Release|Win32
+		Linux_Release|x64 = Linux_Release|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+		ReleaseAMD64|Win32 = ReleaseAMD64|Win32
+		ReleaseAMD64|x64 = ReleaseAMD64|x64
+		ReleaseU|Win32 = ReleaseU|Win32
+		ReleaseU|x64 = ReleaseU|x64
+		Solaris_Release|Win32 = Solaris_Release|Win32
+		Solaris_Release|x64 = Solaris_Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21939397-4587-415C-A863-1FB914839E90}.AIX_Release|Win32.ActiveCfg = AIX_Release|Win32
+		{21939397-4587-415C-A863-1FB914839E90}.AIX_Release|Win32.Build.0 = AIX_Release|Win32
+		{21939397-4587-415C-A863-1FB914839E90}.AIX_Release|x64.ActiveCfg = AIX_Release|x64
+		{21939397-4587-415C-A863-1FB914839E90}.AIX_Release|x64.Build.0 = AIX_Release|x64
+		{21939397-4587-415C-A863-1FB914839E90}.Debug|Win32.ActiveCfg = Debug|Win32
+		{21939397-4587-415C-A863-1FB914839E90}.Debug|Win32.Build.0 = Debug|Win32
+		{21939397-4587-415C-A863-1FB914839E90}.Debug|x64.ActiveCfg = Debug|x64
+		{21939397-4587-415C-A863-1FB914839E90}.Debug|x64.Build.0 = Debug|x64
+		{21939397-4587-415C-A863-1FB914839E90}.DebugAMD64|Win32.ActiveCfg = DebugAMD64|x64
+		{21939397-4587-415C-A863-1FB914839E90}.DebugAMD64|Win32.Build.0 = DebugAMD64|x64
+		{21939397-4587-415C-A863-1FB914839E90}.DebugAMD64|x64.ActiveCfg = DebugAMD64|x64
+		{21939397-4587-415C-A863-1FB914839E90}.DebugAMD64|x64.Build.0 = DebugAMD64|x64
+		{21939397-4587-415C-A863-1FB914839E90}.DebugU|Win32.ActiveCfg = DebugU|Win32
+		{21939397-4587-415C-A863-1FB914839E90}.DebugU|Win32.Build.0 = DebugU|Win32
+		{21939397-4587-415C-A863-1FB914839E90}.DebugU|x64.ActiveCfg = DebugU|x64
+		{21939397-4587-415C-A863-1FB914839E90}.DebugU|x64.Build.0 = DebugU|x64
+		{21939397-4587-415C-A863-1FB914839E90}.HPUX_Debug|Win32.ActiveCfg = HPUX_Debug|Win32
+		{21939397-4587-415C-A863-1FB914839E90}.HPUX_Debug|Win32.Build.0 = HPUX_Debug|Win32
+		{21939397-4587-415C-A863-1FB914839E90}.HPUX_Debug|x64.ActiveCfg = HPUX_Debug|x64
+		{21939397-4587-415C-A863-1FB914839E90}.HPUX_Debug|x64.Build.0 = HPUX_Debug|x64
+		{21939397-4587-415C-A863-1FB914839E90}.HPUX_Release|Win32.ActiveCfg = HPUX_Release|Win32
+		{21939397-4587-415C-A863-1FB914839E90}.HPUX_Release|Win32.Build.0 = HPUX_Release|Win32
+		{21939397-4587-415C-A863-1FB914839E90}.HPUX_Release|x64.ActiveCfg = HPUX_Release|x64
+		{21939397-4587-415C-A863-1FB914839E90}.HPUX_Release|x64.Build.0 = HPUX_Release|x64
+		{21939397-4587-415C-A863-1FB914839E90}.Linux_Debug|Win32.ActiveCfg = Linux_Debug|Win32
+		{21939397-4587-415C-A863-1FB914839E90}.Linux_Debug|Win32.Build.0 = Linux_Debug|Win32
+		{21939397-4587-415C-A863-1FB914839E90}.Linux_Debug|x64.ActiveCfg = Linux_Debug|x64
+		{21939397-4587-415C-A863-1FB914839E90}.Linux_Debug|x64.Build.0 = Linux_Debug|x64
+		{21939397-4587-415C-A863-1FB914839E90}.Linux_Release|Win32.ActiveCfg = Linux_Release|Win32
+		{21939397-4587-415C-A863-1FB914839E90}.Linux_Release|Win32.Build.0 = Linux_Release|Win32
+		{21939397-4587-415C-A863-1FB914839E90}.Linux_Release|x64.ActiveCfg = Linux_Release|x64
+		{21939397-4587-415C-A863-1FB914839E90}.Linux_Release|x64.Build.0 = Linux_Release|x64
+		{21939397-4587-415C-A863-1FB914839E90}.Release|Win32.ActiveCfg = Release|Win32
+		{21939397-4587-415C-A863-1FB914839E90}.Release|Win32.Build.0 = Release|Win32
+		{21939397-4587-415C-A863-1FB914839E90}.Release|x64.ActiveCfg = Release|x64
+		{21939397-4587-415C-A863-1FB914839E90}.Release|x64.Build.0 = Release|x64
+		{21939397-4587-415C-A863-1FB914839E90}.ReleaseAMD64|Win32.ActiveCfg = ReleaseAMD64|x64
+		{21939397-4587-415C-A863-1FB914839E90}.ReleaseAMD64|Win32.Build.0 = ReleaseAMD64|x64
+		{21939397-4587-415C-A863-1FB914839E90}.ReleaseAMD64|x64.ActiveCfg = ReleaseAMD64|x64
+		{21939397-4587-415C-A863-1FB914839E90}.ReleaseAMD64|x64.Build.0 = ReleaseAMD64|x64
+		{21939397-4587-415C-A863-1FB914839E90}.ReleaseU|Win32.ActiveCfg = ReleaseU|Win32
+		{21939397-4587-415C-A863-1FB914839E90}.ReleaseU|Win32.Build.0 = ReleaseU|Win32
+		{21939397-4587-415C-A863-1FB914839E90}.ReleaseU|x64.ActiveCfg = ReleaseU|x64
+		{21939397-4587-415C-A863-1FB914839E90}.ReleaseU|x64.Build.0 = ReleaseU|x64
+		{21939397-4587-415C-A863-1FB914839E90}.Solaris_Release|Win32.ActiveCfg = Solaris_Release|Win32
+		{21939397-4587-415C-A863-1FB914839E90}.Solaris_Release|Win32.Build.0 = Solaris_Release|Win32
+		{21939397-4587-415C-A863-1FB914839E90}.Solaris_Release|x64.ActiveCfg = Solaris_Release|x64
+		{21939397-4587-415C-A863-1FB914839E90}.Solaris_Release|x64.Build.0 = Solaris_Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

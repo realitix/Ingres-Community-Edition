@@ -1,0 +1,36 @@
+/*
+** Copyright (c) 2004 Actian Corporation
+*/
+/*
+** Generic part file for inglogs
+*/
+
+/*
+** History
+**	16-Oct-2009 (hanal04) Bug 122744
+**		Add inglogs to sig on UNIX
+**	20-Jan-2010 (hanje04)
+**	    SIR 123296
+**          Add support for LSB builds, server binaries live under
+**          /usr/libexec/ingres, utilties and client binaries under /usr/bin,
+**          libraries under /usr/lib/ingres and config under /usr/share/ingres
+**      26-Jul-2011 (birbi01/horda03) b125593
+**          Add inglogs script for VMS
+*/
+
+/*
+** Default directory: ingres/sig/inglogs
+*/
+
+PART   inglogs
+
+   BUILD_DIR (ING_BUILD)!sig!inglogs
+# ifdef conf_LSB_BUILD
+   DIRECTORY usr!share!ingres!sig!inglogs
+# else
+   DIRECTORY ingres!sig!inglogs
+# endif
+      SCRIPT inglogs
+# ifdef UNIX
+      FILE readme.txt
+# endif /* UNIX */

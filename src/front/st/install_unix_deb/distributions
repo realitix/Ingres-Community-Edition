@@ -1,0 +1,32 @@
+##
+## Copyright (c)  2011 Actian Corporation, all rights reserved.
+##
+## Name:
+##	distributions
+##
+## Description:
+##
+##	Description file for supported Debian/Ubuntu distributions for
+##	building APT repository	
+##
+## History
+##	08-Apr-2011 (hanje04)
+##	    Created.
+##	02-Jun-2011 (hanje04)
+##	    Add support for signed builds. Toggled by VERS file option.
+##	    Only supporting Ubuntu 10.04 (Lucid Lynx) for 1.6 so remove
+##	    other distros for now.
+##
+
+Origin: Actian Corporation
+Label: VectorWise
+Suite: stable
+Codename: lucid
+Version: ING_VERSION
+Architectures: amd64
+Components: non-free
+Description: (PROD1NAME)
+# ifdef conf_SIGN_RELEASE
+SignWith: (PROD1NAME)
+# endif
+

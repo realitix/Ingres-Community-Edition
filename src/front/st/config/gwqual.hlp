@@ -1,0 +1,97 @@
+/#-- Copyright (c) 2007-2011 Actian Corporation
+ load_table_qualifier
+
+ ii.hostname.gateway.server_class.load_table_qualifier: string
+
+ Specifies the DBA (schema) name used to qualify unqualified 
+ objects. To enable Ingres 6.4 style applications to function with 
+ minimal changes, the gateway allows access to DBA objects in the 
+ host DBMS without prefixing the object with the DBA name; that is, 
+ in Ingres 6.4, a user can access DBA objects (provided the 
+ appropriate grant/permits have been created).
+ For example, with a table, simply referencing the object 
+ eliminates the need to prefix the object with the DBA name. The 
+ gateway achieves this by adding the appropriate prefix-that is, 
+ the database administrator's schema name-to the object name. When 
+ a user accesses an object that is not owned by the user, the 
+ gateway prefixes the DBA name to the object's name so that the 
+ user may access the object.
+
+ Valid values for the load_table_qualifier parameter follow:
+
+ NONE
+ 
+ This is the default. NONE is the simplest case and objects are 
+ never qualified by the gateway; no caching of table names is 
+ performed.
+ 
+ Note: (Unqualified) selects against DBA-owned tables will fail, 
+ where "DBA" means the DBA name used in the catalog builder: 
+ iigwcat, iigwcatora, iigwcatmss, iigwcatudb, and so on.
+ 
+ Note: Selection against public objects is possible with this 
+ setting in Oracle. This behaves in the same way as and supersedes 
+ the old config.dat parameter NO_QUALIFIER.
+ 
+ Important! NO_QUALIFIER is no longer a valid parameter in 
+ config.dat. 
+ 
+ DBA
+ 
+ DBA caches table names owned by the database administrator. If a 
+ non-DBA owned object is accessed (without a qualifying schema), it 
+ is passed to the HOST DBMS unmodified; otherwise, if a DBA object 
+ is accessed, it is qualified with the DBA name.
+ Note: Selection against public objects is possible with this 
+ setting in Oracle.
+ 
+ 
+ USER
+ This was the default for Enterprise Access 2.7 and earlier. It 
+ behaves in the same way as the base 2.1 gateway and caches the 
+ names of the tables owned by the user. If an object is accessed 
+ that is not owned by the user, the object is prefixed with the DBA 
+ name.
+ Note: Selecting against (unqualified) public objects (such as the 
+ "v$version" table) in Oracle will fail with this setting if the 
+ DBA is not "public."
+ 
+ 
+ USER_PUBLIC (Oracle Only)
+ 
+ USER_PUBLIC is an Oracle-specific value and is similar to the 
+ USER setting; it caches table names owned by the user and those 
+ that are public. If an object is accessed that is not owned by the 
+ user or public, it is prefixed by the database administrator's 
+ name. This allows access to public tables.
+ 
+ The USER_PUBLIC parameter may have an impact on performance, 
+ particularly for connection times to the gateway. For instance, 
+ connecting to an Oracle DBMS server across SQL Net (with a slow 
+ network) can be up to 10 times slower when using USER_PUBLIC due 
+ to the extra object names that will be cached. However, this 
+ performance problem does not usually occur if the gateway server 
+ is on the same machine as the host DBMS. The amount of memory used 
+ by the gateway is also affected-although not significantly-based 
+ on the number of table names being cached by the selected option.
+ Choosing between the various options for load_table_qualifier 
+ should be based on functionality and simple benchmarks (that is, 
+ how long does it take to connect to the gateway).
+
+ In general, if you have problems with the default setting, do the 
+ following:
+ 
+    1. Use the default USER setting if there are a large number of 
+       DBA-owned tables compared to the number of user-owned tables.
+    
+    2. Use the DBA setting if there are a large number of user-owned 
+       tables compared to the number of DBA-owned tables (for Oracle, use
+       this option instead of USER_PUBLIC). This option is also useful 
+       when accessing tables created using an application with multiple 
+       sessions.
+    
+    3. Use the NONE setting:
+        * If expecting native DBMS semantics for unqualified objects
+        * If all SQL queries are fully qualified when querying non-user 
+          owned tables
+        * If using Informix

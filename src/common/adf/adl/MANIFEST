@@ -1,0 +1,40 @@
+#
+# Jamfile file for common!adf!adl
+#
+# History:
+#       13-Jul-2004 (hanje04)
+#           SIR 112651
+#           Added to build Ingres r3 with jam for Open Source.
+#	07-jan-2005 (abbjo03)
+#	    This cannot be built on VMS until Xerces C++ 2.5 is ported.
+#       25-Jul-2011 (horda03) b125758
+#           Xerces 3.0 has been ported to VMS. Note, to use Xerces on VMS
+#           the logical DECC$FILENAME_UNIX_REPORT must be "ENABLED", so
+#           added wrapper script. Also, the .cpp files must be built
+#           with /NOMEMBER_ALIGNMENT, __USE_STD_IOSTREAM defined and
+#           ASSUME=NOALIGNED_OBJECTS.
+#       28-Sep-2011 (horda03) b125758
+#           VMSCPPFLAGS rule renamed as II_C_FLAGS to make more generic
+#           old name left here in error.
+
+
+SubDir ING_SRC common adf adl ;
+
+IISUBSYS common adf adl ;
+
+IIUTILEXE unimapcompile : UNIMapCompile.cpp UNIMapCompileHandlers.cpp ;
+IICppNeedLibs unimapcompile : SHXERCESLIB GNLIB SHFRAMELIB SHCOMPATLIB SHQLIB ;
+
+IIUTILEXE unialscompile : UNIAlsCompile.cpp UNIAlsCompileHandlers.cpp ;
+IICppNeedLibs unialscompile : SHXERCESLIB GNLIB SHFRAMELIB SHCOMPATLIB SHQLIB ;
+
+IIXERCLIB $(SHXERCESLIB) ;
+
+if $(VMS)
+{
+   II_C_FLAGS UNIMapCompile.cpp UNIMapCompileHandlers.cpp UNIAlsCompile.cpp UNIAlsCompileHandlers.cpp :
+                      /NOMEMBER /DEF=__USE_STD_IOSTREAM /ASSUME=NOALIGNED_OBJECTS ;
+
+   IIUTILSH unialscompile : unialscompile.dcl ;
+   IIUTILSH unimapcompile : unimapcompile.dcl ;
+}

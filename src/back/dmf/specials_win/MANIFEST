@@ -1,0 +1,64 @@
+#
+# MANIFEST file for back!dmf!specials_win
+#
+#       12-Oct-2010 (hweho01)
+#           Copy the vectorwise files from %X100_PREFIX% area
+#           to the %ING_BUILD% area.
+#       08-Dec-2010 (hweho01)
+#           Copy the pthread lib files from %PTHREAD_LIBLOC% area
+#	10-Dec-2010 (drivi01)
+#	    Add libx100client.lib to be copied from %X100_PREFIX%
+#	    to the %II_SYSTEM%\ingres\lib.
+#	06-May-2011 (drivi01)
+#	    Remove references to pthreads library, no longer
+#	    needed on Windows b/c internal threading was
+#	    implemented.
+#	28-Jul-2011 (drivi01) Mantis 1937
+#	    Add vwlog.conf to be copied from x100 area to
+#	    %II_CONFIG%.
+#	02-Aug-2011 (drivi01)
+#	    vwlog.conf is now being built to X100_PREFIX\etc 
+#	    location.  The build is updated to copy the file
+#	    from X100_PREFIX location.
+
+
+SubDir ING_SRC back dmf specials_win ;
+
+IISUBSYS back dmf specials_win ;
+
+IIIMPLIBRARY $(IMPDMFLIB) : $(DMFLIB) ;
+
+IISHLIBRARY $(SHDMFLIBDATA) : $(SHDMFLIB) $(DMFLIBDATA) ;
+
+if ! $(BUILD_IVW)
+{
+    IISHLIBRARY $(SHDMFLIB) : $(IMPDMFLIBDATA) $(DMFLIB) $(IMPCOMPATLIB)
+	$(IMPCOMPATLIBDATA) $(IMPADFLIB) $(IMPADFLIBDATA) $(IMPRDFLIB)
+	$(IMPRDFLIBDATA) $(IMPSCFLIB) $(IMPSCFLIBDATA) $(IMPULFLIB) 
+	$(IMPULFLIBDATA) $(IMPGCFLIB) $(IMPGCFLIBDATA) $(IMPCUFLIB)
+	$(IMPSXFLIB) $(IMPSXFLIBDATA) $(IMPGWFLIB) $(IMPGWFLIBDATA)
+	$(IMPQEFLIB) $(IMPQEFLIBDATA) $(IMPTPFLIB) $(IMPTPFLIBDATA)
+	$(IMPPSFLIB) $(IMPOPFLIB) $(IMPOPFLIBDATA)
+	$(IMPQSFLIB) $(IMPQSFLIBDATA) $(X100LIB) ;
+}
+else
+{
+    IISHLIBRARY $(SHDMFLIB) : $(IMPDMFLIBDATA) $(DMFLIB) $(IMPCOMPATLIB)
+	$(IMPCOMPATLIBDATA) $(IMPADFLIB) $(IMPADFLIBDATA) $(IMPRDFLIB)
+	$(IMPRDFLIBDATA) $(IMPSCFLIB) $(IMPSCFLIBDATA) $(IMPULFLIB) 
+	$(IMPULFLIBDATA) $(IMPGCFLIB) $(IMPGCFLIBDATA) $(IMPCUFLIB)
+	$(IMPSXFLIB) $(IMPSXFLIBDATA) $(IMPGWFLIB) $(IMPGWFLIBDATA)
+	$(IMPQEFLIB) $(IMPQEFLIBDATA) $(IMPTPFLIB) $(IMPTPFLIBDATA)
+	$(IMPPSFLIB) $(IMPOPFLIB) $(IMPOPFLIBDATA)
+	$(IMPQSFLIB) $(IMPQSFLIBDATA) $(X100LIB) $(X100CLIENTLIB) ;
+
+    IIBULKCOPY $(INGBIN) : [ FDirName $(X100_PREFIX) bin x100_server.exe ] ;
+    IIBULKCOPY $(INGBIN) : [ FDirName $(X100_PREFIX) bin x100_execute.exe ] ;
+    IIBULKCOPY $(INGBIN) : [ FDirName $(X100_PREFIX) bin x100_client.exe ] ;
+    IIBULKCOPY $(INGLIB) : [ FDirName $(X100_PREFIX) lib libx100client.lib ] ;
+    IIBULKCOPY $(INGBIN) : [ FDirName $(X100_PREFIX) lib libx100client.dll ] ;
+    IIBULKCOPY $(INGFILES) : [ FDirName $(X100_PREFIX) etc vwlog.conf ] ; 
+    IIFILE vectorwise.conf_TMPL : [ FDirName $(X100_PREFIX) etc vectorwise.conf ] ;
+}
+
+

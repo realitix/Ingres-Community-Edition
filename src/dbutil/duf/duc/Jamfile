@@ -1,0 +1,32 @@
+#
+# Jamfile file for dbutil!duf!duc
+#
+#       4-apr-2008  (bolke01) 120219
+#          MANIFEST was not in sync with the .lot files for
+#          CREATEDB
+#       19-apr-2010 (hanje04)
+#           BUG 123296
+#           Add wrapper script for createdb for LSB builds
+#       02-sep-2010 (maspa05) b124328
+#          Windows needs libq and VMS needs libui for IIUIpassword()
+SubDir ING_SRC dbutil duf duc ;
+
+IISUBSYS dbutil duf duc ;
+
+
+IIBINEXE createdb : ducreate.qsc ;
+if $(UNIX)
+{
+    IIBINSH ingcreatedb : ingcreatedb.sh ;
+}
+
+if ! $(VMS)
+{
+    IINEEDLIBS createdb : DBUTILLIB SHEMBEDLIB SHCOMPATLIB SHFRAMELIB ;
+    IINEEDLIBSW createdb : SHQLIB SHCUFLIB SHADFLIB ;
+}
+else
+{
+    IINEEDLIBS createdb : DBUTILLIB LIBQLIB LIBQGCALIB GCFLIB CUFLIB UILIB UGLIB AFELIB ADFLIB COMPATLIB ;
+}
+IILIBRARY DBUTILLIB : ducommon.qsc ducdata.c ;

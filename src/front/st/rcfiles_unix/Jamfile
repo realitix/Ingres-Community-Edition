@@ -1,0 +1,16 @@
+#
+# Jamfile file for front!st!rcfiles_unix
+#
+
+SubDir ING_SRC front st rcfiles_unix ;
+
+IISUBSYS front st rcfiles_unix ;
+
+MODE on $(INGFILES)/rcfiles/ingres.rc = $(FILEMODE) ;
+IIRemRCComments $(INGFILES)/rcfiles/ingres.rc : lnx.rc ;
+
+MODE on $(INGFILES)/rcfiles/iimgmtsvc.rc = $(FILEMODE) ;
+IIRemRCComments $(INGFILES)/rcfiles/iimgmtsvc.rc : iimgmtsvc.rc ;
+
+MODE on $(INGFILES)/rcfiles/iiinitdlib = $(FILEMODE) ;
+IIRemRCComments $(INGFILES)/rcfiles/iiinitdlib : iiinitdlib.sh ;

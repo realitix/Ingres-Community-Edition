@@ -1,0 +1,45 @@
+#
+## Copyright Actian Corporation 2007. All Rights Reserved.
+##
+## Name: core_postinst.template
+##
+## Description:
+##	Template file for DEB postinst script for the core package. Not
+##	intended to be manually runnable
+##
+## History:
+##	12-Jul-2007 (hanje04)
+##	    SIR 118420
+##	    Created.
+##	06-Apr-2011 (hanje04)
+##	    Make sure II_INSTALLATION is correctly set and we can 
+##	    handle upgrade.
+##
+. /usr/share/debconf/confmodule
+
+if [ -n "$DEBIAN_SCRIPT_DEBUG" ]; then set -v -x; DEBIAN_SCRIPT_TRACE=1; fi
+${DEBIAN_SCRIPT_TRACE:+ echo "#42#DEBUG# RUNNING $0 $*" 1>&2 }
+
+export II_SYSTEM=%rpm_prefix%
+rc=0
+
+if [ "$1" = "configure" ] ; then
+    # set default value
+    
+    instid=`$II_SYSTEM/ingres/bin/ingprenv II_INSTALLATION`
+    if [ "$instid" ] && [ -s "$II_SYSTEM/ingres/files/config.dat" ]
+    then
+	# upgrade
+	$II_SYSTEM/ingres/utility/iicorepostinst -u -r %rpm_basename% \
+            -v %rpm_version% 
+	rc=$?
+    else
+        [ -z "$II_INSTALLATION" ] && export II_INSTALLATION=VW
+	$II_SYSTEM/ingres/utility/iicorepostinst -r %rpm_basename% \
+	    -v %rpm_version%
+	rc=$?
+    fi
+fi
+
+exit $rc
+

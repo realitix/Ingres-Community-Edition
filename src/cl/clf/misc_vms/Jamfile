@@ -1,0 +1,40 @@
+#
+# Jamfile file for cl!clf!misc_vms
+#
+# History:
+#	23-jun-2005 (abbjo03)
+#	    Compile frontstart.c with NOOPTIM to bypass Ctrl-C problem.
+#	28-oct-2008 (joea)
+#	    Remove jacket.c.
+#       22-dec-2008 (stegr01)
+#           Itanium VMS port.
+#	18-jun-2009 (joea)
+#	    Reinstate Alpha frontmain.mar.
+#       24-nov-2009 (stegr01)
+#           replace IILIBOBJECT by Object for Itanium build
+#       23-aug-2010 (joea)
+#           Don't build unused modules.
+#       19-Oct-2011 (horda03) b121386
+#           Build POSIX management files when required.
+
+SubDir ING_SRC cl clf misc_vms ;
+
+IISUBSYS cl clf misc_vms ;
+
+IINOOPTIM frontstart.c : axm_vms i64_vms ;
+
+if $(VERS) = axm_vms
+{
+    Object $(FRONTMAIN) : frontmain.mar ;
+}
+else
+{
+    Object $(FRONTMAIN) : frontmain.c ;
+}
+
+IILIBRARY COMPATLIB : frontstart.c miscvalue.c miscerr.msg ;
+
+if $(BUILD_WITH_POSIX_THREADS)
+{
+   IILIBRARY COMPATLIB : astjacket.c astmgmt.c pthreadmgmt.c ;
+}

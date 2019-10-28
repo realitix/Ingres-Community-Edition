@@ -1,0 +1,7 @@
+#
+# YAM MANIFEST file for front!frontcl!files_unix
+#
+
+IISUBSYS front frontcl files_unix ;
+
+IIFILES ii_interface.jbl ingmfcobol rcingsetperm rcingstartup ;

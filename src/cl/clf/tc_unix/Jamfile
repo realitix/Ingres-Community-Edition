@@ -1,0 +1,14 @@
+#
+# Jamfile file for cl!clf!tc_unix
+#
+# History
+#      06-Sep-2010 (coomi01) b124361
+#            Add module tc_sync.c
+
+SubDir ING_SRC cl clf tc_unix ;
+
+IISUBSYS cl clf tc_unix ;
+
+
+IILIBRARY COMPATLIB : tcdata.c tc.c tc_sync.c ;
+

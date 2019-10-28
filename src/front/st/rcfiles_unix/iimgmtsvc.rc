@@ -1,0 +1,134 @@
+# Copyright (c) 2011 Actian Corporation. All Rights Reserved
+##
+##  Name: iimgmtsvc.rc
+##
+##  Purpose:
+##	Template for init script for Remote Manager Service
+##	Modified and installed under /etc/rc.d by mkrc
+##
+##  History:
+##	14-Sep-2011 (hanje04)
+##	    Created.
+##
+#
+# /etc/init.d/iimgmtsvcINST_ID
+#
+# chkconfig header
+#
+# chkconfig: 235 80 20
+# Description:    Ingres Mgmt Tools Service - INST_ID instance
+#
+### BEGIN INIT INFO
+# Short-Description:    Ingres Mgmt Tools Service - INST_ID instance
+# Provides:       iimgmtsvcINST_ID
+# Required-Start: $local_fs $network $remote_fs +ypbind
+# Required-Stop: $local_fs $network $remote_fs +ypbind
+# Default-Start: 2 3 4 5
+# Default-Stop:  0 1 6
+### END INIT INFO
+# Ingres environment for INST_ID installation
+export II_SYSTEM=INST_LOC
+
+. ${II_SYSTEM}/ingres/files/rcfiles/iiinitdlib || exit 5
+
+uid=`id | cut -d= -f2 | cut -d\( -f1`
+if [ $uid != 0 ] ; then
+    echo "Only 'root' can control this $self"
+    save_status -v 4
+    $exit
+fi
+
+# Run everything from $II_SYSTEM/ingres so CWD is writable for ingres
+cd $II_SYSTEM/ingres >> /dev/null 2>&1
+ingdir=/var/lib/ingres/INST_ID
+
+case "$1" in
+    start)
+	if [ ! -f ${ingdir}/iimgmtsetup.done ] ; then
+	    $0 configure
+	    rc=$?
+	    [ $rc != 0 ] && $exit $rc
+	fi
+	startmsg="Starting Remote Manager Service for instance INST_ID"
+--REDHAT_CFG
+	if [ -f /var/lock/subsys/iimgmtsvcINST_ID ] ; then
+	    action "$startmsg": true
+	else
+	    action "$startmsg": start_iimgmtsvc
+	fi
+--REDHAT_CFG_END
+--SUSE_CFG
+        $echon $startmsg
+	if [ -f /var/lock/subsys/iimgmtsvcINST_ID ] ; then
+            true > /dev/null 2>&1
+	else
+            start_iimgmtsvc > /dev/null 2>&1
+	fi
+--SUSE_CFG_END
+        rc=$?
+
+        # Remember status and be verbose
+        [ -d /var/lock/subsys ] && touch /var/lock/subsys/iimgmtsvcINST_ID
+        save_status -v $rc
+	;;
+    stop)
+	stpmsg="Stopping Remote Manager Service for instance INST_ID"
+--REDHAT_CFG
+        action "$stpmsg": stop_iimgmtsvc
+--REDHAT_CFG_END
+--SUSE_CFG
+        $echon $stpmsg
+        stop_iimgmtsvc > /dev/null 2>&1
+--SUSE_CFG_END
+	rc=$?
+        [ "$rc" = "0" ] && rm -f /var/lock/subsys/iimgmtsvcINST_ID 2>/dev/null
+        save_status -v $rc
+	;;
+    try-restart)
+	## Stop the service and if this succeeds (i.e. the 
+	## service was running before), start it again.
+	## Note: try-restart is not (yet) part of LSB (as of 0.7.5)
+	$0 status >/dev/null &&  $0 restart
+	rc=$?
+
+	# Remember status and be quiet
+	save_status $rc
+	;;
+    restart|force-reload)
+	$0 stop && $0 start
+	rc=$?
+
+	save_status $rc
+	;;
+    reload)
+	save_status -v 3
+	;;
+    check|status)
+	if [ -f /var/lock/subsys/iimgmtsvcINST_ID ] ; then
+	    rc=7
+	else
+	    rc=0
+ 	fi
+	save_status -v $rc
+	;;
+    configure)
+	if [ -f ${ingdir}/iimgmtsetup.done ] ; then
+	    save_status -v 0 # already done
+	else
+	    respfile=${2:-/var/lib/ingres/INST_ID/install.rsp.INST_ID}
+	    configure_iimgmtsvc ${respfile}
+	    rc=$?
+	    if [ $rc = 0 ] ; then
+	        save_status -v 0
+	        [ -d ${ingdir} ] && touch ${ingdir}/iimgmtsetup.done
+	    else
+	        save_status -v 6
+	    fi
+	fi
+	;;
+    *)
+	echo  "Usage: $0 {start|stop|status|restart|try-restart|force-reload}"
+	$exit
+	;;
+esac
+$exit

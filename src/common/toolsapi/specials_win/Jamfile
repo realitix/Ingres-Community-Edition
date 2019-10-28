@@ -1,0 +1,21 @@
+#
+# Jamfile file for common!toolsapi!specials_win
+#
+#       08-Aug-2011 (drivi01)
+#           Created.
+#	28-Sep-2011 (drivi01)
+#	    Rename discover.exe to iimgmtsvr.exe.
+#	    Rename Management Studio discovery service
+#	    installer from discversvc.exe to iimgmtinstallsvc.exe.
+
+SubDir ING_SRC common toolsapi specials_win ;
+
+IISUBSYS common toolsapi specials_win ;
+
+IIBINEXE iimgmtsvc : iimgmtsvc.c ;
+IINEEDLIBS iimgmtsvc :  COMPATLIB ;
+
+IIBINEXE iimgmtinstallsvc : iimgmtinstallsvc.c ;
+IINEEDLIBS iimgmtinstallsvc :  COMPATLIB ;
+
+

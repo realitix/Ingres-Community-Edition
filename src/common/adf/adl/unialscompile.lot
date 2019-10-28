@@ -1,0 +1,6 @@
+MAINOBJ.obj, -           
+ING_SRC:[common.adf.adl]UNIAlsCompileHandlers.obj
+XERCES-C$ROOT:[lib]Xerces.olb/lib
+II_FRAMELIB/share
+II_LIBQLIB/share
+II_COMPATLIB/share

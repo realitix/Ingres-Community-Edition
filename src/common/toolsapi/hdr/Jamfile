@@ -1,0 +1,11 @@
+#
+# Jamfile file for common!toolsapi!hdr
+#
+
+SubDir ING_SRC common toolsapi hdr ;
+
+IISUBSYS common toolsapi hdr ;
+
+
+IIMSGHDR erta.msg ;
+

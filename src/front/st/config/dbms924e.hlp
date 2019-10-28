@@ -1,0 +1,8 @@
+
+The sc924_error parameter holds the integer error number to
+be used with SC924 tracing.
+
+The default value is 0 which disables SC924 tracing.
+
+The integer error code for a specific error code can be 
+found using errhelp.

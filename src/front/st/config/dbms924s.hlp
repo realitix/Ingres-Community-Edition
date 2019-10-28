@@ -1,0 +1,7 @@
+
+The sc924_stack parameter determines whether SC924 error
+tracing will attempt to generate stack output.
+
+The default value is OFF.
+
+Please note that not all platforms contain stack dump support.

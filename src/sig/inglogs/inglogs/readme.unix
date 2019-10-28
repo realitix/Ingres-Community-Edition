@@ -1,0 +1,28 @@
+inglogs - a Unix shell script collecting Ingres and OS information 
+
+When experiencing some unexpected behavior in your Ingres installation(hangings,
+ slowdowns etc.), it is often difficult to decide which information to collect 
+and to send to the support for further analysis. 
+The script "inglogs" collects all the information automatically - you simply 
+need to execute it as the installation owner.
+
+inglogs is now delivered with the distribution/patch, newer patches may contain 
+a newer version of it. The latest version is available in Servicedesk, 
+check KB Doc ID:415682
+
+  
+inglogs knows several flags, for a short description run:
+inglogs -h
+for a detailed description run:
+inglogs --help
+
+
+Usage: inglogs [-nosystemconfig] [-nosystemstate]
+               [-nologfiles] [-noingresconfig] [-noingresstate] [+stackdebug]
+               [-internalthreads] [-noparallel]
+       inglogs [-h|-help]
+       inglogs [--help]
+       inglogs [-v|-version|--version]
+
+Please execute as the installation owner(usually ingres).    
+

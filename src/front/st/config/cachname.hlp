@@ -1,0 +1,8 @@
+/#-- Copyright (c) 2004 Actian Corporation
+  The cache_name parameter specifies the name of the shared buffer cache to be 
+  used by the server. 
+
+  A valid cache name: 
+   - can not contain operators
+   - can not contain whitespace
+   - first character must be alphabetic.

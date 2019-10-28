@@ -1,0 +1,422 @@
+#
+#  Copyright (c) 2004 Actian Corporation
+#
+#  Name: Jamdefs.a64_win -- Variable definitions for AMD64 Windows
+#
+#  Description:
+#       Platform specific variable definitions for AMD64 Windows
+#
+# History:
+#	10-Nov-2004 (lakvi01)
+#	   Created by modifying Jamdefs.int_w32.
+#       02-May-2005 (drivi01)
+#          Added two more flags to DLLFLAGS variable as part of
+#          effort in generating pdb files in non-debug environment.
+#	12-May-2005 (lakvi01)
+#	   Updating the name of ApacheCore.lib to ApacheCoreAMD64.lib.
+#	13-May-2005 (lakvi01)
+#	   Added KRB5_SYSTYPES to this file. Change 476512 introduced
+#	   it in Jamdefs.int_w32 and it should be in this file too.
+#   	01-Aug-2005 (fanra01)
+#          Bug 90455
+#          Add SHELLHEADER for platform.
+#	25-Sep-2006 (drivi01) SIR 116656
+#	   Moved .NET Data Provider libraries to generic Jamdefs.
+#	8-Feb-2007 (bonro01)
+#	   Updated Kerberos5 headers to r1.6
+#	   Eliminated need for -DKRB5_SYSTYPES__
+#	15-Oct-2008 (whiro01)
+#	    Added /nologo to linker flags; took off /PDB:none and /WARN.
+#	08-Apr-2010 (drivi01)
+#	    Setup environment and variables for 64-bit port.
+#	26-Apr-2010 (bonro01)
+#	    Add comments for WCHART variable for Xerces so that the comment
+#	    is available in all Windows Jamdefs files.
+#       15-May-2010 (maspa05)
+#           Set FLEX to include FLEX_FLAG which for later versions (>=2.5.31)
+#           of flex should be --nounistd and earlier ones should be an empty
+#           string.
+#           Default to --nounistd for cygwin but no flag for MKS based on
+#           current versions of flex in both.
+#           Can be overriden by setting FLEX_FLAG in environment
+#       26-Jul-2010 (horda03)
+#          The definition of  defined within this file causes
+#          the shell commands executed by JAM to be echoed to the
+#          screen. If user now sets the environment variable
+#               set _ECHO=OFF
+#          then by default the shell commands are not echoed. The
+#          command "jam -dx" when _ECHO == "OFF" will display
+#          then shell commands.
+#       07-Jan-2011 (horda03) b124907
+#          Add DLL_ENTRY to a bespoke entry point into a DLL.
+#	26-Jan-2011 (drivi01)
+#	   Add MSDEV_PLATFORM variable to speicfy platform
+#	   configuration.  Needed for 32-bit builds to force devenv to
+#	   call properly configuration profile.
+#	24-Mar-2011 (drivi01)
+#	   Add GEOS to the 64-bit Windows to match 32-bit Windows.
+#	15-Sep-2011 (whiro01)
+#	   Remove definition of IIDEV_TEST which is now not used anywhere.
+#	26-Sep-2011 (drivi01)
+#	    Add JNISOURCE variable to be set to true on JNI source files.
+#	30-Oct-2011 (whiro01)
+#	    Add /nologo to CC compile flags.
+#
+#
+# Tell Jamdefs that this include worked:
+JAMDEFS_INCLUDED = true ;
+
+
+#VERS32	= "int_w32" ;
+VERS64	= "a64_win" ;
+
+MISCFLAGS	default = "/nologo" ;
+THREADS		= "-D_DLL -D_MT" ;
+RUNTIME		default = "/MD" ;
+ERR_LVL		default = "-W3" ;
+PREPROCESS 	default = $(PREP) ;
+BUILDTYPE	default = DYNAMIC ;
+VERSINFO	default = \"$(ING_SRC)/cl/clf/gv_win/gv.res\"  ;
+VERSINFORC	default = \"$(ING_SRC)/cl/clf/gv_win/gv.rc\" ;
+C_LIB		default = msvcrt.lib ;
+SYSLIBS		default = $(C_LIB) kernel32.lib ;
+ADVAPILIB	default = advapi32.lib ;
+NETAPILIB 	default = netapi32.lib ;
+USERLIB 	default = user32.lib ;
+GDILIB 		default = gdi32.lib ;
+MORELIB		default = ws2_32.lib shell32.lib imagehlp.lib winmm.lib ;
+MORELIB2	default = Msi.lib ole32.lib shlwapi.lib Comdlg32.lib ;
+RPCLIB		default = RpcRT4.lib ;
+CLUSAPI  	default = clusapi.lib ;
+ODBC32LIB	default = odbccp32.lib ;
+ODBCLIBS	default = odbc32.lib odbccp32.lib comctl32.lib ;
+VERSIONLIB	default = version.lib ;
+PSAPILIB      	default = psapi.lib ;
+HTMLHELPLIB	default = htmlhelp.lib ;
+if $(WITH_GEO)
+{
+ GEOSLIB		default = $(GEOS_LOC)/geos_c_i.lib ;
+ PROJLIB		default = $(PROJ_LOC)/proj_i.lib ;
+}
+BUFFERLIB	default = bufferoverflowu.lib ;
+GV     		default = \"$(ING_SRC)/cl/clf/gv/gver.obj\" ;
+GV32   		default = \"$(ING_SRC)/cl/clf/gv/lp32/gver.obj\" ;
+APACHECORE	default = $(ING_SRC)/front/ice/lib/ApacheCoreAMD64.lib ;
+OO		default = $(ING_SRC)/front/utils/oo/oosymbol.obj ;
+PORTREF		= "-DREFERENCE_IN_DLL" ;
+PORTIMP		= "-DIMPORT_DLL_DATA" ;
+EHFLAG		= "/EHsc " ;
+NOARSCAN 	= true ;
+JNISOURCE	= false ;
+CD		= "cd /d" ;
+CP		= "cp -f" ;
+RM		= "rm -f" ;
+CHMOD		= chmod ;
+if $(USE_CYGWIN)
+{
+   FLEX_FLAG       ?=  --nounistd ;
+}
+FLEX		= flex $(FLEX_FLAG) ;
+LEX 		= flex ;
+AWK		= $(AWK_CMD) ;
+REBASE		= rebase ;
+platform_string = "Microsoft Windows 64-bit" ;  #Equal to GV_ENV val
+extension_string = $(config_string) ;
+CMPORTS		default = "" ;
+
+#
+# Xerces shared libary link flag
+#    The following WCHART definition is required for older Xerces libraries
+#    like version 2.7 and for newer xerces libraries using Visual C 7.1
+#    Uncomment this variable or get a newer version of xerces compiled with
+#    VC 8.0 or newer to resolve any link problems with xerces.
+#WCHART         default = /Zc:wchar_t- ;
+
+#
+#set CPUFLAGS
+#
+if $(CPU) = i386
+{
+CPUFLAGS	default = "-Di386=1 -D_X86_" ;
+}
+if $(CPU) = AMD64
+{
+CPUFLAGS32	default = "-Di386=1" ;
+}
+
+#
+#set OPTIM
+#
+if ( $(CPU) = IA64 || $(CPU) = AMD64 ) && $(DEBUG) != ON
+{
+OPTIM = "/O2" ;
+}
+else
+{
+OPTIM = "/Od" ;
+}
+
+#
+#set DEBUG
+#
+if $(DEBUG) = ON
+{
+#lakvi01 (changed from /Z7 to /Zi)
+CDEBUG	default = "/Zi" ;
+IYACCFLAGS	default = "-Xa" ;
+}
+else
+{
+CDEBUG 	default = "" ;
+IYACCFLAGS	default = "" ;
+}
+
+#
+#set PLATFORM
+#
+if $(CPU) = i386
+{
+PLATFORM 	default = "-DNT_INTEL" ;
+LIBSUFFIX	default = "" ;
+}
+if $(CPU) = IA64
+{
+PLATFORM	default = "/G2 /Wp64 - DNT_IA64 -D_IA64_=1 -DWIN64 -D_WIN64 -DWIN32 -D_WIN32" ;
+LIBSUFFIX	default = "64" ;
+}
+if $(CPU) = AMD64
+{
+PLATFORM	default = "-DNT_AMD64 -D_AMD64_=1 -DWIN64 -D_WIN64  -DWIN32 -D_WIN32" ;
+PLATFORM32	default = "-DNT_INTEL -DWIN32 -D_WIN32" ;
+}
+if $(CPU) = ALPHA
+{
+PLATFORM	default = "-DNT_ALPHA" ;
+LIBSUFFIX	default = "" ;
+}
+if $(CPU) = MIPS
+{
+LIBSUFFIX	default = "" ;
+PLATFORM	default = "-DNT_MIPS" ;
+}
+if $(CPU) = PPC
+{
+LIBSUFFIX	default = "" ;
+PLATFORM	default = "-DNT_PPC" ;
+}
+else
+{
+LIBSUFFIX	default = "" ;
+PLATFORM	default = "" ;
+}
+
+#
+#set DBLFLAG
+#
+if $(DOUBLEBYTE) = ""
+{
+DBFLAG	default = "-DDOUBLEBYTE" ;
+}
+
+#
+#set EDFLAG
+#
+if $(DEVELOPER_EDITION) = ""
+{
+DEVELOPER_EDITION 	default = "OFF" ;
+}
+else
+{
+DEVELOPER_EDITION 	default = "ON" ;
+EDFLAG 		default = "-DEVELOPER_EDITION" ;
+}
+
+#
+#set DECFLAG
+#
+if $(DECBUILD) != ""
+{
+DECFLAG 	default = "-DDNET_USE_WINSOCK" ;
+}
+
+#
+#set DEVFLAGS
+#
+if $(DEBUG) = ON
+{
+DEVFLAGS	default = "-DIIDEV_DEBUG" ;
+}
+
+#
+#set MACH
+#
+if $(CPU) = i386
+{
+	MACH 	default = /MACHINE:X86 ;
+}
+
+if $(CPU) = IA64
+{
+	MACH 	default = /MACHINE:IA64 ;
+}
+
+if $(CPU) = AMD64
+{
+	MACH 	default = /MACHINE:x64 ;
+	MACH32 	default = /MACHINE:x86 ;
+}
+
+if $(CPU) = ALPHA
+{
+	MACH 	default = -machine:alpha ;
+}
+
+#
+#set DLLFLAGS
+#
+DLL_ENTRY  default = /ENTRY:Dll_Entry ;
+if $(DEBUG) = ON
+{
+	DLLFLAGSNV = /DEBUG /DEBUGTYPE:CV /MAP $(MACH) ;
+	if $(CPU) = IA64 || $(CPU) = AMD64
+	{
+		DLLFLAGS 	default = /DEBUG /DEBUGTYPE:CV /MAP $(MACH)
+					  /LARGEADDRESSAWARE $(VERSINFO) ;
+	}
+	else
+	{
+		DLLFLAGS 	default = /DEBUG /DEBUGTYPE:CV /MAP $(MACH)
+					  $(VERSINFO) ;
+	}
+}
+else
+{
+	DLLFLAGSNV = /MAP /DEBUG /INCREMENTAL:NO $(MACH) ;
+	if $(CPU) = IA64 || $(CPU) = AMD64
+	{
+		DLLFLAGS	default = /MAP /DEBUG /INCREMENTAL:NO $(MACH)
+					  /LARGEADDRESSAWARE $(VERSINFO) ;
+	}
+	else
+	{
+		DLLFLAGS = /MAP /DEBUG /INCREMENTAL:NO $(MACH) $(VERSINFO) ;
+	}
+}
+
+if $(DEBUG) != ON
+{
+	if $(CPU) = IA64
+	{
+		MSDEV_CONFIG = "Release64" ;
+		DEVENVFLAGS  = "/nologo /useenv" ;
+	}
+	if $(CPU) = AMD64
+	{
+		MSDEV_CONFIG = "ReleaseAMD64" ;
+		MSDEV_PLATFORM = "x64" ;
+		DEVENVFLAGS  = "/nologo /useenv" ;
+	}
+	if $(CPU) != IA64 && $(CPU) != AMD64
+	{
+		MSDEV_CONFIG = "Release" ;
+		DEVENVFLAGS  = "/nologo" ;
+		MSDEV_PLATFORM = "Win32" ;
+	}
+}
+else
+{
+	if $(CPU) = IA64
+	{
+		MSDEV_CONFIG = "Debug64" ;
+		DEVENVFLAGS  = "/nologo /useenv" ;
+	}
+	if $(CPU) = AMD64
+	{
+		MSDEV_CONFIG = "DebugAMD64" ;
+		MSDEV_PLATFORM = "x64" ;
+		DEVENVFLAGS  = "/nologo /useenv" ;
+	}
+	if $(CPU) != IA64 && $(CPU) != AMD64
+	{
+		MSDEV_CONFIG = "Debug" ;
+		DEVENVFLAGS  = "/nologo" ;
+		MSDEV_PLATFORM = "Win32" ;
+	}
+
+}
+
+
+#
+# set MANIFEST UI Level
+#
+ADMIN_MANIFEST	default = "/MANIFESTUAC:\"level='requireAdministrator' uiAccess='false'\"" ;
+
+#
+# set MISC FLAGS
+#
+RMWARNINGS	default = -D_CRT_SECURE_NO_WARNINGS ;
+
+
+
+#
+#Variables
+#
+CCMACH64	default = -DBUILD_ARCH64 $(MISCFLAGS) $(CPUFLAGS) $(CDEBUG) $(RUNTIME) $(ERR_LVL) $(PLATFORM) $(PREPROCESS) -DDESKTOP -DDEVIL -DINCLUDE_ALL_CL_PROTOS -DNT_GENERIC -DSEP -DSEPDEBUG -DDOUBLEBYTE -DxCL_NO_AUTH_STRING_EXISTS -DINGRESII $(DBFLAG) $(EDFLAG) $(DECFLAG) $(DEVFLAGS) $(THREADS) $(RMWARNINGS) $(WITH_GEO) ;
+CCMACH32	default = -DBUILD_ARCH32 $(MISCFLAGS) $(CMPORTS) $(CPUFLAGS) $(CDEBUG) $(RUNTIME) $(ERR_LVL) $(PLATFORM32) $(PREPROCESS) -DDESKTOP -DDEVIL -DINCLUDE_ALL_CL_PROTOS -DNT_GENERIC -DSEP -DSEPDEBUG -DDOUBLEBYTE -DxCL_NO_AUTH_STRING_EXISTS -DINGRESII $(DBFLAG) $(EDFLAG) $(DECFLAG) $(DEVFLAGS) $(THREADS) $(RMWARNINGS) ;
+WINNT	default = -D_WIN32_WINNT=0x0500 ;
+# CC	default = "CC" ;
+if $(JAMSHELL_ECHO) != "OFF"
+{
+   JAMSHELL ?= cmd /C % ;
+}
+VISUALC  = "" ;
+C++ 	 = cl.exe ;
+CC32	 ?= \"%VSINSTALLDIR%\\VC\\bin\\cl.exe\" ;
+LINK 	 = link.exe ;
+LINK32 	 ?= \"%VSINSTALLDIR%\\VC\\bin\\link.exe\" ;
+AR32 	 ?= "\"%VSINSTALLDIR%\\VC\\bin\\lib.exe\"  /MACHINE:x86" ;
+LIB32	 ?= "%VSINSTALLDIR%\\VC\\lib" ;
+SDK32	 ?= "%WindowsSdkDir%\lib" ;
+if $(CPU) != IA64 && $(CPU) != AMD64
+{
+	AR = "lib /MACHINE:x86" ;
+}
+else
+{
+	AR = "lib /MACHINE:x64" ;
+}
+LDLIBMACH = /nologo $(DLLFLAGS) ;
+LDLIBMACH64 = /nologo $(DLLFLAGS) ;
+LINKFLAGS = /nologo $(MISCFLAGS) $(MACH) $(DLLFLAGS) ;
+LINKFLAGS32 = /nologo $(MISCFLAGS) $(MACH32) $(DLLFLAGS) ;
+CCLDMACH  = /nologo $(DLLFLAGS) ;
+CCLDMACH64  = /nologo $(DLLFLAGS) ;
+
+LINKLIBS = $(SYSLIBS) $(ADVAPILIB) $(NETAPILIB) $(USERLIB) $(GDILIB) $(MORELIB) $(RPCLIB) $(CLUSAPI) $(PSAPILIB) $(GV) $(GEOSLIB) $(PROJLIB) ;
+LINKLIBS32 = $(SYSLIBS) $(ADVAPILIB) $(NETAPILIB) $(USERLIB) $(GDILIB) $(MORELIB) $(RPCLIB) $(CLUSAPI) $(PSAPILIB) $(GV32) ;
+KEEPOBJ = true ;
+SHELLHEADER = "" ;
+
+
+#
+# File suffixes
+#
+LIBSFX	default = lib ;
+SLSFX	default = dll ;
+DEFSFX	default = def ;
+PDBSFX	default = pdb ;
+EXESFX	default = exe ;
+OBJSFX	default = obj ;
+CHMSFX	default = chm ;
+
+#
+#ICE File extensions
+#
+ICE_EXT = dll ;
+CGI_EXT = exe ;
+
+
+#
+# Visual Studio rebuild flag
+#
+BUILD = /rebuild ;

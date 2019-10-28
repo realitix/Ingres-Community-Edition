@@ -1,0 +1,30 @@
+#
+# Jamfile file for front!misc!genxml
+#
+# History:
+#	24-jan-2005 (abbjo03)
+#	    Cannot build genxml and xmlimport until Xerces 2.5 is ported to VMS.
+#       25-Jul-2011 (horda03) B125758
+#           Xerces 3.0 has been ported to VMS, so build genxml and xmlimport
+
+SubDir ING_SRC front misc genxml ;
+
+IISUBSYS front misc genxml ;
+
+IIBINEXE genxml : xmlmain.sc ;
+IINEEDLIBS genxml :  XFERDBLIB GNLIB SHFRAMELIB
+	SHQLIB SHCOMPATLIB SHEMBEDLIB ;
+IINEEDLIBSW genxml : SHADFLIB ;
+IIUNDEFS genxml : II_copyright malloc ;
+
+IIBINEXE xmlimport  : xmlimport.c ;
+IINEEDLIBS xmlimport  :  XFERDBLIB GNLIB SHFRAMELIB
+	SHQLIB SHCOMPATLIB  SHEMBEDLIB ;
+IIUNDEFS xmlimport  : II_copyright malloc ;
+
+if $(VERS) = rs4_us5 || $(VERS) = r64_us5
+{
+  IILDFLAGS genxml xmlimport : CCLDBMAX ;
+}
+
+IIMSGHDR erxml.msg ;

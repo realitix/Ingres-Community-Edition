@@ -1,0 +1,40 @@
+# Edit History:
+#	20-Jun-2009 SIR 122138
+#	    Implement new Datallegro-style VERS file format which can
+#	    control jam variables as well as shell/compile options.
+#	29-Mar-2010 (drivi01)
+#	    Add Variable to build ice and setup for potential hybrid
+#	    builds, right now hybrid builds are turned off in 
+#	    platform specific Jamdefs.
+#	10-Aug-2010 (bonro01)
+#	    Remove ICE from x64 and fix the build specification.
+#	30-Sep-2010 (troal01)
+#	    Fixed a typo in set option WITH_GEO
+#        7-Feb-2011 (hanal04) Bug 124731
+#           Comment out WITH_GEO in default build parameters. We can
+#           uncomment if the GeoSpatials project is resurrected at a later
+#           date.
+#	16-Mar-2011 (drivi01)
+#	    To comment out #set commands, put 2 '#' in front of it.
+#	28-Sep-2011 (hanje04)
+#	    Bug 125688
+#	    Enable MGMT Tool server builds
+
+#set: config32 int_w32
+#set: config a64_win
+#set: build 00
+
+# Any jam definitions go here, e.g. VAR = value ;
+# Don't forget spaces around the = and before the ;
+#BUILD_ICE = "" ;	##set: option BUILD_ICE
+BUILD_MGMTSVC = TRUE ; #set: option BUILD_MGMTSVC
+
+
+# Hybridization...
+# a64_win normally builds reverse hybrid
+BUILD_ARCH = "64" ;   #set: arch 64
+XERCES_ARCH ?= 64 ;
+
+PLATFORM_JAMDEFS = a64_win ;
+
+# WITH_GEO = -D_WITH_GEO ; ##set: option WITH_GEO

@@ -1,0 +1,27 @@
+/*
+** Copyright (c) 2010 Actian Corporation
+*/
+/*
+** Generic part file for geospatial
+*/
+
+/*
+** History
+**	8-Mar-2010 (troal01)
+**		Added.
+**	23-Nov-2010 (troal)
+**	    Reanmed srid.dat to sridmap.dat
+**      10-Dec-2010 (maspa05)
+**          Add support for LSB builds
+*/
+
+PART   geo
+
+#ifdef conf_LSB_BUILD
+   DIRECTORY usr!share!ingres!files!geo
+#else
+   DIRECTORY ingres!files!geo
+#endif
+   BUILD_DIR (ING_BUILD)!files!geo
+      FILE sridmap.dat
+

@@ -1,0 +1,49 @@
+#
+## Copyright Actian Corporation 2007. All Rights Reserved.
+##
+## Name: postinst.template
+##
+## Description:
+##	Generic template file for DEB postinst script. Not intended to
+##	be manually runnable
+##
+## History:
+##	05-Jul-2007 (hanje04)
+##	    SIR 118420
+##	    Created.
+##      29-Sep-2010 (thich01)
+##          Add -s to the pkg_sulist argument so iigenpreun recognizes it 
+##          properly.
+##
+. /usr/share/debconf/confmodule
+
+if [ -n "$DEBIAN_SCRIPT_DEBUG" ]; then set -v -x; DEBIAN_SCRIPT_TRACE=1; fi
+${DEBIAN_SCRIPT_TRACE:+ echo "#42#DEBUG# RUNNING $0 $*" 1>&2 }
+
+export II_SYSTEM=%rpm_prefix%
+PATH=$II_SYSTEM/ingres/bin:$II_SYSTEM/ingres/utility:$PATH
+LD_LIBRARY_PATH=/lib:/usr/lib:$II_SYSTEM/ingres/lib
+export II_SYSTEM PATH LD_LIBRARY_PATH
+rc=0
+
+if [ "$1" = "configure" ] ; then
+    instid=`$II_SYSTEM/ingres/bin/ingprenv II_INSTALLATION`
+    [ -z "$instid" ] &&
+    {
+	echo "II_INSTALLATION not set"
+	exit 1
+    }
+
+    # Add setup to todo list
+    sulist=%pkg_sulist%
+    ifssave=$IFS
+    IFS=:   
+    for script in ${sulist}
+    do
+	echo $script >> /var/lib/ingres/${instid}/setup.todo
+    done
+    IFS=$ifssave
+fi
+
+exit $rc
+

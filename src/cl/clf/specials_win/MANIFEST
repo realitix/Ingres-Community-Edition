@@ -1,0 +1,25 @@
+#
+# MANIFEST file for cl!clf!specials_win
+#
+# History:
+#	25-Aug-2004 (drivi01)
+#	     Created.  Creates iilibcompat.dll and iilibcompatdata.dll.
+#	23-Jun-2008 (drivi01)
+#	     Remove IITOUCH for alarmwkp.def file.  
+#       07-Jan-2011 (horda03) b124907
+#            Added clfdllentry.c to define a customised DLL Entry
+#            function to to circumvent atexit() invoked functions
+#            causing a SIGSEGV if the DLL is unloaded before the program
+#            terminated.
+#
+
+SubDir ING_SRC cl clf specials_win ;
+
+IISUBSYS cl clf specials_win ;
+
+IILIBRARY COMPATLIB : clfdllentry.c ;
+
+IISHLIBRARY $(SHCOMPATLIB) : $(COMPATLIB) $(IMPCOMPATLIBDATA) ;
+IISHLIBRARY $(SHCOMPATLIBDATA) : $(COMPATLIBDATA) $(SHCOMPATLIB) ;
+
+LINKFLAGS on $(SHCOMPATLIB) += $(DLL_ENTRY) ;

@@ -1,0 +1,62 @@
+#
+# Actian Corporation 2011, all rights reserved
+#
+# Name: README
+#
+# Description:
+#
+#	Readme file for gettext message files for Linux GUI installer.
+#
+# History:
+#	10-Feb-2011 (hanje04)
+#	    Created.
+
+This file contains a brief overview of the native language support
+files and implementation for the Linux GUI installer.
+
+Files:
+    inginstgui.pot - Message file template, created used xgettext. Used to
+		     create .po files for for translation
+    ja.po	- Japanese translation of messages contained in template
+    genpot.sh	- Wrapper script for xgettext utility for extracted messages
+	    	  from source
+
+Implementation:
+
+Native language support was added to GUI installer primarily because it
+needed to be translated to Japanese. This was done using the GNU 'gettext' 
+libraries and utilities.
+
+    http://www.gnu.org/software/gettext/manual/gettext.html
+
+GTK already has full support for gettext so the string in the interface didn't 
+require any ammendments. The "message strings" contained in the source are now
+all wrapped in the gettext macros _() & N_() which correspond to the
+dgettext() and ngettext() functions. 
+
+The message strings in the GTK interface and the source are extracted using
+the xgettext utility to create a .pot template file. This is then translated
+to create a <lang>.po file which is submitted back into the code.
+One per translation.
+
+The .po files are processed by the IIGettextMsgfmt() Jam rule (which uses
+msgfmt) to create binary .mo files:
+
+    $ING_BUILD/files/po/<lang>/LC_MESSAGES/inginstgui.mo
+
+The new directory structure is included with the saveset under the
+<root>/locale directory.
+
+Locale function calls (see gipmain.c & ingpkgqry.py) were also added to
+define the gettext domain:
+
+    inginstgui
+
+at startup and bind the domain to the message file location in the saveset.
+
+Native language messages are triggered by the LC_ALL variable. 
+e.g. To invoke the installer in Japanese run:
+
+   $ LC_ALL=ja_JP.UTF-8 ./ingres_install
+
+On a Japanese language host, this should already be set.

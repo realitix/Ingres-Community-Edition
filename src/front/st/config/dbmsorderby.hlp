@@ -1,0 +1,11 @@
+/#-- Copyright (c) 2011 Actian Corporation
+
+  By default, the Order By clause will allow
+  ambiguous use of a column name specification.
+
+  Example, which column is the subject of the ordering
+
+         select tab1.col1, tab2.col1 order by col1;
+ 
+  Setting the strict_orderby flag will cause the parser
+  to reject the ambiguity.

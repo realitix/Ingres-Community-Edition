@@ -1,0 +1,63 @@
+/*
+** Copyright (c) 2011 Actian Corporation, all rights reserved
+*/
+/*
+**  Generic part file for mgmtsvc - Remote Manager Service
+*/
+
+/*
+** History
+**	07-Sep-2011 (hanje04)
+**	    Created.
+*/ 
+
+PART	mgmtsvc
+
+/*
+** ingres!utility
+*/
+#ifdef conf_LSB_BUILD
+   DIRECTORY usr!libexec!ingres!utility
+#else
+   DIRECTORY (PROD2NAME)!utility
+#endif
+   BUILD_DIR (ING_BUILD)!utility
+      SCRIPT SETUP iisumgmtsvc
+      SCRIPT iimgmtsvrstart
+      SCRIPT iimgmtsvrstop
+
+/*
+** ingres!bin
+*/
+#ifdef conf_LSB_BUILD
+   DIRECTORY usr!bin
+#else
+   DIRECTORY (PROD2NAME)!bin
+#endif
+   BUILD_DIR (ING_BUILD)!bin
+      EXECUTABLE iimgmtsvr
+
+/*
+** ingres!lib
+*/
+   DIRECTORY (PROD2NAME)!lib
+   BUILD_DIR (ING_BUILD)!lib
+      EXECUTABLE libiitools.1.$SLSFX
+      EXECUTABLE libiitoolsjni.1.$JNISLSFX
+      FILE iimgmtsvr.jar
+      FILE iiapi.jar
+
+/*
+** ingres!files!rcfiles
+*/
+
+#ifdef conf_LSB_BUILD
+	DIRECTORY usr!share!ingres!files!rcfiles
+#else
+	DIRECTORY (PROD2NAME)!files!rcfiles
+#endif
+   BUILD_DIR (ING_BUILD)!files!rcfiles
+# ifdef LNX
+      FILE iimgmtsvc.rc
+# endif
+

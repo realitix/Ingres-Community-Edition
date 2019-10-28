@@ -1,0 +1,17 @@
+#
+# Jamfile file for back!scf!sc0
+#
+#    20-Oct-2009 (hweho01)
+#      Remove the IINOOPTIM entries that were generated incorrectly.
+#	23-Nov-2010 (kschendel)
+#	    Drop obsolete nooptim.
+
+SubDir ING_SRC back scf sc0 ;
+
+IISUBSYS back scf sc0 ;
+
+IIBINEXE iimonitor : iimonitor.c ;
+IINEEDLIBS iimonitor : GCFLIB COMPATLIB ;
+
+IILIBRARY SCFLIB : sc0m.c sc0e.c sc0a.c ;
+

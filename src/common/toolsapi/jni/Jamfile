@@ -1,0 +1,22 @@
+#
+# Jamfile file for common!toolsapi!jni
+#
+
+SubDir ING_SRC common toolsapi jni ;
+
+IISUBSYS common toolsapi jni ;
+
+if $(BUILD_MGMTSVC)
+{
+    IIShJniLibrary $(SHTOOLSJNILIB) : IIapi_jni.cpp IIapi_jni_log.cpp
+        IIapi_jni_util.cpp ;
+    if $(NT)
+    {
+        IINEEDLIBS $(SHTOOLSJNILIB) : IMPTOOLSLIB COMPATLIB APILIB ;
+    }
+    else
+    {
+        IINEEDLIBS $(SHTOOLSJNILIB) : SHCOMPATLIB SHQLIB SHAPILIB SHTOOLSLIB ;
+
+    }
+}

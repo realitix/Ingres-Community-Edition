@@ -1,0 +1,1950 @@
+#
+# Copyright (C) Actian Corporation 2011, all rights reserved
+#
+# Name:
+#    inginstgui.pot
+#
+# Description:
+#
+#    Gettext message file template file for Ingres GUI installer
+#    Use to generate lang.po files for native language translation
+#
+#    This file is distributed under the same license as Ingres 
+#
+# History:
+#       18-Jan-2011 (hanje04, jeremy.hankinson@ingres.com)
+#           Created.
+#	24-Feb-2011 (hanje04)
+#	    Updated for 1.5
+#	29-Aug-2011 (hanje04)
+#	    Mantis 2284
+#	    Merge from codev
+#	    Add missing Quit and Back strings
+#	31-Aug-2011 (hanje04)
+#	    Remove "Ingres" from "Ingres VectorWise"
+#	01-Sep-2011 (hanje04)
+#	    Update for Ingres 10.1/VW 2.0 after merge with main. Remove
+#	    file references as it gets too cofusing when used across
+#	    multiple codelines
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 2.0\n"
+"Report-Msgid-Bugs-To: support@actian.com\n"
+"POT-Creation-Date: 2011-02-24 00:19-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "\t-c\t\tEnable GPG signature checking"
+msgstr ""
+
+msgid ""
+"\t-o\t\tWrite output to <filename>\n"
+"\t\t\t(default is to write to ./ingpkginfo.xml)"
+msgstr ""
+
+msgid ""
+"\t-p\t\tPretty print to stdout\n"
+"\t\t\t(ingpkginfo.xml will still be written)"
+msgstr ""
+
+msgid ""
+"\t-s\t\tSearch <pkgdir> for Ingres packages to compare against\n"
+"\t\t\tthose installed"
+msgstr ""
+
+msgid "\tNONE"
+msgstr ""
+
+msgid ""
+"\n"
+"Database server options:\n"
+msgstr ""
+
+msgid ""
+"\n"
+"Installation Owner:\n"
+msgstr ""
+
+msgid ""
+"\n"
+"Locale Settings\n"
+msgstr ""
+
+msgid ""
+"\n"
+"Other Options\n"
+msgstr ""
+
+msgid ""
+"\n"
+"Transaction log(s):\n"
+msgstr ""
+
+msgid ""
+"\n"
+"VectorWise Configuration:\n"
+msgstr ""
+
+msgid " _Documentation"
+msgstr ""
+
+msgid "\"DATE\" type alias: "
+msgstr ""
+
+#, c-format
+msgid "%s Summary"
+msgstr ""
+
+#, c-format
+msgid "%s has been successfully %s"
+msgstr ""
+
+#, c-format
+msgid ""
+"%s has been successfully installed.\n"
+"\n"
+"To exit click \"<b>Finish</b>\""
+msgstr ""
+
+#, c-format
+msgid ""
+"%s supports multiple instances installed on the same machine. Each\n"
+"instance is uniquely identified by an instance name. "
+msgstr ""
+
+#, c-format
+msgid ""
+"%s supports multiple instances installed on the same server. Each\n"
+"instance is uniquely identified by an instance name."
+msgstr ""
+
+msgid "..."
+msgstr ""
+
+msgid "/opt/Ingres/IngresII"
+msgstr ""
+
+#, c-format
+msgid "<b>%s Complete</b>"
+msgstr ""
+
+#, c-format
+msgid "<b>%s Failed</b>"
+msgstr ""
+
+#, c-format
+msgid "<b>%s Instances</b>"
+msgstr ""
+
+msgid "<b>ANSI/ISO SQL Compliance</b>"
+msgstr ""
+
+msgid "<b>Additional Configuration</b>"
+msgstr ""
+
+msgid ""
+"<b>Business Intelligence System</b>\n"
+"Optimized for business decision making; reporting, analytics, data mining, "
+"business performance management, decision support and predictive analytics"
+msgstr ""
+
+msgid "<b>CPU Utilization</b>"
+msgstr ""
+
+msgid "<b>Component List</b>"
+msgstr ""
+
+msgid "<b>Component Selection</b>"
+msgstr ""
+
+msgid ""
+"<b>Content Management System</b>\n"
+"Optimized for storing, controlling, versioning, and publishing information "
+"including files, image media, audio, video, electronic documents, and web "
+"content"
+msgstr ""
+
+msgid "<b>Data Configuration</b>"
+msgstr ""
+
+msgid "<b>Data File Locations</b>"
+msgstr ""
+
+msgid "<b>Database File Locations</b>"
+msgstr ""
+
+msgid "<b>Date Type Alias</b>"
+msgstr ""
+
+msgid "<b>Deployment Platform</b>"
+msgstr ""
+
+msgid "<b>Dual Transaction Log</b>"
+msgstr ""
+
+#, c-format
+msgid "<b>Existing %s Instances</b>"
+msgstr ""
+
+msgid "<b>Ingres Configuration Type</b>"
+msgstr ""
+
+msgid "<b>Installation Complete</b>"
+msgstr ""
+
+msgid "<b>Installation Failed</b>"
+msgstr ""
+
+msgid "<b>Installation Location</b>"
+msgstr ""
+
+msgid "<b>Installation Mode</b>"
+msgstr ""
+
+msgid "<b>Installation Type</b>"
+msgstr ""
+
+msgid "<b>Installed Components</b>"
+msgstr ""
+
+msgid "<b>Instance Locations</b>"
+msgstr ""
+
+msgid "<b>Instance Name</b>"
+msgstr ""
+
+msgid "<b>Instance Owner</b>"
+msgstr ""
+
+msgid "<b>License</b>"
+msgstr ""
+
+msgid "<b>Locale Settings</b>"
+msgstr ""
+
+msgid "<b>Locale and Compliance</b>"
+msgstr ""
+
+msgid "<b>Memory Configuration</b>"
+msgstr ""
+
+msgid "<b>Miscelaneous Options</b>"
+msgstr ""
+
+msgid "<b>Miscellaneous Options</b>"
+msgstr ""
+
+msgid "<b>Modify Components</b>"
+msgstr ""
+
+msgid ""
+"<b>Note:</b> Strict compliance should only be selected if you are sure\n"
+"you require it. It is <b>not</b> recommended for normal operation."
+msgstr ""
+
+msgid ""
+"<b>Note:</b> We recommend the transaction log and the dual transaction\n"
+"log be stored on different physical devices."
+msgstr ""
+
+#, c-format
+msgid "<b>Please wait while %s is installed</b>"
+msgstr ""
+
+#, c-format
+msgid "<b>Please wait while the %s instance is %s</b>"
+msgstr ""
+
+msgid "<b>Please wait while the Ingres instance is upgraded</b>"
+msgstr ""
+
+#, c-format
+msgid "<b>Ready to %s</b>"
+msgstr ""
+
+#, c-format
+msgid "<b>Ready to Install %s</b>"
+msgstr ""
+
+msgid "<b>Ready to Upgrade</b>"
+msgstr ""
+
+msgid "<b>Response File Complete</b>"
+msgstr ""
+
+msgid "<b>Review Settings</b>"
+msgstr ""
+
+msgid "<b>Service Configuration</b>"
+msgstr ""
+
+msgid "<b>Terminal Settings</b>"
+msgstr ""
+
+msgid ""
+"<b>Traditional Ingres System</b>\n"
+"High transaction isolation, low concurrency as if transactions are executed "
+"serially, rather than concurrently. This level requires transaction retries "
+"in the event of serialization failures. Use this setting for client-only "
+"installations."
+msgstr ""
+
+msgid "<b>Transaction Log Files</b>"
+msgstr ""
+
+msgid "<b>Transaction Log</b>"
+msgstr ""
+
+msgid ""
+"<b>Transactional System</b>\n"
+"Optimized for transaction-oriented applications, such as ERP or CRM systems, "
+"electronic banking, order processing, time clock system, and e-commerce "
+"systems."
+msgstr ""
+
+msgid "<b>Upgrade Complete</b>"
+msgstr ""
+
+msgid "<b>Upgrade Failed</b>"
+msgstr ""
+
+msgid "<b>VectorWise Configuration</b>"
+msgstr ""
+
+#, c-format
+msgid "<b>Welcome to the %s Community!</b>"
+msgstr ""
+
+#, c-format
+msgid "<b>Welcome to the %s Installation Wizard</b>"
+msgstr ""
+
+#, c-format
+msgid "<b>Welcome to the %s Response File Generator</b>"
+msgstr ""
+
+msgid "A default instance will be created. No questions asked."
+msgstr ""
+
+#, c-format
+msgid ""
+"A response file will be created for deploying %s\n"
+"on Linux"
+msgstr ""
+
+#, c-format
+msgid ""
+"A response file will be created for deploying %s\n"
+"on Windows"
+msgstr ""
+
+msgid "AN_SI Date"
+msgstr ""
+
+msgid "Add or remove components from the selected instance"
+msgstr ""
+
+msgid "Additional Configuration"
+msgstr ""
+
+msgid ""
+"Adds the directory containing the Ingres executables to the Windows path "
+"variable. You can then run Ingres executables from the command line"
+msgstr ""
+
+msgid "All Ingres components will be installed"
+msgstr ""
+
+msgid "All files under the following locations will be removed:\n"
+msgstr ""
+
+msgid ""
+"All user databases must be upgraded before they can be accessed by the "
+"upgraded binaries. By default this is done automatically by the upgrade "
+"process. If you do not want this to be done now uncheck this option.\n"
+"\n"
+"NOTE: You will have to run upgradedb manually on all user databases if this "
+"option is unchecked"
+msgstr ""
+
+msgid ""
+"An error occured during installation and the process was unable to\n"
+"complete.\n"
+"\n"
+"Review the errors below and contact Ingres technical support at\n"
+"http://www.actian.com/support for further assistance.\n"
+"\n"
+"To exit click \"Finish\""
+msgstr ""
+
+#, c-format
+msgid ""
+"An older version of %s has been detected on your machine.\n"
+"\n"
+"Select an option to proceed"
+msgstr ""
+
+#, c-format
+msgid ""
+"Another %s instance of the same version has been detected on \n"
+"your machine\n"
+"\n"
+"Select an option to proceed"
+msgstr ""
+
+msgid ""
+"Application-By-Forms\n"
+"\n"
+"Ingres Application-By-Forms is a forms-based application development tool "
+"that allows developers to use, write, compile, and link Ingres 4GL (formerly "
+"OpenINGRES/4GL) programs.\n"
+"\n"
+"Vision\n"
+"\n"
+"Ingres Vision is the premier tool for rapid development of open, portable, "
+"character-based applications.  Vision combines the productivity of a 4GL, "
+"the production power of a 3GL, an advanced user interface, automatic code "
+"generation capabilities, and customizable code templates which allow rapid "
+"development of applications that run against relational and non-relational "
+"database systems from Actian Corporation, IBM, DEC, and Hewlett Packard. \n"
+"Vision applications can be deployed both as traditional, host-based terminal "
+"applications, or as client-server applications under Microsoft Windows, "
+"OS/2, MS-DOS, Unix, Linux and VMS.  When deployed under MS Windows and IBM "
+"Presentation Manager, Vision applications support pull-down menus, button "
+"bars, and other mouse-driven graphical user interface features."
+msgstr ""
+
+msgid ""
+"Application-By-Forms\n"
+"\n"
+"Ingres Application-By-Forms is a forms-based application development tool "
+"that allows developers to use, write, compile, and link Ingres 4GL (formerly "
+"OpenINGRES/4GL) programs.\n"
+"\n"
+"Vision\n"
+"\n"
+"Ingres Vision is the premier tool for rapid development of open, portable, "
+"character-based applications.  Vision combines the productivity of a 4GL, "
+"the production power of a 3GL, an advanced user interface, automatic code "
+"generation capabilities, and customizable code templates which allow rapid "
+"development of applications that run against relational and non-relational "
+"database systems from Actian Corporation, IBM, DEC, and Hewlett Packard. "
+"Vision applications can be deployed both as traditional, host-based terminal "
+"applications, or as client-server applications under Microsoft Windows, "
+"OS/2, MS-DOS, Unix, Linux and VMS.  When deployed under MS Windows and IBM "
+"Presentation Manager, Vision applications support pull-down menus, button "
+"bars, and other mouse-driven graphical user interface features. "
+msgstr ""
+
+msgid "Are you sure you want to quit?"
+msgstr ""
+
+msgid "Bac_kup"
+msgstr ""
+
+msgid "Backup"
+msgstr ""
+
+msgid "Block group size"
+msgstr ""
+
+msgid "Block size"
+msgstr ""
+
+msgid "Browse..."
+msgstr ""
+
+msgid "Buffer P_ool Memory"
+msgstr ""
+
+msgid "Buffer pool memory"
+msgstr ""
+
+msgid ""
+"By default the Ingres instance and all the files associated with it will be "
+"owned by the OS user ingres. If you want it owned by a different OS user, "
+"enter the username here. The user will be created if it doesn't already "
+"exist.\n"
+"\n"
+"This user will also be made a member of the ingres user group. If you want "
+"it to be part of a different user group, enter the group name here. The "
+"group will be created if it doesn't already exist."
+msgstr ""
+
+msgid "C_haracter Set"
+msgstr ""
+
+msgid "C_reate a demo database"
+msgstr ""
+
+msgid "C_ustom"
+msgstr ""
+
+msgid ""
+"Character Set\n"
+"\n"
+"Ingres supports different character sets. You must now enter the character "
+"set you want to use with this Ingres installation.\n"
+"\n"
+"IMPORTANT NOTE: You will be unable to change character sets once you make "
+"your selection. If you are unsure of which character set to use, exit this "
+"program and refer to the Ingres Getting Started Guide.\n"
+"\n"
+msgstr ""
+
+msgid "Character Set: "
+msgstr ""
+
+msgid "Choose a location"
+msgstr ""
+
+msgid "Cick <b>Upgrade</b> to begin the installaltion"
+msgstr ""
+
+#, c-format
+msgid "Click <b>%s</b> to begin the installation"
+msgstr ""
+
+msgid "Click <b>Back</b> to change your settings"
+msgstr ""
+
+msgid "Client and Server components of VectorWise will be installed"
+msgstr ""
+
+msgid "Co_mplete"
+msgstr ""
+
+msgid "Component Selection"
+msgstr ""
+
+msgid "Components added:\n"
+msgstr ""
+
+msgid ""
+"Components most commonly used for a Ingres\n"
+"server will be installed"
+msgstr ""
+
+msgid ""
+"Components most commonly used for an Ingres\n"
+"client will be installed"
+msgstr ""
+
+msgid "Components removed:\n"
+msgstr ""
+
+msgid "Components selected:\n"
+msgstr ""
+
+msgid "Configuration Type"
+msgstr ""
+
+msgid ""
+"Configuration Type:\n"
+"\t"
+msgstr ""
+
+msgid "Continue to the next section..."
+msgstr ""
+
+#, c-format
+msgid "Could not save response file: %s"
+msgstr ""
+
+#, c-format
+msgid "Couldn't find pixmap file: %s"
+msgstr ""
+
+msgid "Create Ingres _folder on Desktop"
+msgstr ""
+
+msgid "Create Ingres folder on Desktop: "
+msgstr ""
+
+msgid "Create a _demo database"
+msgstr ""
+
+msgid "Create a demo database: "
+msgstr ""
+
+msgid ""
+"Create a demonstration database named demodb and populate it with a tables, "
+"view, procedures and other database objects. The database is used by Ingres "
+"demonstration applications such as the Ingres Frequent Flyer Demo."
+msgstr ""
+
+msgid "Create a folder containing Ingres stuff on your desktop"
+msgstr ""
+
+msgid "Create a folder on the"
+msgstr ""
+
+msgid "Create a populated demonstration database named demodb"
+msgstr ""
+
+msgid "Create and populate a demonstration database called demodb"
+msgstr ""
+
+msgid "D_atabase"
+msgstr ""
+
+msgid "Data Block _Group Size"
+msgstr ""
+
+msgid "Data Block _Size"
+msgstr ""
+
+msgid "Database"
+msgstr ""
+
+msgid "Database Locations"
+msgstr ""
+
+msgid "Database file locations:\n"
+msgstr ""
+
+msgid ""
+"Date Type Alias\n"
+"\n"
+"Ingres supports the ANSI date and time data types DATE, TIME, TIMESTAMP, and "
+"INTERVAL. Previously, Ingres supported one date data type that could store "
+"dates, times, intervals, and time stamps. The previous date type has been "
+"renamed to  INGRESDATE.\n"
+"\n"
+"The configuration parameter date_alias controls whether the keyword DATE "
+"used for a column data type refers to INGRESDATE or to ANSIDATE. (See the "
+"Ingres Release Summary for more info)"
+msgstr ""
+
+msgid "De_fault to installation location (II__SYSTEM)"
+msgstr ""
+
+msgid ""
+"Define the database file locations.\n"
+"To accept the defaults, simply click next."
+msgstr ""
+
+msgid ""
+"Define the installation locations and database file locations.\n"
+"To accept the defaults, simply click next."
+msgstr ""
+
+msgid "Define the transaction log file size and locations."
+msgstr ""
+
+msgid "Deployment Platform"
+msgstr ""
+
+msgid "Done"
+msgstr ""
+
+msgid ""
+"Dual Logging\n"
+"\n"
+"In order to guarantee that no committed transactions can be lost in the "
+"event of a single storage device failure, a secondary Ingres transaction log "
+"can be maintained on a storage device which is independent of the primary "
+"transaction log file device.\n"
+"\n"
+"You have the option of enabling a secondary transaction log file, although "
+"you should only do so if the location you intend to use for your secondary "
+"transaction log file is different from the location used for your primary "
+"log. "
+msgstr ""
+
+msgid "Dual log location"
+msgstr ""
+
+msgid "Dual logging disabled\n"
+msgstr ""
+
+msgid "Dual logging enabled\n"
+msgstr ""
+
+msgid "Dum_p"
+msgstr ""
+
+msgid "Dump"
+msgstr ""
+
+msgid ""
+"ERROR: A newer version of the product is already installed.\n"
+"Multiple instances are not support for DEBs packaging,\n"
+"no further action is possible."
+msgstr ""
+
+msgid ""
+"ERROR: A newer version of the product is already installed.\n"
+"Multiple instances are not supported for DEBs packaging,\n"
+"no further action is possible."
+msgstr ""
+
+msgid ""
+"ERROR: Failed to load Python module \"apt\" \n"
+"The 'python-apt' package must be installed to run this installer"
+msgstr ""
+
+msgid ""
+"ERROR: Failed to load Python module \"rpm\" \n"
+"The 'rpm-python' package must be installed to run this installer"
+msgstr ""
+
+msgid ""
+"ERROR: Failed to load Python module \"xml\" \n"
+"The 'python-xml' package must be installed to run this installer"
+msgstr ""
+
+#, python-format
+msgid ""
+"ERROR: Failed to write XML to: %s\n"
+"%s\n"
+msgstr ""
+
+msgid "Enable _Dual Logging"
+msgstr ""
+
+msgid "Enable strict SQL-_92 Compliance (Entry Level)"
+msgstr ""
+
+msgid "Error"
+msgstr ""
+
+#, c-format
+msgid "Error: %s does not exist\n"
+msgstr ""
+
+msgid "Error: Missing argument, need pkginfo file\n"
+msgstr ""
+
+msgid "Error: Must be run as root\n"
+msgstr ""
+
+msgid "Error: Path too long\n"
+msgstr ""
+
+msgid "Errors"
+msgstr ""
+
+msgid "FATAL ERROR: Command line exceeds allocated space. Aborting"
+msgstr ""
+
+msgid "Failed to create temporary location\n"
+msgstr ""
+
+msgid "Failed to generate command line"
+msgstr ""
+
+msgid "Failed to initialize install mode\n"
+msgstr ""
+
+msgid "Failed to initialize upgrade mode\n"
+msgstr ""
+
+msgid "Failed to query package info\n"
+msgstr ""
+
+msgid "Failed to remove temporary location\n"
+msgstr ""
+
+#, c-format
+msgid "Failed to save response file to %s\n"
+msgstr ""
+
+msgid "Finish the application"
+msgstr ""
+
+msgid "For experienced users and custom installation"
+msgstr ""
+
+msgid "Group"
+msgstr ""
+
+msgid "I _accept the terms of this license agreement"
+msgstr ""
+
+msgid "II_CHECKPOINT"
+msgstr ""
+
+msgid "II_DATABASE"
+msgstr ""
+
+msgid "II_DUMP"
+msgstr ""
+
+msgid "II_JOURNAL"
+msgstr ""
+
+msgid "II_VWDATA"
+msgstr ""
+
+msgid "II_WORK"
+msgstr ""
+
+msgid "In_gres Date"
+msgstr ""
+
+msgid "Information"
+msgstr ""
+
+msgid "Ingres "
+msgstr ""
+
+msgid "Ingres Cli_ent"
+msgstr ""
+
+msgid "Ingres Clien_t"
+msgstr ""
+
+msgid ""
+"Ingres Client\n"
+"\n"
+"The Ingres Client extension enables communication between Ingres "
+"installations in a heterogeneous, networked environment. Ingres Client "
+"supports several major protocols, including TCP/IP, ISO X.25, DEC/NET, "
+"Asynchronous, ISO/OSLAN, SNA/LU6.2, SPX, and TCP /WOLLONGONG.\n"
+"\n"
+"Ingres Data Access Server\n"
+"\n"
+"The Ingres Data Access Server will replace the existing JDBC server and will "
+"provide DBMS access to the existing EDBC JDBC driver, the new Ingres JDBC "
+"driver and the .NET Data Provider\n"
+"The Ingres Data Access Server supports several major protocols, including "
+"TCP/IP, ISO X.25, DEC/NET, Asynchronous, ISO/OSLAN, SNA/LU6.2, SPX, and TCP/"
+"WOLLONGONG."
+msgstr ""
+
+msgid ""
+"Ingres Client\n"
+"\n"
+"The Ingres Client extension enables communication between Ingres "
+"installations in a heterogeneous, networked environment. Ingres Client "
+"supports several major protocols, including TCP/IP, ISO X.25, DEC/NET, "
+"Asynchronous, ISO/OSLAN, SNA/LU6.2, SPX, and TCP/WOLLONGONG.\n"
+"\n"
+"Ingres Data Access Server\n"
+"\n"
+"The Ingres Data Access Server will replace the existing JDBC server and will "
+"provide DBMS access to the existing EDBC JDBC driver, the new Ingres JDBC "
+"driver and the .NET Data Provider\n"
+"\n"
+"The Ingres Data Access Server supports several major protocols, including "
+"TCP/IP, ISO X.25, DEC/NET, Asynchronous, ISO/OSLAN, SNA/LU6.2, SPX, and TCP/"
+"WOLLONGONG."
+msgstr ""
+
+msgid "Ingres Do_cumentation"
+msgstr ""
+
+msgid "Ingres Documentat_ion"
+msgstr ""
+
+msgid ""
+"Ingres Dual Transaction Log Location\n"
+"\n"
+"The location used for the dual transaction log file. This is a secondary "
+"location for storing uncommitted transactions. It is written to in parallel "
+"with the primary log file and used as a hot \"stand-by\" in the event of "
+"device or other catastrophic failure."
+msgstr ""
+
+msgid "Ingres II"
+msgstr ""
+
+msgid "Ingres Installation Wizard"
+msgstr ""
+
+msgid ""
+"Ingres Intelligent DBMS\n"
+"\n"
+"The Ingres Intelligent DBMS, the foundation of the Ingres product line, "
+"provides the power to manage today's critical information resources: data, "
+"knowledge, and objects.  Because of this unique ability, the Ingres "
+"Intelligent DBMS empowers organizations to model all aspects of their "
+"operations within the database engine itself, rather than within client "
+"application code.\n"
+"\n"
+"The Ingres Intelligent DBMS can support a wide range of applications, from "
+"ad hoc queries to large-scale, mission-critical production applications "
+"which require 24-hour-a-day, 7-day-a-week service.  The Ingres Intelligent "
+"DBMS features a threaded, multi-server architecture which can fully harness "
+"the power of today's scalable multiprocessors.  Other advanced features "
+"include the industry's most advanced statistically based query optimizer, "
+"compiled database procedures, on-line backup, and transparent two-phase "
+"commit.\n"
+msgstr ""
+
+msgid ""
+"Ingres Intelligent DBMS\n"
+"\n"
+"The Ingres Intelligent DBMS, the foundation of the Ingres product line, "
+"provides the power to manage today's critical information resources: data, "
+"knowledge, and objects. Because of this unique ability, the Ingres "
+"Intelligent DBMS empowers organizations to model all aspects of their "
+"operations within the database engine itself, rather than within client "
+"application code.\n"
+"\n"
+"The Ingres Intelligent DBMS can support a wide range of applications, from "
+"ad hoc queries to large-scale, mission- critical production applications "
+"which require 24-hour-a-day, 7-day-a-week service.  The Ingres Intelligent "
+"DBMS features a threaded, multi-server architecture which can fully harness "
+"the power of today's scalable multiprocessors.  Other advanced features "
+"include the industry's most advanced statistically based query optimizer, "
+"compiled database procedures, on-line backup, and transparent two-phase "
+"commit.\n"
+msgstr ""
+
+msgid ""
+"Ingres Location Variables\n"
+"\n"
+"The Ingres storage locations and the corresponding Ingres variables are "
+"listed below:\n"
+"\n"
+"Ingres Location Variables\n"
+"II_DATABASE \t\tDefault location for database files\n"
+"II_CHECKPOINT \t\tDefault location for full backup snapshots\n"
+"II_JOURNAL \t\tDefault location for journals (backup \t\t\t\t\taudit "
+"trails)\n"
+"II_DUMP \t\t\tDefault location for on-line backup \t\t\t\t\tchange logs\n"
+"II_WORK \t\t\tDefault location for temporary files\n"
+"\n"
+"Important Note\n"
+"\n"
+"You cannot change the values you assign to the default Ingres storage "
+"location variables once this setup procedure has been completed. However you "
+"can create additional storage locations and assign individual databases to "
+"them.\n"
+"\n"
+"ALL locations MUST exist and be writable by the instance owner. If this user "
+"does not exist the location MUST be globally writable. If it is not, "
+"installation of the DBMS package\n"
+"will fail.\n"
+"\n"
+"For information on creating storage locations, refer to the\n"
+"Ingres Database Administrator's Guide. "
+msgstr ""
+
+msgid ""
+"Ingres Location Variables\n"
+"\n"
+"The Ingres storage locations and the corresponding Ingres variables are "
+"listed below:\n"
+"\n"
+"Ingres Location Variables\n"
+"II_DATABASE \t\tDefault location for database files\n"
+"II_CHECKPOINT \tDefault location for full backup snapshots\n"
+"II_JOURNAL \t\tDefault location for journals (backup \t\t\t\t\taudit "
+"trails)\n"
+"II_DUMP \t\t\tDefault location for on-line backup \t\t\t\t\tchange logs\n"
+"II_WORK \t\t\tDefault location for temporary files\n"
+"\n"
+"Important Note\n"
+"\n"
+"You cannot change the values you assign to the default Ingres storage "
+"location variables once this setup procedure has been completed. However you "
+"can create additional storage locations and assign individual databases to "
+"them.\n"
+"\n"
+"ALL locations MUST exist and be writable by the instance owner. If this user "
+"does not exist the location MUST be globally writable. If it is not, "
+"installation of the DBMS package\n"
+"will fail.\n"
+"\n"
+"For information on creating storage locations, refer to the Ingres Database "
+"Administrator's Guide. "
+msgstr ""
+
+msgid ""
+"Ingres ODBC Driver\n"
+"\n"
+"The Ingres ODBC driver requires a third-party ODBC driver manager.  The "
+"Ingres ODBC driver connects to local or remote databases to fetch or modify "
+"information.\n"
+"\n"
+"The iiodbcadmn utility allows Linux, Unix or VMS users to configure ODBC "
+"data source information."
+msgstr ""
+
+msgid "Ingres Re_plicator"
+msgstr ""
+
+msgid ""
+"Ingres Replicator\n"
+"\n"
+"The Ingres Replicator is an extension to the Ingres Intelligent DBMS server "
+"which allows data in multiple independent databases to be maintained in a "
+"synchronized manner as if contained in a single, centralized relational "
+"database.  In this way, Ingres Replicator provides client applications with "
+"almost transparent access to enterprise-wide data.\n"
+"\n"
+"In addition to supporting access to Ingres databases, Ingres Replicator can "
+"integrate data from other database systems, with the addition of Ingres "
+"Client and Enterprise Access extensions. In combination, these Ingres "
+"products allow replication to a wide variety of database systems: IBM DB2, "
+"IBM IMS, IBM ISAM, IBM VSAM, DEC RMS, DEC Rdb, and HP data in ALLBASE/SQL or "
+"TurboIMAGE/XL."
+msgstr ""
+
+msgid ""
+"Ingres Star Distributed DBMS\n"
+"\n"
+"The Ingres Star Distributed DBMS is a distributed extension to the Ingres "
+"Intelligent DBMS server which allows data from multiple independent "
+"databases to be accessed as if contained in a single, centralized relational "
+"database.  In this way, Ingres Star provides client applications with "
+"transparent access to enterprise-wide data.\n"
+"\n"
+"In addition to supporting access to Ingres databases, Ingres Star can "
+"seamlessly integrate data from other database systems, with the addition of "
+"Ingres Client and Enterprise Access extensions. In combination, these Ingres "
+"products allow seamless, distributed access to data stored in a wide variety "
+"of database systems: IBM DB2, IBM IMS, IBM ISAM, IBM VSAM, DEC RMS, DEC Rdb, "
+"and HP data in ALLBASE /SQL or TurboIMAGE/XL.\n"
+msgstr ""
+
+msgid ""
+"Ingres Star Distributed DBMS\n"
+"\n"
+"The Ingres Star Distributed DBMS is a distributed extension to the Ingres "
+"Intelligent DBMS server which allows data from multiple independent "
+"databases to be accessed as if contained in a single, centralized relational "
+"database.  In this way, Ingres Star provides client applications with "
+"transparent access to enterprise-wide data.\n"
+"\n"
+"In addition to supporting access to Ingres databases, Ingres Star can "
+"seamlessly integrate data from other database systems, with the addition of "
+"Ingres Client and Enterprise Access extensions. In combination, these Ingres "
+"products allow seamless, distributed access to data stored in a wide variety "
+"of database systems: IBM DB2, IBM IMS, IBM ISAM, IBM VSAM, DEC RMS, DEC Rdb, "
+"and HP data in ALLBASE/SQL or TurboIMAGE/XL.\n"
+msgstr ""
+
+msgid ""
+"Ingres Transaction Log File\n"
+"\n"
+"The Ingres Intelligent DBMS uses a circular transaction log file to store "
+"uncommitted transactions and buffer committed transactions before they are "
+"written to the database file location(s).\n"
+"\n"
+"ALL log locations MUST exist and be writable by the instance owner. If this "
+"user does not exist the location MUST be globally writable. If it is not, "
+"installation of the DBMS package\n"
+"will fail.\n"
+"\n"
+"By default, Ingres will NOT maintain a backup of the primary transaction log "
+"file on the storage location which you select."
+msgstr ""
+
+msgid ""
+"Ingres Transaction Log File\n"
+"\n"
+"The Ingres Intelligent DBMS uses a circular transaction log file to store "
+"uncommitted transactions and buffer committed transactions before they are "
+"written to the database file location(s).\n"
+"\n"
+"The size of the transaction log needed for a particular instance is highly "
+"dependent on the frequency, type and size of transactions being processed. "
+"For this reason, unless you are sure you require a larger transaction log "
+"file, we recommend accepting the default and changing it later if required.\n"
+"\n"
+"The size of the transaction log file can be changed after installation using "
+"cbf or vcbf. \n"
+"\n"
+"See the Database Administrator Guide for more details."
+msgstr ""
+
+msgid "Ingres VectorWise Installation Wizard"
+msgstr ""
+
+msgid "Ingres _ABF"
+msgstr ""
+
+msgid "Ingres _Database Server"
+msgstr ""
+
+msgid "Ingres _ODBC Connectivity"
+msgstr ""
+
+msgid "Ingres _Replicator"
+msgstr ""
+
+msgid "Ingres _Star"
+msgstr ""
+
+msgid "Ingres documentation set"
+msgstr ""
+
+msgid "Ingres has been successfully upgraded.\n"
+msgstr ""
+
+msgid ""
+"Ingres supports multiple instances installed on the same machine.\n"
+"Each instance is uniquely identified by an instance name.\n"
+" "
+msgstr ""
+
+msgid "Install Ingres now!"
+msgstr ""
+
+msgid "Install Log"
+msgstr ""
+
+msgid "Installation"
+msgstr ""
+
+msgid ""
+"Installation Location (II_SYSTEM):\n"
+"\t"
+msgstr ""
+
+msgid "Installation Mode"
+msgstr ""
+
+msgid "Installation Summary"
+msgstr ""
+
+msgid "Installation Type"
+msgstr ""
+
+msgid "Installation location"
+msgstr ""
+
+#, c-format
+msgid ""
+"Instance %s:\n"
+"\t"
+msgstr ""
+
+msgid "Instance Locations"
+msgstr ""
+
+msgid "Instance Name"
+msgstr ""
+
+msgid ""
+"Instance Name\n"
+"\n"
+"Enter a two character string to complete the instance name. The first "
+"character must be an UPPER case letter and the second can be a number or an "
+"UPPER case letter"
+msgstr ""
+
+msgid ""
+"Instance Name:\n"
+"\t"
+msgstr ""
+
+msgid "Instance Selection"
+msgstr ""
+
+msgid ""
+"Instance location:\n"
+"\t"
+msgstr ""
+
+msgid "Journal"
+msgstr ""
+
+msgid "License"
+msgstr ""
+
+msgid "Lo_g Location"
+msgstr ""
+
+msgid "Locale and Compliance"
+msgstr ""
+
+msgid "Location"
+msgstr ""
+
+msgid "Location where Ingres will be installed"
+msgstr ""
+
+msgid "Log File Locations"
+msgstr ""
+
+msgid "Log File Size (MB)"
+msgstr ""
+
+msgid "Log file size: "
+msgstr ""
+
+msgid "Manually select features you wish to install"
+msgstr ""
+
+msgid "Manually select the components to be installed"
+msgstr ""
+
+msgid "Maximum Parallel _Threads"
+msgstr ""
+
+msgid "Maximum database size"
+msgstr ""
+
+msgid "Maximum parallel threads"
+msgstr ""
+
+msgid "Modify"
+msgstr ""
+
+msgid "Modify Components"
+msgstr ""
+
+#, c-format
+msgid ""
+"Multiple instances of %s have been detected on your machine.\n"
+"\n"
+"Select an option to proceed"
+msgstr ""
+
+msgid "New Instance"
+msgstr ""
+
+msgid ""
+"New version:\n"
+"\t"
+msgstr ""
+
+msgid "No"
+msgstr ""
+
+msgid ""
+"Old version:\n"
+"\t"
+msgstr ""
+
+msgid "Only the Client components of VectorWise will be installed"
+msgstr ""
+
+msgid "Ot_her (specify)"
+msgstr ""
+
+msgid "Output"
+msgstr ""
+
+msgid "Password"
+msgstr ""
+
+msgid "Please review your settings below"
+msgstr ""
+
+msgid "Processing memory"
+msgstr ""
+
+msgid "Question"
+msgstr ""
+
+msgid "Quit the Ingres installation process"
+msgstr ""
+
+msgid "Quit?"
+msgstr ""
+
+msgid "Remove"
+msgstr ""
+
+msgid "Remove all _files"
+msgstr ""
+
+msgid ""
+"Remove all databases, configuration and all other files relating to the "
+"instance. Only packaged, non-generated files are removed by default."
+msgstr ""
+
+msgid "Remove all files: "
+msgstr ""
+
+msgid ""
+"Remove all installed components for the selected instance.\n"
+"NOTE: Databases, configuration and other generated files will NOT be removed."
+msgstr ""
+
+msgid "Response File Summary"
+msgstr ""
+
+#, c-format
+msgid ""
+"Response file creation failed with:\n"
+"\t%s"
+msgstr ""
+
+msgid "Return to the previous screen..."
+msgstr ""
+
+msgid "Review Settings"
+msgstr ""
+
+msgid ""
+"SQL92 Compliance\n"
+"\n"
+"The Ingres DBMS can be configured to be strictly compliant with the ANSI/ISO "
+"entry-level SQL-92 standard. If you need information about this standard, "
+"please refer to the Ingres SQL Reference Manual.\n"
+"\n"
+"Strict ANSI/ISO SQL-92 compliance causes some Ingres features to operate in "
+"a non-default mode, such as uppercase identifiers and subquery semantics "
+"changes. Strict compliance should only be selected if you are sure that you "
+"require it. "
+msgstr ""
+
+msgid "Save Response File"
+msgstr ""
+
+msgid "Save the response file"
+msgstr ""
+
+msgid "Select a configuration type from the list below"
+msgstr ""
+
+msgid "Select a value"
+msgstr ""
+
+msgid "Select an action"
+msgstr ""
+
+msgid "Select an installation mode"
+msgstr ""
+
+msgid "Select an option to change its value from the default"
+msgstr ""
+
+msgid "Select the platform you want to create a response file for"
+msgstr ""
+
+msgid "Select the set of components to install."
+msgstr ""
+
+msgid "Select the user account & group that will own the instance"
+msgstr ""
+
+#, c-format
+msgid ""
+"Settings for Processing Memory and Buffer Pool Memory exceed 90% of\n"
+"physical system memory. This may cause the VectorWise Server to swap\n"
+"heavily or fail on startup. Reduce one or both settings"
+msgstr ""
+
+msgid "Simple, default configuration for those new to Ingres"
+msgstr ""
+
+msgid "Simple, default configuration for those new to VectorWise"
+msgstr ""
+
+msgid "Specify a custom name or accept the default"
+msgstr ""
+
+msgid "Start Ingres under _built-in System account"
+msgstr ""
+
+msgid "Start Ingres under _user account"
+msgstr ""
+
+msgid "Start Ingres when your computer starts up"
+msgstr ""
+
+msgid "Start instance with computer: "
+msgstr ""
+
+msgid "Strict SQL-92 Compliance: "
+msgstr ""
+
+msgid "Summary"
+msgstr ""
+
+#, c-format
+msgid ""
+"System parameter 'kernel.shmmax' is currently %ld Mb,\n"
+"which is insufficient for %s.\n"
+"Increasing to %ld Mb, see the Getting Started\n"
+"Guide for more information."
+msgstr ""
+
+msgid "Temporar_y"
+msgstr ""
+
+msgid "Temporary"
+msgstr ""
+
+msgid "Terminal Type"
+msgstr ""
+
+msgid ""
+"The Default Backup, Journal and Dump Locations\n"
+"\n"
+"The Ingres variables II_CHECKPOINT, II_JOURNAL, and II_DUMP are used to "
+"store the default locations used for full and incremental on-line backup "
+"files. It is essential that II_CHECKPOINT, II_JOURNAL and II_DUMP not be "
+"assigned to the same physical device as II_DATABASE. If this restriction is "
+"ignored, you will be unable to recover lost data in the event that the "
+"II_DATABASE location fails.\n"
+"\n"
+"Once assigned, the values of II_CHECKPOINT, II_JOURNAL, and II_DUMP can only "
+"be changed by removing and re-installing Ingres. Refer to the Ingres "
+"Database Administrator's Guide for information on moving the default backup "
+"locations.\n"
+"\n"
+"Refer to the chapter on \"Backup and Recovery\" in the Ingres Database "
+"Administrator's Guide for instructions on backup and recovery of Ingres "
+"databases.\n"
+"\n"
+"NOTE: This location must exist and be writable by the instance owner."
+msgstr ""
+
+msgid ""
+"The Default Database Location\n"
+"\n"
+"The Ingres variable II_DATABASE stores the default location used to store "
+"Ingres database files.\n"
+"\n"
+"Once a value has been assigned to II_DATABASE, you can change it only by "
+"removing and re-installing Ingres. Refer to the Ingres Database "
+"Administrator's Guide for information on moving the default database file "
+"location. \n"
+"\n"
+"NOTE: This location must exist and be writable by the instance owner."
+msgstr ""
+
+msgid ""
+"The Default Temporary Work Location\n"
+"\n"
+"The Ingres variable II_WORK stores the default location used for all "
+"temporary files created during external sorts and other DBMS server "
+"operations that require large amounts of temporary file space. Ingres lets "
+"you designate a separate storage device as the default location for these "
+"files.\n"
+"\n"
+"When choosing the II_WORK location, be aware that temporary files tend to "
+"increase fragmentation on storage devices, which can lead to decreased "
+"performance. For this reason, you should assign II_WORK to a physical device "
+"which does not contain database, checkpoint, journal, or dump files, if "
+"possible. Your choice of the default work location does not affect your "
+"ability to recover lost data in the event of a storage device failure, "
+"although it may affect performance.\n"
+"\n"
+"Once assigned, the value of II_WORK can only be changed by removing and re-"
+"installing Ingres. Refer to the Ingres Database Administrator's Guide for "
+"instructions on moving the default work location in this manner. \n"
+"\n"
+"NOTE: This location must exist and be writable by the instance owner."
+msgstr ""
+
+msgid ""
+"The Ingres \"Lauch Pad\" is GUI utility designed to assist you in getting "
+"started with Ingres. It will show you what's new in this release, help you "
+"with database administration or developing an application or just point you "
+"to the documentation"
+msgstr ""
+
+#, c-format
+msgid ""
+"The Ingres %s instance appears to be running. It must be shutdown for the "
+"installation to continue, do you want to shut it down now?"
+msgstr ""
+
+msgid ""
+"The VectorWise Database Location\n"
+"\n"
+"The VectorWise variable II_VWDATA stores the default location used to store "
+"the VectorWise database files.\n"
+"\n"
+"NOTE: This location must exist and be writable by the instance owner. "
+"Defaults to II_DATABASE"
+msgstr ""
+
+#, c-format
+msgid ""
+"The following instances have been detected, please select the instance\n"
+"you wish to %s"
+msgstr ""
+
+msgid ""
+"The following instances have been detected, please select the instance\n"
+"you wish to modify."
+msgstr ""
+
+msgid ""
+"The installation log file location:\n"
+"\t"
+msgstr ""
+
+msgid ""
+"The installation process did not\n"
+"complete successfully"
+msgstr ""
+
+msgid ""
+"The instance name you have\n"
+"selected is already in use."
+msgstr ""
+
+msgid ""
+"The response file has been successfully.\n"
+"\n"
+"To change your setting click \"<b>Back</b>\"\n"
+"To write it to a file click \"<b>Save</b>\"\n"
+"To exit click \"<b>Finish</b>\""
+msgstr ""
+
+msgid "This value is stored in the environment variable _II__SYSTEM"
+msgstr ""
+
+#, c-format
+msgid ""
+"This wizard will guide you through creating an %s installer response file\n"
+"\n"
+"Click 'Next' to begin."
+msgstr ""
+
+#, c-format
+msgid ""
+"This wizard will guide you through installing and setting up %s. \n"
+"\n"
+"Click 'Next' to begin."
+msgstr ""
+
+#, c-format
+msgid ""
+"This wizard will guide you through upgrading or removing an\n"
+"existing %s instance, or installing a new one.\n"
+"\n"
+"Click Next to begin."
+msgstr ""
+
+msgid "Time_zone"
+msgstr ""
+
+msgid ""
+"Timezone Info\n"
+"\n"
+"You must now specify the time zone this installation is located in. To "
+"specify a time zone, you must first select the region of the world this "
+"installation is located in. You will then be prompted with a list of the "
+"time zones in that region. "
+msgstr ""
+
+msgid "Timezone: "
+msgstr ""
+
+msgid "To exit click \"Finish\""
+msgstr ""
+
+msgid "Transaction Log"
+msgstr ""
+
+msgid "Transaction log location"
+msgstr ""
+
+msgid "Typical _Client"
+msgstr ""
+
+#, c-format
+msgid ""
+"Unable to shut down the %s %s instance. The instance must be shut down "
+"before the installation can continue."
+msgstr ""
+
+msgid "Upgrade"
+msgstr ""
+
+msgid "Upgrade user databases: "
+msgstr ""
+
+#, python-format
+msgid ""
+"Usage:\n"
+"    %s -s <pkgdir> [-o <filename>][-p][-c]"
+msgstr ""
+
+msgid "User"
+msgstr ""
+
+msgid "User Group: "
+msgstr ""
+
+msgid "Username"
+msgstr ""
+
+msgid "Username: "
+msgstr ""
+
+msgid "VectorWise"
+msgstr ""
+
+msgid ""
+"VectorWise CPU Configuration - Maximum Parallel Threads\n"
+"\n"
+"Defines the maximum number of threads used by a single query. A value of 1 "
+"disables parallel query execution.\n"
+"\n"
+"Used to set max_parallelism_level and num_cores in VectorWise configuration "
+"file.\n"
+"\n"
+"For more information, see the VectorWise User guide.\n"
+"\n"
+"Default: Number of CPU cores on the machine or 8, whichever is smaller."
+msgstr ""
+
+msgid "VectorWise Configuration"
+msgstr ""
+
+msgid ""
+"VectorWise Data Configuration - Data Block Group Size\n"
+"\n"
+"Specifies the number of blocks to handle in every disk request.\n"
+"\n"
+"Used to set the default value for group_size in the VectorWise configuration "
+"file.\n"
+"\n"
+"For more information, see the VectorWise User guide.\n"
+"\n"
+"Default: 8 blocks"
+msgstr ""
+
+msgid ""
+"VectorWise Data Configuration - Data Block Size\n"
+"\n"
+"Specifies the minimum I/O granularity. This option is the most important for "
+"I/O performance.\n"
+"\n"
+"Used to set the default value for block_size in the VectorWise configuration "
+"file.\n"
+"\n"
+"For more information, see the VectorWise User guide. \n"
+"\n"
+"Default: 512Kb\n"
+"Maximum: 64Mb"
+msgstr ""
+
+msgid ""
+"VectorWise Data Configuration - Maximum Database Size\n"
+"\n"
+"Specifies the maximum database size in bytes.\n"
+"\n"
+"Used to set the default value for columnspace_size in the VectorWise "
+"configuration file.\n"
+"\n"
+"For more information, see the VectorWise User guide.\n"
+"\n"
+"Default: 512G"
+msgstr ""
+
+msgid "VectorWise Installation Wizard"
+msgstr ""
+
+#, c-format
+msgid ""
+"VectorWise Memory Configuration - Buffer Pool Memory\n"
+"\n"
+"Specifies the buffer pool size in bytes (that is, disk cache). The setting "
+"can be changed without reloading data.\n"
+"\n"
+"Used to set the default value for bufferpool_size in the VectorWise "
+"configuration file\n"
+"\n"
+"For more information, see the VectorWise User guide.\n"
+"\n"
+"Default: 25% of the physical system memory"
+msgstr ""
+
+#, c-format
+msgid ""
+"VectorWise Memory Configuration - Processing Memory\n"
+"\n"
+"Specifies the amount of the total memory used for query execution.\n"
+"\n"
+"Used to set the default value for max_memory_size in the VectorWise "
+"configuration file.\n"
+"\n"
+"For more information, see the VectorWise User guide.\n"
+"\n"
+"Default: 50% of the physical system memory\n"
+"\n"
+msgstr ""
+
+msgid ""
+"VectorWise-specific options can be configured here\n"
+"To accept the default values,click Next"
+msgstr ""
+
+msgid "Version"
+msgstr ""
+
+msgid "Warning"
+msgstr ""
+
+msgid "Warning: Failed to initialize the system info\n"
+msgstr ""
+
+msgid "Welcome"
+msgstr ""
+
+msgid "Yes"
+msgstr ""
+
+#, c-format
+msgid "You are now ready to %s your %s instance."
+msgstr ""
+
+msgid ""
+"You are now ready to generate a respose file. Review your settings below\n"
+"and click <b>Next</b> to proceed."
+msgstr ""
+
+#, c-format
+msgid ""
+"You are now ready to install %s. Review your settings below\n"
+"and click <b>Install</b> to proceed with the installation."
+msgstr ""
+
+msgid "You are now ready to upgrade your Ingres instance."
+msgstr ""
+
+msgid ""
+"You have complete control over the installation configuration.\n"
+"For advanced users only."
+msgstr ""
+
+msgid ""
+"Your Ingres instance will be configured to startup and shutdown with your "
+"system. If you want to start and stop Ingres independently of your computer, "
+"uncheck this option."
+msgstr ""
+
+msgid "_Automatically upgrade all user databases in the selected instance"
+msgstr ""
+
+msgid "_Back"
+msgstr ""
+
+msgid "_Client Only"
+msgstr ""
+
+msgid "_Custom instance name:"
+msgstr ""
+
+msgid "_Customize"
+msgstr ""
+
+msgid "_Decline"
+msgstr ""
+
+msgid "_Default instance name:"
+msgstr ""
+
+msgid "_Default to installation location (II__SYSTEM)"
+msgstr ""
+
+msgid "_Enable strict SQL-92 Compliance (Entry Level)"
+msgstr ""
+
+msgid "_Finish"
+msgstr ""
+
+msgid "_Full Server"
+msgstr ""
+
+msgid "_Include Ingres in Windows PATH"
+msgstr ""
+
+msgid "_Install"
+msgstr ""
+
+msgid "_Install a new Ingres Instance"
+msgstr ""
+
+msgid "_Install a new Ingres instance"
+msgstr ""
+
+msgid "_Install a new instance"
+msgstr ""
+
+msgid "_Journal"
+msgstr ""
+
+msgid "_Linux"
+msgstr ""
+
+msgid "_Log Location"
+msgstr ""
+
+msgid "_Modify"
+msgstr ""
+
+msgid "_Modify an existing Ingres instance"
+msgstr ""
+
+msgid "_Modify installed components"
+msgstr ""
+
+msgid "_Next"
+msgstr ""
+
+msgid "_Other (specify)"
+msgstr ""
+
+msgid "_Processing Memory"
+msgstr ""
+
+msgid "_Quit"
+msgstr ""
+
+msgid "_Remove"
+msgstr ""
+
+msgid "_Remove ALL files"
+msgstr ""
+
+msgid "_Remove all components"
+msgstr ""
+
+msgid "_Run Ingres \"Launch Pad\" now"
+msgstr ""
+
+msgid "_Start Ingres automatically at system startup"
+msgstr ""
+
+msgid "_Start instance with computer"
+msgstr ""
+
+msgid "_Timezone"
+msgstr ""
+
+msgid "_Typical Server"
+msgstr ""
+
+msgid "_Upgrade"
+msgstr ""
+
+msgid "_Upgrade an existing Ingres instance"
+msgstr ""
+
+msgid "_VectorWise Data"
+msgstr ""
+
+msgid "_Windows"
+msgstr ""
+
+msgid "i_ngres (default)"
+msgstr ""
+
+msgid "in_gres (default)"
+msgstr ""
+
+msgid "label271"
+msgstr ""
+
+msgid "label275"
+msgstr ""
+
+msgid "label276"
+msgstr ""
+
+msgid "label329"
+msgstr ""
+
+msgid "label415"
+msgstr ""
+
+msgid "label417"
+msgstr ""
+
+msgid "label419"
+msgstr ""
+
+msgid "label420"
+msgstr ""
+
+msgid "label441"
+msgstr ""
+
+msgid "label442"
+msgstr ""
+
+msgid "label443"
+msgstr ""
+
+msgid "label444"
+msgstr ""
+
+msgid "label460"
+msgstr ""
+
+msgid "label461"
+msgstr ""
+
+msgid "label552"
+msgstr ""
+
+msgid "label560"
+msgstr ""
+
+msgid "label567"
+msgstr ""
+
+msgid "label679"
+msgstr ""
+
+msgid "label682"
+msgstr ""
+
+msgid "label696"
+msgstr ""
+
+msgid "label697"
+msgstr ""
+
+msgid "label711"
+msgstr ""
+
+msgid "label718"
+msgstr ""
+
+msgid "label721"
+msgstr ""
+
+msgid "label739"
+msgstr ""
+
+msgid "label752"
+msgstr ""
+
+msgid "label766"
+msgstr ""
+
+msgid "label778"
+msgstr ""
+
+msgid "label792"
+msgstr ""
+
+msgid "label815"
+msgstr ""
+
+msgid "modified"
+msgstr ""
+
+msgid "modify"
+msgstr ""
+
+msgid "page 14"
+msgstr ""
+
+msgid "page 20"
+msgstr ""
+
+msgid "remove"
+msgstr ""
+
+msgid "removed"
+msgstr ""
+
+msgid "upgrade"
+msgstr ""
+
+msgid "upgraded"
+msgstr ""

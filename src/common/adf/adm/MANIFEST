@@ -1,0 +1,33 @@
+#
+# YAM MANIFEST file for common!adf!adm
+#
+# History:
+#       13-Jul-2004 (hanje04)
+#           SIR 112651
+#           Updated to build Ingres r3 with jam for Open Source.
+#	12-Mar-2007 (gupsh01)
+#	    Added specialcasing.txt file.
+#	23-May-2007 (gupsh01)
+#	    Added ufrench for unicode french collation support.
+#	05-Sep-2007 (gupsh01)
+#	    Rename ufrench.uce to unicode_french for unicode_french. 
+#	13-sep-2007 (bonro01)
+#	    Added unicode_french collation.
+#       15-Apr-2010 (hanal04) SIR 121823
+#           Added udefault5.uce to avoid unexpected duplicate errors seen
+#           when using the outdated udefault.uce. See KB Doc 417763.
+#	05-May-2011 (kiria01) SIR 125342
+#	    Added wordbreakproperty.txt for INITCAP support
+
+
+IISUBSYS common adf adm ;
+
+IICOLFILES multi.dsc spanish.dsc udata.ucd specialcasing.txt udefault.uce wordbreakproperty.txt ;
+IICOLFILES unicode_french.uce udefault5.uce ;
+
+IICOLDATA multi : multi.dsc ;
+IICOLDATA spanish : spanish.dsc ;
+IICOLDATA udefault : udefault.uce ;
+IICOLDATA udefault5 : udefault5.uce ;
+IICOLDATA unicode_french : unicode_french.uce ;
+

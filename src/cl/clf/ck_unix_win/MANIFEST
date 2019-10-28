@@ -1,0 +1,31 @@
+#
+# MANIFEST file for cl!clf!ck_unix_win
+#
+# History
+#    10-Dec-2010 (bolke01/bonro01) SIR 124813
+#       Added cktmpl_ivw.tpl and cktmpl_ivw.sh
+#    01-jun-2011 (stial01) m1871
+#       Removed cktmpl_ivw.tpl and cktmpl_ivw.sh
+
+SubDir ING_SRC cl clf ck_unix_win ;
+
+IISUBSYS cl clf ck_unix_win ;
+
+if ! $(NT)
+{
+    IIBINSH cktmpl_wrap : cktmpl_wrap.sh ;
+
+    IICCPPFILE $(INGFILES)/cktmpl.def : cktmpl.ccpp ;
+    IICCPPFILE $(INGFILES)/cktmpl_cpio.def : cktmpl_cpio.ccpp ;
+    IICCPPFILE $(INGFILES)/cktmpl_ocfs.def : cktmpl_ocfs.ccpp ;
+    IICCPPFILE $(INGFILES)/cktmpl_wrap.tpl : cktmpl_wrap.ccpp ;
+}
+else
+{
+
+    IICCPPFILE $(INGFILES)/cktmpl.def : cktmpl.ccpp ;
+
+}
+IILIBRARY COMPATLIB : cksubst.c ckspawn.c ckerror.c ck.c ;
+
+

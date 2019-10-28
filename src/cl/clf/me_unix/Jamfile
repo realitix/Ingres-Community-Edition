@@ -1,0 +1,24 @@
+#
+# Jamfile file for cl!clf!me_unix
+#
+#	23-Nov-2010 (kschendel)
+#	    Delete obsolete nooptim's.
+
+SubDir ING_SRC cl clf me_unix ;
+
+IISUBSYS cl clf me_unix ;
+
+IIBINEXE mecopytest : mecopytest.c ;
+IINEEDLIBS mecopytest : COMPATLIB ;
+
+IIUTILEXE lgkmkey : lgkmkey.c ;
+IINEEDLIBS lgkmkey : COMPATLIB MALLOCLIB ;
+
+IIUTILEXE iimemkey : iimemkey.c ;
+IINEEDLIBS iimemkey : COMPATLIB MALLOCLIB ;
+
+IILIBRARY COMPATLIB : mefindpg.roc mexdump.c metls.c metfree.c
+	metagutl.c mesize.c meshared.c mereq.c mepages.c memove.c
+	meinitlst.c mefree.c mefill.c mefadd.c medump.c meconsist.c
+	me.c meadvise.c meaddrmg.c meactual.c ;
+

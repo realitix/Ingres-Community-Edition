@@ -1,0 +1,30 @@
+#
+## Copyright Actian Corporation 2007. All Rights Reserved.
+##
+## Name: dbms_preinst.template
+##
+## Description:
+##	Template file for preinst script for DBMS DEB package. Not intended
+##	to be run manually.
+##
+## History:
+##	12-Jul-2007 (hanje04)
+##	    SIR 118420
+##	    Created.
+##	01-Apr-2011 (hanje04)
+##	    Pre-inst stuff now performed by RC script
+##
+. /usr/share/debconf/confmodule
+
+DEBUG_SHELL=''
+if [ -n "$DEBIAN_SCRIPT_DEBUG" ] ; then
+    set -v -x; DEBIAN_SCRIPT_TRACE=1;
+    DEBUG_SHELL='bash -v -x' 
+    
+fi
+${DEBIAN_SCRIPT_TRACE:+ echo "#42#DEBUG# RUNNING $0 $*" 1>&2 }
+
+export II_SYSTEM=%rpm_prefix%
+rc=0
+
+exit $rc

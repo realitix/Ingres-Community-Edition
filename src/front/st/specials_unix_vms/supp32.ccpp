@@ -1,0 +1,76 @@
+/*
+** Copyright (c) 2005 Actian Corporation
+*/
+/*
+**  Generic part file for supp32 - 32bit support package for 64bit Ingres
+*/
+
+/*
+** History
+**	07-Mar-2005 (hanje04)
+**	    Created.
+**       08-jan-2008 (bolke01)
+**          Bring VMS inline with UNIX and build into install directory
+**      19-May-2008 (hanal04) Bug 120389
+**          Add lp32 xerces library to distribution. The lp32/unimapcompile
+**          fails to run without it.
+**	22-Jun-2009 (kschendel) SIR 122138
+**	    Use any_aix, sparc_sol, any_hpux symbols as needed.
+**      20-Sep-2010 (hanje04)
+**          Fix build for FC 13/ Xerces 3.x, add XERCLIB to handle lib
+**          naming anomalies between 2.x and 3.0
+**	30-Sep-2010 (troal01)
+**	    Added GEODEPS if R_GEODEPS is defined.
+*/ 
+
+PART	supp32
+
+/*
+** ingres!utility
+*/
+   DIRECTORY (PROD2NAME)!utility
+   BUILD_DIR (ING_BUILD)!utility
+      SCRIPT SETUP iisusupp32
+
+/*
+** ingres!lib!lp32
+*/
+   DIRECTORY (PROD2NAME)!LIB_TGT!lp32
+   BUILD_DIR (ING_BUILD)!LIB_BLD!lp32
+      FILE lib(PROG1PRFX)api.a
+      FILE lib(PROG0PRFX)ingres.a
+
+# ifdef R_SHLIBS
+   BUILD_DIR (ING_BUILD)!LIB_BLD!lp32
+   DIRECTORY (PROD2NAME)!LIB_TGT!lp32
+   {
+      EXECUTABLE lib(PROG0PRFX)compat.1.$SLSFX
+      EXECUTABLE lib(PROG0PRFX)frame.1.$SLSFX
+      EXECUTABLE lib(PROG0PRFX)interp.1.$SLSFX
+      EXECUTABLE lib(PROG0PRFX)q.1.$SLSFX
+      EXECUTABLE lib(PROG1PRFX)api.1.$SLSFX
+      EXECUTABLE lib(PROG1PRFX)odbc.1.$SLSFX
+      EXECUTABLE lib(PROG1PRFX)odbcdriver.1.$SLSFX
+# ifdef R_XERCES /* R_XERCES */
+# ifdef any_aix
+      EXECUTABLE libxerces-c$XERCVERS.0.$SLSFX
+# elif defined(OSX)
+      EXECUTABLE libxerces-c.$XERCVERS.$SLSFX
+# else
+      EXECUTABLE $XERCLIB
+# endif
+      LINK libxerces-c.$SLSFX.$XERCVERS
+      LINK libxerces-c.$SLSFX
+# endif /* xerces */
+# ifdef R_GEODEPS /* R_GEODEPS */
+      EXECUTABLE libgeos-$GEOS_VERS.$SLSFX
+      LINK libgeos.$SLSFX
+      EXECUTABLE libgeos_c.$SLSFX.$GEOSC_VERS
+      LINK libgeos_c.$SLSFX
+      EXECUTABLE libproj.$SLSFX.$PROJ_VERS
+      LINK libproj.$SLSFX
+# endif /* R_GEODEPS */
+      PERMISSION s:re,o:rwed,g:re,w:re
+   }
+# endif /* R_SHLIBS */
+

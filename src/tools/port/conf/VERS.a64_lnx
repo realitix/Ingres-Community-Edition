@@ -1,0 +1,53 @@
+# 64+32 bit reverse hybrid version of the int/a64_lnx pair.
+
+# Edit History:
+#	20-Jun-2009 SIR 122138
+#	    Implement new Datallegro-style VERS file format which can
+#	    control jam variables as well as shell/compile options.
+#       21-May-2010 (bonro01)
+#           Remove ICE from standard builds.
+#       31-Aug-2010 (thich01)
+#           Add WITH_GEO for platforms where spatial is not supported.
+#       30-Sep-2010 (troal01)
+#           Fixed a typo in set option WITH_GEO
+#	24-Nov-2010 (bonro01)
+#	    Remove temporary change and restore Hybrid build for a64_lnx
+#        7-Feb-2011 (hanal04) Bug 124731
+#           Comment out WITH_GEO in default build parameters. We can 
+#           uncomment if the GeoSpatials project is resurrected at a later
+#           date.
+#	16-Mar-2011 (drivi01)
+#	    To comment out #set commands, put 2 '#' in front of it.
+#	07-Jun-2011 (hanje04)
+#	    Add option SIGN_RELEASE for turning on GPG signing of RPM
+#	    and DEBs releases. Leave OFF by default
+#	28-Sep-2011 (hanje04)
+#	    Bug 125688
+#	    Enable MGMT Tool server builds. Off by default.
+
+
+#set: config32 int_lnx
+#set: config64 a64_lnx
+#set: option libc6
+#set: option DBL
+#set: option CAS_ENABLED
+#set: param ADI_MAX_OPERANDS 5
+##set: option SIGN_RELEASE
+#set: build 00
+#
+
+# Any jam definitions go here, e.g. VAR = value ;
+# Don't forget spaces around the = and before the ;
+
+#BUILD_ICE = "" ;	##set: option BUILD_ICE (off)
+SVR_ARLIB = "TRUE" ;	#set: option SVR_AR
+#BUILD_MGMTSVC = TRUE ; ##set: option BUILD_MGMTSVC
+
+# Hybridization...
+# a64_lnx normally builds reverse hybrid
+BUILD_ARCH = "64+32" ;	#set: arch 64+32
+XERCES_ARCH ?= 64 ;
+
+PAX_CHECK = TRUE ;
+PLATFORM_JAMDEFS = hyb86_lnx ;
+# WITH_GEO = -D_WITH_GEO ; ##set: option WITH_GEO

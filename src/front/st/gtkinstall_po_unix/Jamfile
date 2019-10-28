@@ -1,0 +1,15 @@
+#
+# Jamfile file for front!st!gtkinstall_po_unix
+#
+
+SubDir ING_SRC front st gtkinstall_po_unix ;
+
+IISUBSYS front st gtkinstall_po_unix ;
+
+if $(BUILD_GTK_INST) = "TRUE"
+{
+    IIGettextMsgfmt inginstgui.mo : ja.po ;
+    IITOOLSSH gipgenpot : gipgenpot.sh ;
+}
+
+

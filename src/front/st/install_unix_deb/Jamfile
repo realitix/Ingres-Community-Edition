@@ -1,0 +1,18 @@
+#
+# Jamfile file for front!st!install_unix_deb
+#
+
+SubDir ING_SRC front st install_unix_deb ;
+
+IISUBSYS front st install_unix_deb ;
+
+IIUTILSH iidebbuild : iidebbuild.sh ;
+IIUTILSH checksig_deb : checksig_deb.sh ;
+IIBINSH uninstall_ingres_deb : uninstall_ingres_deb.sh ;
+
+IIDFILES debscripts : preinst.template postinst.template prerm.template
+	core_preinst.template core_postinst.template core_prerm.template
+	dbms_preinst.template net_postinst.template ;
+
+MODE on $(INGFILES)/apt/conf/distributions = $(FILEMODE) ;
+IIRELDAT $(INGFILES)/apt/conf/distributions : distributions ;

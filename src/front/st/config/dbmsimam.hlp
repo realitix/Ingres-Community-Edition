@@ -1,0 +1,12 @@
+/#-- Copyright (c) 2011 Actian Corporation
+
+  Executing queries will cause objects to be added and removed from IMA.  
+  These objects contain information which can be viewed by running queries
+  against the IMA database.  The ima_memory parameter controls how much memory 
+  to allocate for IMA object storage. 
+
+  Queries attempting to add IMA objects when IMA memory is full will finish 
+  running without returning errors, but the query's IMA information will not
+  be visible by IMA queries.
+
+  The default is 1 megabyte + QSF memory/40.

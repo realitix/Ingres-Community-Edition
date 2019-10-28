@@ -1,0 +1,11 @@
+/#-- Copyright (c) 2004 Ingres Corporation
+
+  The int_math_i8_result parameter controls the result size for
+  integer arithmetic. If ON, the result size for integer
+  arithmetic is fixed at integer 8. This is the recommended
+  setting and is also the default. If OFF, the result size for
+  integer arithmetic is integer 4 if all operands are integer 4
+  or less, otherwise integer 8. The latter setting is provided
+  as an aid in upgrading from some earlier releases of Ingres.
+
+  The default is ON.

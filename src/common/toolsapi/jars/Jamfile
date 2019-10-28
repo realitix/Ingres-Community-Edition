@@ -1,0 +1,11 @@
+#
+# Jamfile file for common!toolsapi!jars
+#
+
+SubDir ING_SRC common toolsapi jars ;
+
+IISUBSYS common toolsapi jars ;
+
+IIBFILES $(LIB_BLD) : iimgmtsvr.jar iiapi.jar ;
+
+

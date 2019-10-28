@@ -1,0 +1,15 @@
+#
+# Jamfile for tools!port!scripts
+#
+#	17-Mar-2011 (kschendel)
+#	    Created, to copy (non-shell, non-bat) scripts to INGTOOLSBIN.
+
+SubDir ING_SRC tools port scripts ;
+
+IISUBSYS tools port scripts ;
+
+# IITOOLSSH here doesn't work since it uses the standard Shell rule/action,
+# which prepends #!/bin/bash ...
+
+IITbinPy addseptest : addseptest ;
+IITbinPy sql2sep : sql2sep ;

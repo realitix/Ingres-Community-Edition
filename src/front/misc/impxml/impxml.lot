@@ -1,0 +1,11 @@
+INGLIB:frontmain.obj
+MAINOBJ.obj
+INGLIB:libcompat.olb/include=(gver)  ! for II_copyright
+INGLIB:libimpxml.olb/library
+INGLIB:libxferdb.olb/library
+INGLIB:libgn.olb/library
+INGLIB:iisqlca.obj
+XERCES-C$ROOT:[LIB]XERCES.OLB/library
+XALAN-C$ROOT:[c.lib]XALAN.OLB/library
+II_LIBQLIB/share
+II_COMPATLIB/share

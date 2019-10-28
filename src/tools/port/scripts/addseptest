@@ -1,0 +1,72 @@
+#!/usr/bin/perl
+undef $/;
+$#ARGV == 0 or die "Specify a SQL script as the only parameter";
+$ENV{SEPPARAMDB} ||= "ivw_test";
+$ENV{ING_SET} ||= "set result_structure vectorwise";
+$base = $name = $ARGV[0];
+$base =~ s/\.sql$//i;
+$purpose = "test case for mantis bug $1" if $base =~ /bug0*(\d+)/;
+
+$SEPPARAMDB = $ENV{SEPPARAMDB} == "ivw_test" ? "SEPPARAMDB" : $ENV{SEPPARAMDB};
+
+open I, $name or die "Cannot open input file $name";
+$_ = <I>;
+close I;
+/(x100|vectorwise)_default/i and die "Do not set [no]vectorwise_default in a sep test";
+@fill = /copy\b.*?\bfrom\s*\'(.*?)\'/isg;
+
+open S, ">$base.sep" or die "Cannot create .sep file";
+print "Creating sep test from SQL...\n";
+$date_str=`date +%e-%b-%Y`;
+chop $date_str;
+$user_str=`whoami`;
+chop $user_str;
+$fill_str = "@fill" || "none";
+print S <<"EOS";
+/*
+  Copyright (c) 2011 Actian Corporation
+
+  Test Name     : $base.sep
+  Suite         : 
+  Focus         : $purpose
+                :
+  Databases     : $SEPPARAMDB
+  Tables        : 
+  Filled Files  : $fill_str
+  Copied Files  : 
+  Output Files  :
+  Prerequisites : 
+  Run as user   :
+  Summary       : 
+                :
+  Exp. DIFFs    : 
+                :
+  History       : 
+          $date_str   ($user_str) Created (using addseptest)
+*/
+EOS
+for(@fill){
+    open my $F, $_ or die "Can't open $_";
+    my $c = <$F>;
+    close $F;
+    print S "? fill $_\n!!\n$c!!\n";
+    system "cp '$_' '$_.backup'";
+}
+print S "? sql -s $SEPPARAMDB\n<<\n>>\n";
+while (/\s*(.*?\\g)\b/sg) {
+    my $_ = $1;
+    my $o = /\bdrop\s+(table|sequence|view)\b/si ? "~\n" : '';
+    s/\n/-\n  /g;
+    print S "* $_\n<<\n$o>>\n";
+}
+print S "* \\q\n<<\n>>\n";
+close S;
+print "Generating canon outputs...\n";
+system "echo q | sep -mo $base.sep 2>/dev/null >/dev/null";
+-f "$base.upd" or die "Failed to create canon sep outputs";
+system "mv '$base.upd' '$base.sep'";
+system "perl -i -p -e 's/^.*-\\d{4}\\s+\\(Author\\).*\$//g;' '$base.sep'";
+print "Verifying...\n";
+system "sep -b $base.sep";
+-f "$base.log" and die "Failed, see $base.log";
+print "OK\n";

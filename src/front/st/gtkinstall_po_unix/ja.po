@@ -1,0 +1,3827 @@
+# Copyright (C) Actian Corporation 2011, all rights reserved
+# 
+# Name: ja.po
+#
+# Description:
+#	Gettext message file for Ingres GUI installer - inginstgui
+#	Translated from inginstgui.po
+#	This file is distributed under the same license as Ingres 
+#
+# History:
+#       09-Feb-2011 (hanje04, jeremy.hankinson@ingres.com)
+#           Created.
+#	28-Feb-2011 (hanje04)
+#	    Updated for 1.5
+#	29-Aug-2011 (hanje04)
+#	    Mantis 2284
+#	    Merge from codev
+#	    Add missing Quit and Back strings
+#	31-Aug-2011 (hanje04)
+#	    Remove "Ingres" from "Ingres VectorWise"
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.5\n"
+"Report-Msgid-Bugs-To: support@actian.com\n"
+"POT-Creation-Date: 2011-02-24 00:19-0800\n"
+"PO-Revision-Date: 2011-02-28 10:00+09:00\n"
+"Last-Translator: Sada Hayashida <shayashida@kknst.com>\n"
+"Language-Team: kknst <support@kknst.com>\n"
+"Language: Japanese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix/ingpkgqry.py:172
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix/ingpkgqry.py:182
+msgid ""
+"\t-o\t\tWrite output to <filename>\n"
+"\t\t\t(default is to write to ./ingpkginfo.xml)"
+msgstr ""
+"\t-o\t\t<filename>に出力\n"
+"\t\t\t(デフォルトは、./ingpkginfo.xml)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix/ingpkgqry.py:173
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix/ingpkgqry.py:183
+msgid ""
+"\t-p\t\tPretty print to stdout\n"
+"\t\t\t(ingpkginfo.xml will still be written)"
+msgstr ""
+"\t-p\t\t印刷用にstdoutに出力\n"
+"\t\t\t(ingpkginfo.xmlにも出力)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix/ingpkgqry.py:171
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix/ingpkgqry.py:181
+msgid ""
+"\t-s\t\tSearch <pkgdir> for Ingres packages to compare against\n"
+"\t\t\tthose installed"
+msgstr ""
+"\t-s\t\t<pkgdir>を検索し、Ingresパッケージをインストールされている\n"
+"\t\t\tものと比較します"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:2006
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:2036
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:2198
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:2229
+msgid "\tNONE"
+msgstr "\tなし"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:640
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:2138
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:686
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:2367
+msgid ""
+"\n"
+"Database server options:\n"
+msgstr ""
+"\n"
+"データベース・サーバー・オプション:\n"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:701
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:747
+msgid ""
+"\n"
+"Installation Owner:\n"
+msgstr ""
+"\n"
+"インストレーション所有者:\n"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:676
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:722
+msgid ""
+"\n"
+"Locale Settings\n"
+msgstr ""
+"\n"
+"ロケール設定\n"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:725
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:2172
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:771
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:2401
+msgid ""
+"\n"
+"Other Options\n"
+msgstr ""
+"\n"
+"その他のオプション\n"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:591
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:2091
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:637
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:2320
+msgid ""
+"\n"
+"Transaction log(s):\n"
+msgstr ""
+"\n"
+"トランザクション・ログ:\n"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:566
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:610
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:2295
+msgid ""
+"\n"
+"VectorWise Configuration:\n"
+msgstr ""
+"\n"
+"VectorWise構成:\n"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4363
+msgid " _Documentation"
+msgstr " ドキュメント(_D)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:661
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:2159
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:707
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:2388
+msgid "\"DATE\" type alias: "
+msgstr "\"日付\"型エイリアス: "
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:1927
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:2122
+#, c-format
+msgid "%s Summary"
+msgstr "%s サマリー"
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gip.h:335
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gip.h:281
+#, c-format
+msgid "%s has been successfully %s"
+msgstr "%sは%sが完了しました"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5513
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5529
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5736
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6123
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6138
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5773
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5789
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6010
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6400
+msgid "..."
+msgstr "..."
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2098
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2450
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5223
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2175
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2527
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5479
+msgid "/opt/Ingres/IngresII"
+msgstr "/opt/Ingres/IngresII"
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gip.h:334
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gip.h:280
+#, c-format
+msgid "<b>%s Complete</b>"
+msgstr "<b>%sが完了</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gip.h:336
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gip.h:282
+#, c-format
+msgid "<b>%s Failed</b>"
+msgstr "<b>%sが失敗</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2744
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5638
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2823
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5911
+msgid "<b>ANSI/ISO SQL Compliance</b>"
+msgstr "<b>ANSI/ISO SQLの遵守</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2881
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6187
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6444
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2961
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6440
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6693
+msgid "<b>Additional Configuration</b>"
+msgstr "<b>追加の構成</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3877
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4004
+msgid ""
+"<b>Business Intelligence System</b>\n"
+"Optimized for business decision making; reporting, analytics, data mining, "
+"business performance management, decision support and predictive analytics"
+msgstr ""
+"<b>ビジネス・インテリジェンス・システム</b>\n"
+"ビジネス上の意思決定支援、レポート作成、分析、データ・マイニング、ビジネス・"
+"データ管理、予測分析などに最適化"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5427
+msgid "<b>CPU Utilization</b>"
+msgstr "<b>CPU利用</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4441
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4694
+msgid "<b>Component List</b>"
+msgstr "<b>コンポーネントのリスト</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4446
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4384
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4699
+msgid "<b>Component Selection</b>"
+msgstr "<b>コンポーネントの選択</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3895
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4022
+msgid ""
+"<b>Content Management System</b>\n"
+"Optimized for storing, controlling, versioning, and publishing information "
+"including files, image media, audio, video, electronic documents, and web "
+"content"
+msgstr ""
+"<b>コンテンツ管理システム</b>\n"
+"ファイル、イメージ、音声、ビデオ、電子ドキュメント、WEBコンテンツなどの情報を"
+"格納、管理、履歴管理、公開するのに最適化"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5066
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5249
+msgid "<b>Data Configuration</b>"
+msgstr "<b>データ構成</b>"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5108
+msgid "<b>Data File Locations</b>"
+msgstr "<b>データ・ファイル位置</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4920
+msgid "<b>Data Location</b>"
+msgstr "<b>データ位置</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2398
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4819
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2475
+msgid "<b>Database File Locations</b>"
+msgstr "<b>データベース・ファイル位置</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2792
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5686
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2872
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5960
+msgid "<b>Date Type Alias</b>"
+msgstr "<b>日付型エイリアス</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3685
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3810
+msgid "<b>Deployment Platform</b>"
+msgstr "<b>配布プラットフォーム</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2658
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5434
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2737
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5692
+msgid "<b>Dual Transaction Log</b>"
+msgstr "<b>二重化トランザクション・ログ</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1772
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1838
+msgid "<b>Existing Ingres Instances</b>"
+msgstr "<b>インストール済みIngresインスタンス</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3922
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4049
+msgid "<b>Ingres Configuration Type</b>"
+msgstr "<b>Ingres構成タイプ</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6641
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6897
+msgid "<b>Installation Complete</b>"
+msgstr "<b>インストール完了</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6718
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6991
+msgid "<b>Installation Failed</b>"
+msgstr "<b>インストール失敗</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2108
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2455
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4530
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5228
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2185
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2532
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4783
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5484
+msgid "<b>Installation Location</b>"
+msgstr "<b>インストール位置</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4016
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4137
+msgid "<b>Installation Mode</b>"
+msgstr "<b>インストール・モード</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1526
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1605
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1699
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1576
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1655
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1749
+msgid "<b>Installation Type</b>"
+msgstr "<b>インストール・タイプ</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2047
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2124
+msgid "<b>Installed Components</b>"
+msgstr "<b>インストール済みコンポーネント</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2403
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4824
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2480
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5113
+msgid "<b>Instance Locations</b>"
+msgstr "<b>インスタンス位置</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4141
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4146
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4261
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4266
+msgid "<b>Instance Name</b>"
+msgstr "<b>インスタンス名</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5940
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6217
+msgid "<b>Instance Owner</b>"
+msgstr "<b>インスタンス所有者</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1446
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3780
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1496
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3907
+msgid "<b>License</b>"
+msgstr "<b>ライセンス</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5574
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5847
+msgid "<b>Locale Settings</b>"
+msgstr "<b>ロケール設定</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5691
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5965
+msgid "<b>Locale and Compliance</b>"
+msgstr "<b>ロケールと規格の遵守</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5171
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5363
+msgid "<b>Memory Configuration</b>"
+msgstr "<b>メモリー構成</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6439
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6688
+msgid "<b>Miscelaneous Options</b>"
+msgstr "<b>その他のオプション</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2876
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6055
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6182
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2956
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6332
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6435
+msgid "<b>Miscellaneous Options</b>"
+msgstr "<b>その他のオプション</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2052
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2129
+msgid "<b>Modify Components</b>"
+msgstr "<b>コンポーネントの変更</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2723
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5623
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2802
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5896
+msgid ""
+"<b>Note:</b> Strict compliance should only be selected if you are sure\n"
+"you require it. It is <b>not</b> recommended for normal operation."
+msgstr ""
+"<b>注意:</b> 規格の厳格な遵守は、必要があるときのみ選択すべきです。\n"
+"通常の業務においては、これは<b>選択しない</b>ことを推奨します。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2651
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5427
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2730
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5685
+msgid ""
+"<b>Note:</b> We recommend the transaction log and the dual transaction\n"
+"log be stored on different physical devices."
+msgstr ""
+"<b>注意:</b>トランザクション・ログと二重化トランザクション・ログは物理的\n"
+"に異なるデバイスに格納することを推奨します。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6564
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6818
+msgid "<b>Please wait while Ingres is installed</b>"
+msgstr "<b>Ingresがインストールされるまでお待ちください</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gip.h:333
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gip.h:279
+#, c-format
+msgid "<b>Please wait while the %s instance is %s</b>"
+msgstr "<b>%sインスタンスの%sが完了するまでお待ちください</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3013
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3096
+msgid "<b>Please wait while the Ingres instance is upgraded</b>"
+msgstr "<b>Ingresインスタンスがアップグレードされるまでお待ちください</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gip.h:330
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gip.h:276
+#, c-format
+msgid "<b>Ready to %s</b>"
+msgstr "<b>%sの準備完了</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6501
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6753
+msgid "<b>Ready to Install Ingres</b>"
+msgstr "<b>Ingresのインストール準備完了</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2950
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3031
+msgid "<b>Ready to Upgrade</b>"
+msgstr "<b>アップグレードの準備完了</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6825
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:7101
+msgid "<b>Response File Complete</b>"
+msgstr "<b>応答ファイル完了</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6774
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:7048
+msgid "<b>Review Settings</b>"
+msgstr "<b>設定の確認</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6317
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6571
+msgid "<b>Service Configuration</b>"
+msgstr "<b>サービス構成</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5756
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6355
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6031
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6602
+msgid "<b>Terminal Settings</b>"
+msgstr "<b>端末設定</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3913
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4040
+msgid ""
+"<b>Traditional Ingres System</b>\n"
+"High transaction isolation, low concurrency as if transactions are executed "
+"serially, rather than concurrently. This level requires transaction retries "
+"in the event of serialization failures. Use this setting for client-only "
+"installations."
+msgstr ""
+"<b>伝統的なIngresシステム</b>\n"
+"トランザクションが一つづつ順番に実行されたかのような高いトランザクション分離"
+"性、低い同時実行性。トランザクションの直列化に失敗した場合は、そのトランザク"
+"ションの再実行が必要になります。クライアントのみのインストールではこの設定を"
+"使用してください。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2663
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5439
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2742
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5697
+msgid "<b>Transaction Log Files</b>"
+msgstr "<b>トランザクション・ログ・ファイル</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2564
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5337
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2642
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5594
+msgid "<b>Transaction Log</b>"
+msgstr "<b>トランザクション・ログ</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3859
+msgid ""
+"<b>Transactional System</b>\n"
+"Optimized for transaction-oriented appliancations, such as ERP or CRM "
+"systems, electrontic banking, order processing, time clock system, and e-"
+"commerce systems."
+msgstr ""
+"<b>トランザクション・システム</b>\n"
+"ERPシステムやCRMシステム、インターネット銀行、受注処理、電子商取引といったト"
+"ランザクション指向のアプリケーションに最適化。"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3986
+msgid ""
+"<b>Transactional System</b>\n"
+"Optimized for transaction-oriented applications, such as ERP or CRM systems, "
+"electronic banking, order processing, time clock system, and e-commerce "
+"systems."
+msgstr ""
+"<b>トランザクション・システム</b>\n"
+"トランザクション指向のアプリケーションに最適。たとえばERPやCRMシステム、銀行"
+"システム、受注処理、勤怠管理システム、Eコマースシステムなど。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3089
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3174
+msgid "<b>Upgrade Complete</b>"
+msgstr "<b>アップグレード完了</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3160
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3263
+msgid "<b>Upgrade Failed</b>"
+msgstr "<b>アップグレード失敗</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5176
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5432
+msgid "<b>VectorWise Configuration</b>"
+msgstr "<b>VectorWise構成</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1777
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1843
+msgid "<b>Ingres Instances</b>"
+msgstr "<b>Ingresインスタンス</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3595
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3720
+msgid "<b>Welcome to the Ingres Response File Generator</b>"
+msgstr "<b>Ingres Response File Generatorにようこそ</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3731
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3856
+msgid "<b>Welcome to the Ingres  Community!</b>"
+msgstr "<b>Ingres コミュニティにようこそ!</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1397
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1447
+msgid "<b>Welcome to the Ingres Installation Wizard</b>"
+msgstr "<b>Ingres インストール・ウィザードにようこそ</b>"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4008
+msgid ""
+"A custom instance will be created.  You will have greater \n"
+"control over the installed components and configuration\n"
+"options available."
+msgstr ""
+"設定を変更してインスタンスを作成します。日本語を使用する場合は\n"
+"こちらを選択します。コンポーネントの選択と設定変更が可能です。\n"
+" "
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4000
+msgid ""
+"A default instance will be created.  You will have the \n"
+"opportunity to select the components to be installed."
+msgstr ""
+"デフォルトの設定でインスタンスを作成します。インストールする\n"
+"コンポーネントを選択することができます。"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4086
+msgid "A default instance will be created. No questions asked."
+msgstr "デフォルトのインスタンスが作成されます。質問はありません。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3640
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3765
+msgid ""
+"A response file will be created for deploying Ingres\n"
+"on Linux"
+msgstr ""
+"応答ファイルは、Linux上に配布するIngres用に作成\n"
+"されます。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3648
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3773
+msgid ""
+"A response file will be created for deploying Ingres\n"
+"on Windows"
+msgstr ""
+"応答ファイルは、Windows上に配布するIngres用に作成\n"
+"されます。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2765
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5659
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2844
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5932
+msgid "AN_SI Date"
+msgstr "ANSI日付(_S)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1836
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1903
+msgid "Add or remove components from the selected instance"
+msgstr "選択したインスタンスにコンポーネントを追加/削除"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1301
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3454
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1351
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3600
+msgid "Additional Configuration"
+msgstr "追加の構成"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6244
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6381
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6497
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6628
+msgid ""
+"Adds the directory containing the Ingres executables to the Windows path "
+"variable. You can then run Ingres executables from the command line"
+msgstr ""
+"WindowsのPATH環境変数にIngresの実行ファイルが含まれているディレクトリを追加し"
+"ます。コマンド・ラインからIngresプログラムを実行できます。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4276
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4521
+msgid "All Ingres components will be installed"
+msgstr "すべてのIngresコンポーネントをインストール"
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gipmsg.h:44
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:46
+msgid "All files under the following locations will be removed:\n"
+msgstr "以下のディレクトリ配下のすべてのファイルを削除します:\n"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1764
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1810
+msgid ""
+"All user databases must be upgraded before they can be accessed by the "
+"upgraded binaries. By default this is done automatically by the upgrade "
+"process. If you do not want this to be done now uncheck this option.\n"
+"\n"
+"NOTE: You will have to run upgradedb manually on all user datatbases if this "
+"option is unchecked"
+msgstr ""
+"全ユーザ・データベースは、アクセス前にアップグレードが必要です。デフォルトで"
+"は、これは、アップグレードのプロセスによって、自動的に行われます。このオプ"
+"ションの選択を外すと自動的なアップグレードを行いません。\n"
+"\n"
+"注意: このオプションの選択を外した場合、手動で、全ユーザ・データベースに対し"
+"てupgradedbを実行してください。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3116
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6668
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3196
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6924
+msgid ""
+"An error occured during installation and the process was unable to\n"
+"complete.\n"
+"\n"
+"Review the errors below and contact Ingres technical support at\n"
+"http://www.actian.com/support for further assistance.\n"
+"\n"
+"To exit click \"Finish\""
+msgstr ""
+"インストール中にエラーが発生しました。インストールを完了することが\n"
+"できません。\n"
+"\n"
+"以下のエラーを確認してください。Ingres技術サポート\n"
+"http://www.actian.com/support に連絡してください。\n"
+"\n"
+"\"完了\"をクリックします。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1549
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1599
+msgid ""
+"An older version of Ingres has been detected on your machine.\n"
+"\n"
+"Select an option to proceed"
+msgstr ""
+"古いバージョンのIngresがこのマシンで検出されました。\n"
+"\n"
+"続けるには、オプションを選択してください"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1469
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1519
+msgid ""
+"Another Ingres instance of the same version has been detected on \n"
+"your machine\n"
+"\n"
+"Select an option to proceed"
+msgstr ""
+"同じバージョンで、別のIngresインスタンスがこのマシンで検出され\n"
+"ました。\n"
+"\n"
+"続けるには、オプションを選択してください"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2013
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2086
+msgid ""
+"Application-By-Forms\n"
+"\n"
+"Ingres Application-By-Forms is a forms-based application development tool "
+"that allows developers to use, write, compile, and link Ingres 4GL (formerly "
+"OpenINGRES/4GL) programs.\n"
+"\n"
+"Vision\n"
+"\n"
+"Ingres Vision is the premier tool for rapid development of open, portable, "
+"character-based applications.  Vision combines the productivity of a 4GL, "
+"the production power of a 3GL, an advanced user interface, automatic code "
+"generation capabilities, and customizable code templates which allow rapid "
+"development of applications that run against relational and non-relational "
+"database systems from Actian Corporation, IBM, DEC, and Hewlett Packard. \n"
+"Vision applications can be deployed both as traditional, host-based terminal "
+"applications, or as client-server applications under Microsoft Windows, "
+"OS/2, MS-DOS, Unix, Linux and VMS.  When deployed under MS Windows and IBM "
+"Presentation Manager, Vision applications support pull-down menus, button "
+"bars, and other mouse-driven graphical user interface features."
+msgstr ""
+"ABF(フォームによるアプリケーション)\n"
+"\n"
+"Ingres ABFは、フォームを使ったアプリケーション開発ツールです。開発者は、"
+"Ingres 4GL（以前のOpenINGRES/4GL）プログラムを使用し、開発し、コンパイルし、"
+"実行することができます。\n"
+"\n"
+"Ingres Vision\n"
+"\n"
+"Ingres Visionは、オープンで、移植可能な、文字ベースのアプリケーションを迅速に"
+"開発するためのプレミアツールです。Visionは、4GLの生産性と、3GLの性能を結合"
+"し、先進的なユーザー・インタフェース、自動的なコード生成機能、カスタマイズ可"
+"能なテンプレートによってアプリケーションの迅速な開発が可能になり、Ingresや、"
+"IBM, DEC, HPなどのリレーショナルと非リレーショナルのデータベースに対して実行"
+"できます。\n"
+"Visionアプリケーションは、伝統的なホスト・コンピュータの端末アプリケーション"
+"として、また、Microsoft Windows、OS/2、MS-DOS、Unix、Linux、VMSのクライアン"
+"ト・サーバー・アプリケーションとして配布できます。MS WindowsとIBM "
+"Presentation Managerへの配布では、プルダウン・メニュー、ボタン・バー、その他"
+"のグラフィカルなユーザ・インタフェース機能が使用できます。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4407
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4656
+msgid ""
+"Application-By-Forms\n"
+"\n"
+"Ingres Application-By-Forms is a forms-based application development tool "
+"that allows developers to use, write, compile, and link Ingres 4GL (formerly "
+"OpenINGRES/4GL) programs.\n"
+"\n"
+"Vision\n"
+"\n"
+"Ingres Vision is the premier tool for rapid development of open, portable, "
+"character-based applications.  Vision combines the productivity of a 4GL, "
+"the production power of a 3GL, an advanced user interface, automatic code "
+"generation capabilities, and customizable code templates which allow rapid "
+"development of applications that run against relational and non-relational "
+"database systems from Actian Corporation, IBM, DEC, and Hewlett Packard. "
+"Vision applications can be deployed both as traditional, host-based terminal "
+"applications, or as client-server applications under Microsoft Windows, "
+"OS/2, MS-DOS, Unix, Linux and VMS.  When deployed under MS Windows and IBM "
+"Presentation Manager, Vision applications support pull-down menus, button "
+"bars, and other mouse-driven graphical user interface features. "
+msgstr ""
+"ABF(フォームによるアプリケーション)\n"
+"\n"
+"Ingres ABFは、フォームを使ったアプリケーション開発ツールです。開発者は、"
+"Ingres 4GL（以前のOpenINGRES/4GL）プログラムを使用し、開発し、コンパイルし、"
+"実行することができます。\n"
+"\n"
+"Ingres Vision\n"
+"\n"
+"Ingres Visionは、オープンで、移植可能な、文字ベースのアプリケーションを迅速に"
+"開発するためのプレミアツールです。Visionは、4GLの生産性と、3GLの性能を結合"
+"し、先進的なユーザー・インタフェース、自動的なコード生成機能、カスタマイズ可"
+"能なテンプレートによってアプリケーションの迅速な開発が可能になり、Ingresや、"
+"IBM, DEC, HPなどのリレーショナルと非リレーショナルのデータベースに対して実行"
+"できます。\n"
+"Visionアプリケーションは、伝統的なホスト・コンピュータの端末アプリケーション"
+"として、また、Microsoft Windows、OS/2、MS-DOS、Unix、Linux、VMSのクライアン"
+"ト・サーバー・アプリケーションとして配布できます。MS WindowsとIBM "
+"Presentation Managerへの配布では、プルダウン・メニュー、ボタン・バー、その他"
+"のグラフィカルなユーザ・インタフェース機能が使用できます。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gipmsg.h:38
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:40
+msgid "Are you sure you want to quit?"
+msgstr "処理を中止しますか?"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2171
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4593
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2248
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4853
+msgid "Bac_kup"
+msgstr "バックアップ(_k)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipdata.c:151
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipdata.c:177
+msgid "Backup"
+msgstr "バックアップ"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipdata.c:283
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipdata.c:309
+msgid "Block group size"
+msgstr "ブロック・グループ・サイズ"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipdata.c:272
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipdata.c:298
+msgid "Block size"
+msgstr "ブロック・サイズ"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2292
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2298
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2304
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2310
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2316
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2532
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2609
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4501
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4713
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4719
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4725
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4731
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4737
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4910
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5305
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5383
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2369
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2375
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2381
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2387
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2393
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2610
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2688
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4753
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4996
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5002
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5008
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5014
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5020
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5026
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5562
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5641
+msgid "Browse..."
+msgstr "検索..."
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5274
+msgid "Buffer P_ool Memory"
+msgstr "バッファ・プール・メモリー(_o)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5091
+msgid "Buffer Pool Memory"
+msgstr "バッファ・プール・メモリー"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipdata.c:250
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipdata.c:276
+msgid "Buffer pool memory"
+msgstr "バッファ・プール・メモリー"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5791
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6066
+msgid ""
+"By default the Ingres instance and all the files associated with it will be "
+"owned by the OS user ingres. If you want it owned by a different OS user, "
+"enter the username here. The user will be created if it doesn't already "
+"exist.\n"
+"\n"
+"This user will also be made a member of the ingres user group. If you want "
+"it to be part of a different user group, enter the group name here. The "
+"group will be created if it doesn't already exist."
+msgstr ""
+"デフォルトでは、Ingresインスタンスとそれに関連するすべてのファイルは、OSユー"
+"ザ ingres が所有者です。所有者を他のOSユーザに変更したい場合、そのユーザ名を"
+"入力してください。そのユーザが存在していない場合は、作成されます。\n"
+"\n"
+"また、このユーザは、グループ ingres のメンバーの一員となります。グループを変"
+"更したい場合、そのグループ名を入力してください。そのグループが存在していない"
+"場合は、作成されます。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5558
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6152
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5818
+msgid "C_haracter Set"
+msgstr "文字セット(_h)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6035
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6312
+msgid "C_reate a demo database"
+msgstr "デモ・データベースを作成(_r)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4230
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4475
+msgid "C_ustom"
+msgstr "カスタマイズ(_u)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5494
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5753
+msgid ""
+"Character Set\n"
+"\n"
+"Ingres supports different character sets. You must now enter the character "
+"set you want to use with this Ingres installation.\n"
+"\n"
+"IMPORTANT NOTE: You will be unable to change character sets once you make "
+"your selection. If you are unsure of which character set to use, exit this "
+"program and refer to the Ingres Getting Started Guide.\n"
+"\n"
+msgstr ""
+"文字セット\n"
+"\n"
+"Ingresはいくつかの文字セットをサポートしています。このIngresインスタンスで使"
+"用する文字セットを入力しなければなりません。\n"
+"\n"
+"重要な注意: インストールが完了すると、指定された文字セットは、変更することが"
+"できません。どの文字セットを使用してよいのか分からない場合は、このプログラム"
+"を終了し、Ingres Getting Started Guideを参照してください。\n"
+"\n"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:689
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:735
+msgid "Character Set: "
+msgstr "文字セット: "
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gipmsg.h:39
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:41
+msgid "Choose a location"
+msgstr "位置を選択"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2919
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2999
+msgid "Cick <b>Upgrade</b> to begin the installaltion"
+msgstr "<b>アップグレード</b>をクリックしてインストールを開始します"
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gip.h:331
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gip.h:277
+#, c-format
+msgid "Click <b>%s</b> to begin the installation"
+msgstr "<b>%s</b>をクリックしてインストールを開始"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2931
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6482
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6755
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3011
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6731
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:7028
+msgid "Click <b>Back</b> to change your settings"
+msgstr "設定を変更するには<b>戻る</b>をクリックします。"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4367
+msgid "Client and Server components of VectorWise will be installed"
+msgstr ""
+"VectorWiseのクライアントとサーバー・コンポーネントをインストール"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4220
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4465
+msgid "Co_mplete"
+msgstr "すべて(_m)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3383
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3518
+msgid "Component Selection"
+msgstr "コンポーネントの選択"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:2003
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:2013
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:2195
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:2205
+msgid "Components added:\n"
+msgstr "追加コンポーネント:\n"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4267
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4512
+msgid ""
+"Components most commonly used for a Ingres\n"
+"server will be installed"
+msgstr ""
+"Ingresサーバーで標準的に使用される\n"
+"コンポーネントをインストール"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4259
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4504
+msgid ""
+"Components most commonly used for an Ingres\n"
+"client will be installed"
+msgstr ""
+"Ingresクライアントで標準的に使用される\n"
+"コンポーネントをインストール"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:2034
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:2043
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:2227
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:2236
+msgid "Components removed:\n"
+msgstr "削除コンポーネント:\n"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:421
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:468
+msgid "Components selected:\n"
+msgstr "選択コンポーネント:\n"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3339
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3474
+msgid "Configuration Type"
+msgstr "構成タイプ"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:481
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:528
+msgid ""
+"Configuration Type:\n"
+"\t"
+msgstr ""
+"構成タイプ:\n"
+"\t"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3185
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6851
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3305
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:7143
+msgid "Continue to the next section..."
+msgstr "次のセクションに進む..."
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gipmsg.h:35
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:37
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:57
+#, c-format
+msgid "Could not save response file: %s"
+msgstr "応答ファイルが保存できません: %s"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipsup.c:92
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipsup.c:116
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipsup.c:92
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipsup.c:116
+#, c-format
+msgid "Couldn't find pixmap file: %s"
+msgstr "pixmapファイルが見つかりません: %s"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2860
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6022
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2940
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6299
+msgid "Create Ingres _folder on Desktop"
+msgstr "デスクトップにIngresフォルダを作成(_f)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:759
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:805
+msgid "Create Ingres folder on Desktop: "
+msgstr "デスクトップにIngresフォルダを作成: "
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2868
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6423
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2948
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6672
+msgid "Create a _demo database"
+msgstr "デモ・データベースを作成(_d)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:746
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:2179
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:792
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:2408
+msgid "Create a demo database: "
+msgstr "デモ・データベースを作成: "
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2817
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5966
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2897
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6243
+msgid ""
+"Create a demonstration database named demodb and populate it with a tables, "
+"view, procedures and other database objects. The database is used by Ingres "
+"demonstration applications such as the Ingres Frequent Flyer Demo."
+msgstr ""
+"demodbという名前のデモ・データベースを作成し、テーブル、ビュー、プロシージャ"
+"やその他のデータベース・オブジェクトにデータを投入します。このデータベースは"
+"Ingres Frequent Flyer Demoなどで使用されます。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2865
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2945
+msgid "Create a folder containing Ingres stuff on your desktop"
+msgstr "デスクトップにIngres関連ファイルを含むフォルダーを作成"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2829
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5978
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2909
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6255
+msgid "Create a folder on the"
+msgstr "フォルダーを作成 : "
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6393
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6641
+msgid "Create a populated demonstration database named demodb"
+msgstr "demodbというデモ・データベースを作成"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2873
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6428
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2953
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6677
+msgid "Create and populate a demonstration database called demodb"
+msgstr "demodbというデモ・データベースを作成"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2240
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4661
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2317
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4929
+msgid "D_atabase"
+msgstr "データベース(_a)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4953
+msgid "Data Block Group Size"
+msgstr "データ・ブロック・グループ・サイズ"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4947
+msgid "Data Block Size"
+msgstr "データ・ブロック・サイズ"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5164
+msgid "Data Block _Group Size"
+msgstr "データ・ブロック・グループ・サイズ(_G)"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5158
+msgid "Data Block _Size"
+msgstr "データ・ブロック・サイズ(_S)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipdata.c:144
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipdata.c:170
+msgid "Database"
+msgstr "データベース"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1285
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1335
+msgid "Database Locations"
+msgstr "データベース位置"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:529
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:2065
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:576
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:2258
+msgid "Database file locations:\n"
+msgstr "データベース・ファイル位置:\n"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2785
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5679
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2864
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5952
+msgid ""
+"Date Type Alias\n"
+"\n"
+"Ingres supports the ANSI date and time data types DATE, TIME, TIMESTAMP, and "
+"INTERVAL. Previously, Ingres supported one date data type that could store "
+"dates, times, intervals, and time stamps. The previous date type has been "
+"renamed to  INGRESDATE.\n"
+"\n"
+"The configuration parameter date_alias controls whether the keyword DATE "
+"used for a column data type refers to INGRESDATE or to ANSIDATE. (See the "
+"Ingres Release Summary for more info)"
+msgstr ""
+"日付型エイリアス\n"
+"\n"
+"Ingresは、ANSI方式の日付、時間データ型 DATE, TIME, TIMESTAMP, INTERVALを サ"
+"ポートします。以前、Ingresは日付、時間、インターバル、時刻を格納できるデータ"
+"型をサポートしていました。以前のデータ型は、INGRESDATEと名前が変更されまし"
+"た。\n"
+"\n"
+"この構成パラメータdate_aliasは、日付型データ型に使われるキーワードDATEが、"
+"INGRESDATEなのかANSIDATEなのかをコントロールします。(詳しくは、IngresRelease "
+"Summaryを参照してください)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2508
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4551
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5281
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2586
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4804
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5538
+msgid "De_fault to installation location (II__SYSTEM)"
+msgstr "デフォルトのインストール位置(_f) (II__SYSTEM)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1439
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3773
+msgid "Decline"
+msgstr "同意しません"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4862
+msgid "Default to Ingres data _location (II__DATABASE)"
+msgstr "デフォルトのIngresのデータ位置(II__DATABASE)(_l)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2075
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2152
+msgid ""
+"Define the database file locations.\n"
+"To accept the defaults, simply click next."
+msgstr ""
+"データベース・ファイルの位置を定義します。\n"
+"デフォルトでよければ、'次へ'をクリックします。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4470
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4722
+msgid ""
+"Define the installation locations and database file locations.\n"
+"To accept the defaults, simply click next."
+msgstr ""
+"インストール先とデータベース・ファイルの位置を定義します。\n"
+"デフォルトでよければ、'次へ'をクリックします。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2426
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5199
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2503
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5455
+msgid "Define the transaction log file size and locations."
+msgstr "トランザクション・ログ・ファイルのサイズと位置を指定します。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3309
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3444
+msgid "Deployment Platform"
+msgstr "配布プラットフォーム"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1352
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3522
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3552
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1402
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3648
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3669
+msgid "Done"
+msgstr "完了"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2597
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5371
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2675
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5628
+msgid ""
+"Dual Logging\n"
+"\n"
+"In order to guarantee that no committed transactions can be lost in the "
+"event of a single storage device failure, a secondary Ingres transaction log "
+"can be maintained on a storage device which is independent of the primary "
+"transaction log file device.\n"
+"\n"
+"You have the option of enabling a secondary transaction log file, although "
+"you should only do so if the location you intend to use for your secondary "
+"transaction log file is different from the location used for your primary "
+"log. "
+msgstr ""
+"二重化ロギング\n"
+"\n"
+"単一のストレージ・デバイスが故障しても、コミットされたトランザクションの変更"
+"内容がなくらならないことを保証するために、第二のトランザクション・ログを、第"
+"一のトランザクション・ログ・ファイルを格納するデバイスとは独立したストレー"
+"ジ・デバイスに保持できます。\n"
+"\n"
+"第二のトランザクション・ログ・ファイルを有効にすることはできますが、第一のト"
+"ランザクション・ログ・ファイルで使用されているデバイス、位置とは、異なるデバ"
+"イス、位置を指定する場合だけにすべきです。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipdata.c:206
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipdata.c:232
+msgid "Dual log location"
+msgstr "二重化ログ位置"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:633
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:2133
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:679
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:2362
+msgid "Dual logging disabled\n"
+msgstr "二重化ログは無効\n"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:618
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:2118
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:664
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:2347
+msgid "Dual logging enabled\n"
+msgstr "二重化ログは有効\n"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2200
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4621
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2277
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4881
+msgid "Dum_p"
+msgstr "ダンプ(_p)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipdata.c:172
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipdata.c:198
+msgid "Dump"
+msgstr "ダンプ"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix/ingpkgqry.py:166
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix/ingpkgqry.py:176
+#, python-format
+msgid ""
+"ERROR: %(name)s-%(version)s-%(release)s-%(arch)s.rpm is not a valid "
+"package.\n"
+"Aborting"
+msgstr ""
+"ERROR: %(name)s-%(version)s-%(release)s-%(arch)s.rpm 正しくない パッケージで"
+"す。\n"
+"中止"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix/ingpkgqry.py:167
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix/ingpkgqry.py:177
+msgid ""
+"ERROR: Execution mode must be set to 'ingres' or 'vectorwise'\n"
+"Aborting..."
+msgstr ""
+"ERROR: 実行モードは'ingres'か'vectorwise'にしてください\n"
+"中止..."
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix/ingpkgqry.py:161
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix/ingpkgqry.py:171
+msgid "ERROR: Failed to determine DB locations"
+msgstr "ERROR: データベース位置が決定できません"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix/ingpkgqry.py:162
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix/ingpkgqry.py:172
+msgid "ERROR: Failed to determine log locations"
+msgstr "ERROR: ログ位置が決定できません"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix/ingpkgqry.py:163
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix/ingpkgqry.py:173
+msgid "ERROR: Failed to determine value for II_INSTALLATION"
+msgstr "ERROR: II_INSTALLATIONの値が決定できません"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix/ingpkgqry.py:156
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix/ingpkgqry.py:166
+msgid ""
+"ERROR: Failed to load Python module \"apt\" \n"
+"The 'python-apt' package must be installed to run this installer"
+msgstr ""
+"ERROR: Pythonモジュール\"apt\"をロードできません \n"
+"インストールには'python-apt'パッケージが必要です"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix/ingpkgqry.py:154
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix/ingpkgqry.py:164
+msgid ""
+"ERROR: Failed to load Python module \"rpm\" \n"
+"The 'rpm-python' package must be installed to run this installer"
+msgstr ""
+"ERROR: Pythonモジュール\"rpm\"をロードできません \n"
+"インストールには'rpm-python'パッケージが必要です"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix/ingpkgqry.py:158
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix/ingpkgqry.py:168
+msgid ""
+"ERROR: Failed to load Python module \"xml\" \n"
+"The 'python-xml' package must be installed to run this installer"
+msgstr ""
+"ERROR: Pythonモジュール\"xml\"をロードできません \n"
+"インストールには'python-xml'パッケージが必要です"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix/ingpkgqry.py:160
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix/ingpkgqry.py:170
+#, python-format
+msgid "ERROR: Failed to open file: %s"
+msgstr "ERROR: ファイルをオープンできません: %s"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix/ingpkgqry.py:165
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix/ingpkgqry.py:175
+#, python-format
+msgid "ERROR: Failed to query %s saveset"
+msgstr "ERROR: %s セーブセットの検索に失敗"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix/ingpkgqry.py:164
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix/ingpkgqry.py:174
+#, python-format
+msgid ""
+"ERROR: Failed to write XML to: %s\n"
+"%s\n"
+msgstr ""
+"ERROR: XMLの書き込みに失敗: %s\n"
+"%s\n"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2587
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5360
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2665
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5617
+msgid "Enable _Dual Logging"
+msgstr "二重化ロギングを有効化(_D)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5596
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5869
+msgid "Enable strict SQL-_92 Compliance (Entry Level)"
+msgstr "厳格なSQL-_92(エントリー・レベル)の遵守を有効化"
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gipmsg.h:46
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:48
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/giputil.h:115
+msgid "Error"
+msgstr "Error"
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gipmsg.h:24
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gipmsg.h:28
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:26
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:30
+#, c-format
+msgid "Error: %s does not exist\n"
+msgstr "Error: %s は存在しません\n"
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gipmsg.h:25
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:27
+msgid "Error: Missing argument, need pkginfo file\n"
+msgstr "Error: 引数がたりません。pkginfoファイルが必要\n"
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gipmsg.h:22
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:24
+msgid "Error: Must be run as root\n"
+msgstr "Error: rootとして実行が必要\n"
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gipmsg.h:23
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:25
+msgid "Error: Path too long\n"
+msgstr "Error: パスが長すぎます\n"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3139
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6697
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3225
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6953
+msgid "Errors"
+msgstr "Errors"
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gipmsg.h:36
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:38
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:58
+msgid "FATAL ERROR: Command line exceeds allocated space. Aborting"
+msgstr "FATAL ERROR: コマンド行が割り当て領域を超過。中止"
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gipmsg.h:29
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:31
+msgid "Failed to create temporary location\n"
+msgstr "作業用の位置を作成できません\n"
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gipmsg.h:27
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:29
+msgid "Failed to initialize install mode\n"
+msgstr "インストール・モードの初期化ができません\n"
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gipmsg.h:30
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:32
+msgid "Failed to initialize upgrade mode\n"
+msgstr "アップグレード・モードの初期化ができません\n"
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gipmsg.h:26
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:28
+msgid "Failed to query package info\n"
+msgstr "パッケージ情報を検索できません\n"
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gipmsg.h:31
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:33
+msgid "Failed to remove temporary location\n"
+msgstr "作業用の位置を削除できません\n"
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gipmsg.h:43
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gipmsg.h:47
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:45
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:49
+#, c-format
+msgid "Failed to save response file to %s\n"
+msgstr "応答ファイルを%sに保存できません\n"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6901
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:7193
+msgid "Finish the application"
+msgstr "アプリケーションを完了"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3981
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4108
+msgid "For experienced users and custom installation"
+msgstr "経験者用、インストールのカスタマイズ用"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5925
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6202
+msgid "Group"
+msgstr "グループ"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1483
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3892
+msgid "I _accept the terms of this license agreement"
+msgstr "このライセンス契約の条項に同意します(_a)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1433
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3767
+msgid "I accept the terms of this license agreement"
+msgstr "このライセンス契約の条項に同意します"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2168
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4590
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2245
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4850
+msgid "II_CHECKPOINT"
+msgstr "II_CHECKPOINT"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2237
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4658
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2314
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4926
+msgid "II_DATABASE"
+msgstr "II_DATABASE"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2197
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4618
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2274
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4878
+msgid "II_DUMP"
+msgstr "II_DUMP"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2182
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4604
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2259
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4864
+msgid "II_JOURNAL"
+msgstr "II_JOURNAL"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4906
+msgid "II_VWDATA"
+msgstr "II_VWDATA"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2217
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4638
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2294
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4892
+msgid "II_WORK"
+msgstr "II_WORK"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2771
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5665
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2851
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5938
+msgid "In_gres Date"
+msgstr "Ingres日付(_g)"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/giputil.h:117
+msgid "Information"
+msgstr "情報"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4088
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4239
+msgid "Ingres "
+msgstr "Ingres "
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4319
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4564
+msgid "Ingres Cli_ent"
+msgstr "Ingresクライアント(_e)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1926
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1995
+msgid "Ingres Clien_t"
+msgstr "Ingresクライアント(_t)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1960
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2030
+msgid ""
+"Ingres Client\n"
+"\n"
+"The Ingres Client extension enables communication between Ingres "
+"installations in a heterogeneous, networked environment. Ingres Client "
+"supports several major protocols, including TCP/IP, ISO X.25, DEC/NET, "
+"Asynchronous, ISO/OSLAN, SNA/LU6.2, SPX, and TCP /WOLLONGONG.\n"
+"\n"
+"Ingres Data Access Server\n"
+"\n"
+"The Ingres Data Access Server will replace the existing JDBC server and will "
+"provide DBMS access to the existing EDBC JDBC driver, the new Ingres JDBC "
+"driver and the .NET Data Provider\n"
+"The Ingres Data Access Server supports several major protocols, including "
+"TCP/IP, ISO X.25, DEC/NET, Asynchronous, ISO/OSLAN, SNA/LU6.2, SPX, and TCP/"
+"WOLLONGONG."
+msgstr ""
+"Ingresクライアント\n"
+"\n"
+"IngresクライアントはIngresデータベース・サーバーと、ネットワークされたヘテロ"
+"ジーニアスな環境で通信を行います。Ingresクライアントは、TCP/IP,  ISO X.25, "
+"DEC/NET, 非同期, ISO/OSLAN, SNA/LU6.2, SPX, and TCP/WOLLONGONGといった主要な"
+"プロトコルをサポートします。\n"
+"\n"
+"Ingresデータ・アクセス・サーバー\n"
+"\n"
+"Ingresデータ・アクセス・サーバーは既存のJDBCサーバーを置き変えるものです。既"
+"存のEDBC JDBCドライバー、新しいIngres JDBCドライバー、.NETデータプロバイダー"
+"からのDBMSへのアクセスを提供します。\n"
+"Ingresデータ・アクセス・サーバーは、TCP/IP, ISO X.25, DEC/NET, 非同期, ISO/"
+"OSLAN, SNA/LU6.2, SPX, and TCP/WOLLONGONGといった主要なプロトコルをサポートし"
+"ます。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4353
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4599
+msgid ""
+"Ingres Client\n"
+"\n"
+"The Ingres Client extension enables communication between Ingres "
+"installations in a heterogeneous, networked environment. Ingres Client "
+"supports several major protocols, including TCP/IP, ISO X.25, DEC/NET, "
+"Asynchronous, ISO/OSLAN, SNA/LU6.2, SPX, and TCP/WOLLONGONG.\n"
+"\n"
+"Ingres Data Access Server\n"
+"\n"
+"The Ingres Data Access Server will replace the existing JDBC server and will "
+"provide DBMS access to the existing EDBC JDBC driver, the new Ingres JDBC "
+"driver and the .NET Data Provider\n"
+"\n"
+"The Ingres Data Access Server supports several major protocols, including "
+"TCP/IP, ISO X.25, DEC/NET, Asynchronous, ISO/OSLAN, SNA/LU6.2, SPX, and TCP/"
+"WOLLONGONG."
+msgstr ""
+"Ingresクライアント\n"
+"\n"
+"IngresクライアントはIngresデータベース・サーバーと、ネットワークされたヘテロ"
+"ジーニアスな環境で通信を行います。Ingresクライアントは、TCP/IP,  ISO X.25, "
+"DEC/NET, 非同期, ISO/OSLAN, SNA/LU6.2, SPX, and TCP/WOLLONGONGといった主要な"
+"プロトコルをサポートします。\n"
+"\n"
+"Ingresデータ・アクセス・サーバー\n"
+"\n"
+"Ingresデータ・アクセス・サーバーは既存のJDBCサーバーを置き変えるものです。既"
+"存のEDBC JDBCドライバー、新しいIngres JDBCドライバー、.NETデータプロバイダー"
+"からのDBMSへのアクセスを提供します。\n"
+"\n"
+"Ingresデータ・アクセス・サーバーは、TCP/IP, ISO X.25, DEC/NET, 非同期, ISO/"
+"OSLAN, SNA/LU6.2, SPX, and TCP/WOLLONGONGといった主要なプロトコルをサポートし"
+"ます。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2000
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2073
+msgid "Ingres Do_cumentation"
+msgstr "Ingresドキュメント(_c)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4394
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4643
+msgid "Ingres Documentat_ion"
+msgstr "Ingresドキュメント(_i)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5418
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5676
+msgid ""
+"Ingres Dual Transaction Log Location\n"
+"\n"
+"The location used for the dual transaction log file. This is a secondary "
+"location for storing uncommitted transactions. It is written to in parallel "
+"with the primary log file and used as a hot \"stand-by\" in the event of "
+"device or other catastrophic failure."
+msgstr ""
+"Ingres二重化トランザクション・ログ位置\n"
+"\n"
+"二重化トランザクション・ログ・ファイルに使用される位置。これは、コミット前の"
+"トランザクションを格納しておくための二次的な位置です。デバイスやその他の壊滅"
+"的な故障の際のホットスタンバイとして使用され、第一のログ・ファイルとパラレル"
+"に書き込まれます。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4110
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4216
+msgid "Ingres II"
+msgstr "Ingres II"
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gipmsg.h:33
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:35
+msgid "Ingres Installation Wizard"
+msgstr "Ingresインストール・ウィザード"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1951
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2020
+msgid ""
+"Ingres Intelligent DBMS\n"
+"\n"
+"The Ingres Intelligent DBMS, the foundation of the Ingres product line, "
+"provides the power to manage today's critical information resources: data, "
+"knowledge, and objects.  Because of this unique ability, the Ingres "
+"Intelligent DBMS empowers organizations to model all aspects of their "
+"operations within the database engine itself, rather than within client "
+"application code.\n"
+"\n"
+"The Ingres Intelligent DBMS can support a wide range of applications, from "
+"ad hoc queries to large-scale, mission-critical production applications "
+"which require 24-hour-a-day, 7-day-a-week service.  The Ingres Intelligent "
+"DBMS features a threaded, multi-server architecture which can fully harness "
+"the power of today's scalable multiprocessors.  Other advanced features "
+"include the industry's most advanced statistically based query optimizer, "
+"compiled database procedures, on-line backup, and transparent two-phase "
+"commit.\n"
+msgstr ""
+"Ingres DBMS\n"
+"\n"
+"Ingres DBMS（データベース・サーバー）は、Ingres製品群の基盤です。現代における"
+"重大な情報資源：データ、知識、オブジェクトを管理する能力を提供します。Ingres "
+"DBMSは、企業が必要とする業務内容をデータベース・エンジン内にモデル作成するこ"
+"とを可能とします。業務内容をクライアント・アプリケーション内にコーディングす"
+"る必要はありません。\n"
+"\n"
+"Ingres DBMSは、広い範囲のアプリケーションをサポートします。アドホックな検索か"
+"ら、24時間365日のサービスが要求される大規模なミッション・クリティカルなアプリ"
+"ケーションまでサポートします。Ingres DBMSは、マルチ・スレッド、マルチ・サー"
+"バーのアーキテクチャを採用しており、現代のスケーラブルなマルチ・プロセッサの"
+"能力をフルに引き出します。その他の最新の機能としては業界では最も先進的な統計"
+"ベースの問合せオプティマイザーや、コンパイル済みのデータベース・プロシー"
+"ジャ、オンライン・バックアップ、２相コミットなどがあります。\n"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4344
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4589
+msgid ""
+"Ingres Intelligent DBMS\n"
+"\n"
+"The Ingres Intelligent DBMS, the foundation of the Ingres product line, "
+"provides the power to manage today's critical information resources: data, "
+"knowledge, and objects. Because of this unique ability, the Ingres "
+"Intelligent DBMS empowers organizations to model all aspects of their "
+"operations within the database engine itself, rather than within client "
+"application code.\n"
+"\n"
+"The Ingres Intelligent DBMS can support a wide range of applications, from "
+"ad hoc queries to large-scale, mission- critical production applications "
+"which require 24-hour-a-day, 7-day-a-week service.  The Ingres Intelligent "
+"DBMS features a threaded, multi-server architecture which can fully harness "
+"the power of today's scalable multiprocessors.  Other advanced features "
+"include the industry's most advanced statistically based query optimizer, "
+"compiled database procedures, on-line backup, and transparent two-phase "
+"commit.\n"
+msgstr ""
+"Ingres DBMS\n"
+"\n"
+"Ingres DBMS（データベース・サーバー）は、Ingres製品群の基盤です。現代における"
+"重大な情報資源：データ、知識、オブジェクトを管理する能力を提供します。Ingres "
+"DBMSは、企業が必要とする業務内容をデータベース・エンジン内にモデル作成するこ"
+"とを可能とします。業務内容をクライアント・アプリケーション内にコーディングす"
+"る必要はありません。\n"
+"\n"
+"Ingres DBMSは、広い範囲のアプリケーションをサポートします。アドホックな検索か"
+"ら、24時間365日のサービスが要求される大規模なミッション・クリティカルなアプリ"
+"ケーションまでサポートします。Ingres DBMSは、マルチ・スレッド、マルチ・サー"
+"バーのアーキテクチャを採用しており、現代のスケーラブルなマルチ・プロセッサの"
+"能力をフルに引き出します。その他の最新の機能としては業界では最も先進的な統計"
+"ベースの問合せオプティマイザーや、コンパイル済みのデータベース・プロシー"
+"ジャ、オンライン・バックアップ、２相コミットなどがあります。\n"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2329
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2406
+msgid ""
+"Ingres Location Variables\n"
+"\n"
+"The Ingres storage locations and the corresponding Ingres variables are "
+"listed below:\n"
+"\n"
+"Ingres Location Variables\n"
+"II_DATABASE \t\tDefault location for database files\n"
+"II_CHECKPOINT \t\tDefault location for full backup snapshots\n"
+"II_JOURNAL \t\tDefault location for journals (backup \t\t\t\t\taudit "
+"trails)\n"
+"II_DUMP \t\t\tDefault location for on-line backup \t\t\t\t\tchange logs\n"
+"II_WORK \t\t\tDefault location for temporary files\n"
+"\n"
+"Important Note\n"
+"\n"
+"You cannot change the values you assign to the default Ingres storage "
+"location variables once this setup procedure has been completed. However you "
+"can create additional storage locations and assign individual databases to "
+"them.\n"
+"\n"
+"ALL locations MUST exist and be writable by the instance owner. If this user "
+"does not exist the location MUST be globally writable. If it is not, "
+"installation of the DBMS package\n"
+"will fail.\n"
+"\n"
+"For information on creating storage locations, refer to the\n"
+"Ingres Database Administrator's Guide. "
+msgstr ""
+"Ingres位置変数\n"
+"\n"
+"Ingresの格納位置とそれに対応するIngres変数は以下の通りです:\n"
+"Ingres位置変数\n"
+"II_DATABASE \t\tデータベース・ファイルのデフォルトの位置\n"
+"II_CHECKPOINT \tフル・バックアップのデフォルトの格納位置\n"
+"II_JOURNAL \t\tジャーナルのデフォルトの格納位置 (バックアップ \t\t\t\t\t監査"
+"証跡)\n"
+"II_DUMP \t\t\tオンライン・バックアップのデフォルトの位置\t\t\t\t\t変更ログ\n"
+"II_WORK \t\t\t作業用ファイルのデフォルトの位置\n"
+"\n"
+"重要な注意\n"
+"\n"
+"インストール処理が一旦完了すると、ここで指定したデフォルトのIngresの格納位置"
+"は変更できなくなります。しかし、追加の格納位置を作成したり、個々のデータベー"
+"スにそれらを割り当てることはできます。\n"
+"\n"
+"すべての位置はあらかじめ存在している必要があります。また、インスタンスの所有"
+"者が書き込みできる権限が必要です。このユーザが存在しないのであればすべての位"
+"置は、すべてに対して書き込み可能でなければなりません。もし、そうでなければ、"
+"DBMSのインストール処理は失敗します。\n"
+"\n"
+"格納位置の作成についてより詳細は、Ingres Database Administrator's Guideを参照"
+"してください。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4750
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5039
+msgid ""
+"Ingres Location Variables\n"
+"\n"
+"The Ingres storage locations and the corresponding Ingres variables are "
+"listed below:\n"
+"\n"
+"Ingres Location Variables\n"
+"II_DATABASE \t\tDefault location for database files\n"
+"II_CHECKPOINT \tDefault location for full backup snapshots\n"
+"II_JOURNAL \t\tDefault location for journals (backup \t\t\t\t\taudit "
+"trails)\n"
+"II_DUMP \t\t\tDefault location for on-line backup \t\t\t\t\tchange logs\n"
+"II_WORK \t\t\tDefault location for temporary files\n"
+"\n"
+"Important Note\n"
+"\n"
+"You cannot change the values you assign to the default Ingres storage "
+"location variables once this setup procedure has been completed. However you "
+"can create additional storage locations and assign individual databases to "
+"them.\n"
+"\n"
+"ALL locations MUST exist and be writable by the instance owner. If this user "
+"does not exist the location MUST be globally writable. If it is not, "
+"installation of the DBMS package\n"
+"will fail.\n"
+"\n"
+"For information on creating storage locations, refer to the Ingres Database "
+"Administrator's Guide. "
+msgstr ""
+"Ingres位置変数\n"
+"\n"
+"Ingresのデフォルトの格納位置とそれに対応するIngres変数は以下の通りです: \n"
+"\n"
+"Ingres位置変数\n"
+"II_DATABASE \tデータベース・ファイル\n"
+"II_CHECKPOINT \tフル・バックアップ\n"
+"II_JOURNAL \tジャーナル(バックアップ、監査証跡)\n"
+"II_DUMP \tオンライン・バックアップ\n"
+"II_WORK \t作業用ファイル\n"
+"\n"
+"重要な注意\n"
+"\n"
+"インストール処理が一旦完了すると、ここで指定したデフォルトのIngresの格納位置"
+"は変更できなくなります。しかし、追加の格納位置を作成したり、個々のデータベー"
+"スにそれらを割り当てることはできます。\n"
+"\n"
+"すべての位置はあらかじめ存在している必要があります。また、インスタンスの所有"
+"者が書き込みできる権限が必要です。このユーザが存在しないのであればすべての位"
+"置は、すべてに対して書き込み可能でなければなりません。もし、そうでなければ、"
+"DBMSのインストール処理は失敗します。\n"
+"\n"
+"格納位置の作成についてより詳細は、Ingres Database Administrator's Guideを参照"
+"してください。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1969
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4362
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2040
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4609
+msgid ""
+"Ingres ODBC Driver\n"
+"\n"
+"The Ingres ODBC driver requires a third-party ODBC driver manager.  The "
+"Ingres ODBC driver connects to local or remote databases to fetch or modify "
+"information.\n"
+"\n"
+"The iiodbcadmn utility allows Linux, Unix or VMS users to configure ODBC "
+"data source information."
+msgstr ""
+"Ingres ODBCドライバー\n"
+"\n"
+"Ingres ODBCドライバーは、サード・パーティのODBCドライバー・マネージャを必要と"
+"します。Ingres ODBCドライバーは、ローカルまたはリモートのデータベースにアクセ"
+"スして情報を取得したり変更したりします。\n"
+"\n"
+"Linux、Unix、VMSではiiodbcadmnユーティリティを利用して、ODBCデータ・ソース情"
+"報を構成することができます。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1938
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2007
+msgid "Ingres Re_plicator"
+msgstr "Ingres Replicator(_p)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1978
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4371
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2050
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4619
+msgid ""
+"Ingres Replicator\n"
+"\n"
+"The Ingres Replicator is an extension to the Ingres Intelligent DBMS server "
+"which allows data in multiple independent databases to be maintained in a "
+"synchronized manner as if contained in a single, centralized relational "
+"database.  In this way, Ingres Replicator provides client applications with "
+"almost transparent access to enterprise-wide data.\n"
+"\n"
+"In addition to supporting access to Ingres databases, Ingres Replicator can "
+"integrate data from other database systems, with the addition of Ingres "
+"Client and Enterprise Access extensions. In combination, these Ingres "
+"products allow replication to a wide variety of database systems: IBM DB2, "
+"IBM IMS, IBM ISAM, IBM VSAM, DEC RMS, DEC Rdb, and HP data in ALLBASE/SQL or "
+"TurboIMAGE/XL."
+msgstr ""
+"Ingres Replicator\n"
+"\n"
+"Ingres ReplicatorはIngres DBMSサーバーの拡張機能の一つです。複数の独立した"
+"データベース中のデータをあたかも一つの集中したリレーショナル・データベースに"
+"存在しているかのように同期した状態を維持します。これによって、Ingres "
+"Replicatorは、クライアント・アプリケーションにほとんど透過的なデータベース・"
+"アクセスを提供できます。\n"
+"\n"
+"Ingresデータベースへのアクセスに加えて、Ingres Replicatorはその他のデータベー"
+"ス・システムからのデータを統合することも可能です。これには、Ingresクライアン"
+"トと、Ingres Enterprise Accessが必要です。これらの組み合わせでIngres製品は、"
+"次のさまざまなデータベースのレプリケーションが可能になります: IBM DB2, IBM "
+"IMS, IBM ISAM, IBM VSAM, DEC RMS, DEC Rdb, ALLBASE/SQL中のHPデータ, "
+"TurboIMAGE/XL."
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4416
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4666
+msgid ""
+"Ingres Star Distributed DBMS\n"
+"\n"
+"The Ingres Star Distributed DBMS is a distributed extension to the Ingres "
+"Intelligent DBMS server which allows data from multiple independent "
+"databases to be accessed as if contained in a single, centralized relational "
+"database.  In this way, Ingres Star provides client applications with "
+"transparent access to enterprise-wide data.\n"
+"\n"
+"In addition to supporting access to Ingres databases, Ingres Star can "
+"seamlessly integrate data from other database systems, with the addition of "
+"Ingres Client and Enterprise Access extensions. In combination, these Ingres "
+"products allow seamless, distributed access to data stored in a wide variety "
+"of database systems: IBM DB2, IBM IMS, IBM ISAM, IBM VSAM, DEC RMS, DEC Rdb, "
+"and HP data in ALLBASE /SQL or TurboIMAGE/XL.\n"
+msgstr ""
+"Ingres Star分散データベース\n"
+"\n"
+"Ingres Star分散データベース管理システムは、Ingres DBMSサーバーへの分散データ"
+"ベース機能拡張です。複数の独立したデータベース中のデータをあたかも一つの集中"
+"したリレーショナル・データベースに存在しているかのようにアクセスさせることが"
+"できます。これによって、Ingres Starは、クライアント・アプリケーションに透過的"
+"なデータベース・アクセスを提供できます。\n"
+"\n"
+"Ingresデータベースへのアクセスに加えて、Ingres Starはその他のデータベース・シ"
+"ステムからのデータを統合することも可能です。これには、Ingresクライアントと、"
+"Ingres Enterprise Accessが必要です。これらの組み合わせでIngres製品は、次のさ"
+"まざまなデータベースのシームレスな分散データベースへのアクセスが可能になりま"
+"す: IBM DB2, IBM IMS, IBM ISAM, IBM VSAM, DEC RMS, DEC Rdb, ALLBASE/SQL中のHP"
+"データ, TurboIMAGE/XL.\n"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2022
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2096
+msgid ""
+"Ingres Star Distributed DBMS\n"
+"\n"
+"The Ingres Star Distributed DBMS is a distributed extension to the Ingres "
+"Intelligent DBMS server which allows data from multiple independent "
+"databases to be accessed as if contained in a single, centralized relational "
+"database.  In this way, Ingres Star provides client applications with "
+"transparent access to enterprise-wide data.\n"
+"\n"
+"In addition to supporting access to Ingres databases, Ingres Star can "
+"seamlessly integrate data from other database systems, with the addition of "
+"Ingres Client and Enterprise Access extensions. In combination, these Ingres "
+"products allow seamless, distributed access to data stored in a wide variety "
+"of database systems: IBM DB2, IBM IMS, IBM ISAM, IBM VSAM, DEC RMS, DEC Rdb, "
+"and HP data in ALLBASE/SQL or TurboIMAGE/XL.\n"
+msgstr ""
+"Ingres Star分散データベース\n"
+"\n"
+"Ingres Star分散データベース管理システムは、Ingres DBMSサーバーへの分散データ"
+"ベース機能拡張です。複数の独立したデータベース中のデータをあたかも一つの集中"
+"したリレーショナル・データベースに存在しているかのようにアクセスさせることが"
+"できます。これによって、Ingres Starは、クライアント・アプリケーションに透過的"
+"なデータベース・アクセスを提供できます。\n"
+"\n"
+"Ingresデータベースへのアクセスに加えて、Ingres Starはその他のデータベース・シ"
+"ステムからのデータを統合することも可能です。これには、Ingresクライアントと、"
+"Ingres Enterprise Accessが必要です。これらの組み合わせでIngres製品は、次のさ"
+"まざまなデータベースのシームレスな分散データベースへのアクセスが可能になりま"
+"す: IBM DB2, IBM IMS, IBM ISAM, IBM VSAM, DEC RMS, DEC Rdb, ALLBASE/SQL中のHP"
+"データ, TurboIMAGE/XL.\n"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2555
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5328
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2633
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5585
+msgid ""
+"Ingres Transaction Log File\n"
+"\n"
+"The Ingres Intelligent DBMS uses a circular transaction log file to store "
+"uncommitted transactions and buffer committed transactions before they are "
+"written to the database file location(s).\n"
+"\n"
+"ALL log locations MUST exist and be writable by the instance owner. If this "
+"user does not exist the location MUST be globally writable. If it is not, "
+"installation of the DBMS package\n"
+"will fail.\n"
+"\n"
+"By default, Ingres will NOT maintain a backup of the primary transaction log "
+"file on the storage location which you select."
+msgstr ""
+"Ingresトランザクション・ログ・ファイル\n"
+"\n"
+"Ingres DBMSは、データベース・ファイルにトランザクションの内容が書き込まれる前"
+"に、コミット前のトランザクションを格納し、コミット後のトランザクションをバッ"
+"ファリングするために巡回式のトランザクション・ログ・ファイルを使用します。\n"
+"\n"
+"すべてのログの位置は、予め存在し、インスタンス所有者が書き込みできる必要があ"
+"ります。このユーザが存在しないなら、その位置は全てに対して書き込み可能である"
+"こと。そうでなければDBMSパッケージのインストールは\n"
+"失敗します。\n"
+"\n"
+"デフォルトでは、Ingresは、指定された格納位置にあるトランザクション・ログ・"
+"ファイルのバックアップはの保持しません。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2500
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5273
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2577
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5529
+msgid ""
+"Ingres Transaction Log File\n"
+"\n"
+"The Ingres Intelligent DBMS uses a circular transaction log file to store "
+"uncommitted transactions and buffer committed transactions before they are "
+"written to the database file location(s).\n"
+"\n"
+"The size of the transaction log needed for a particular instance is highly "
+"dependent on the frequency, type and size of transactions being processed. "
+"For this reason, unless you are sure you require a larger transaction log "
+"file, we recommend accepting the default and changing it later if required.\n"
+"\n"
+"The size of the transaction log file can be changed after installation using "
+"cbf or vcbf. \n"
+"\n"
+"See the Database Administrator Guide for more details."
+msgstr ""
+"Ingresトランザクション・ログ・ファイル\n"
+"\n"
+"Ingres DBMSは、データベース・ファイルにトランザクションの内容が書き込まれる前"
+"に、コミット前のトランザクションを格納し、コミット後のトランザクションをバッ"
+"ファリングするために巡回式のトランザクション・ログ・ファイルを使用します。\n"
+"\n"
+"特定のインスタンスで必要になるトランザクション・ログ・ファイルのサイズは、処"
+"理されるトランザクションの頻度とタイプ、サイズに強く依存します。このため、よ"
+"り大きなトランザクション・ログ・ファイルが必要だと確認するまでは、デフォルト"
+"で運用し、必要になった時点で変更することを推奨します。\n"
+"\n"
+"トランザクション・ログ・ファイルのサイズは、インストールの後、cbfかvcbfを使っ"
+"て変更できます。\n"
+"\n"
+"詳しくはDatabase Administrator Guideを参照してください。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1097
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gipmsg.h:32
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1144
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:34
+msgid "VectorWise Installation Wizard"
+msgstr "VectorWise インストール・ウィザード"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1988
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4382
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2061
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4631
+msgid "Ingres _ABF"
+msgstr "Ingres ABF(_A)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1920
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4313
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1989
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4558
+msgid "Ingres _Database Server"
+msgstr "Ingresデータベース・サーバー(_D)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1932
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4325
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2001
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4570
+msgid "Ingres _ODBC Connectivity"
+msgstr "Ingres ODBC接続(_O)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4331
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4576
+msgid "Ingres _Replicator"
+msgstr "Ingres Replicator(_R)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1994
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4388
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2067
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4637
+msgid "Ingres _Star"
+msgstr "Ingres Star(_S)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2032
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4426
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2107
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4677
+msgid "Ingres documentation set"
+msgstr "Ingresドキュメント"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6592
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6846
+msgid ""
+"Ingres has been successfully installed.\n"
+"\n"
+"To exit click \"<b>Finish</b>\""
+msgstr ""
+"Ingresのインストールが完了しました。 \n"
+"\n"
+"\"<b>完了</b>\"をクリックします"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:224
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:271
+msgid ""
+"Ingres supports multiple instances installed on the same machine.\n"
+"Each instance is uniquely identified by an instance name.\n"
+msgstr ""
+"Ingresは同一マシンに複数のインスタンスをインストールできます。\n"
+"各インスタンスはインスタンス名で区別します。\n"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6873
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:7165
+msgid "Install Ingres now!"
+msgstr "Ingresインストールを開始!"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3259
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6987
+msgid "Install Log"
+msgstr "インストール・ログ"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3514
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3640
+msgid "Installation"
+msgstr "インストール"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:445
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:492
+msgid ""
+"Installation Location (II_SYSTEM):\n"
+"\t"
+msgstr ""
+"インストール位置(II_SYSTEM):\n"
+"\t"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3354
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3489
+msgid "Installation Mode"
+msgstr "インストール・モード"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:412
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:459
+msgid "Installation Summary"
+msgstr "インストール・サマリー"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1198
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1245
+msgid "Installation Type"
+msgstr "インストール・タイプ"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipdata.c:133
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipdata.c:159
+msgid "Installation location"
+msgstr "インストール位置"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:1934
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:2128
+#, c-format
+msgid ""
+"Instance %s:\n"
+"\t"
+msgstr ""
+"インスタンスを%s:\n"
+"\t"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3401
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3540
+msgid "Instance Locations"
+msgstr "インスタンス位置"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3368
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:2249
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3503
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:2478
+msgid "Instance Name"
+msgstr "インスタンス名"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4101
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4252
+msgid ""
+"Instance Name\n"
+"\n"
+"Enter a two character string to complete the instance name. The first "
+"character must be an UPPER case letter and the second can be a number or an "
+"UPPER case letter"
+msgstr ""
+"インスタンス名\n"
+"\n"
+"インスタンス名の一部となる２文字のアルファベットを入力します。１文字目は大文"
+"字の英字、２文字目は数字か大文字の英字（ともに半角）です。 "
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:496
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:543
+msgid ""
+"Instance Name:\n"
+"\t"
+msgstr ""
+"インスタンス名:\n"
+"\t"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1234
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1283
+msgid "Instance Selection"
+msgstr "インスタンスの選択"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:1943
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:2136
+msgid ""
+"Instance location:\n"
+"\t"
+msgstr ""
+"インスタンス位置:\n"
+"\t"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix/ingpkgqry.py:461
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix/ingpkgqry.py:480
+#, python-format
+msgid "Invalid installation ID: '%s', found for %s-%s, using %s"
+msgstr "正しくないインストールID: '%s', %s-%sについて %sを使用"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipdata.c:158
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipdata.c:184
+msgid "Journal"
+msgstr "ジャーナル"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1190
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3324
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1237
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3459
+msgid "License"
+msgstr "ライセンス"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2622
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5396
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2701
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5654
+msgid "Lo_g Location"
+msgstr "ログ位置(_g)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3473
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3585
+msgid "Locale and Compliance"
+msgstr "ロケールと遵守"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:2269
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:2498
+msgid "Location"
+msgstr "位置"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4512
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4764
+msgid "Location where Ingres will be installed"
+msgstr "Ingresをインストールする位置"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3434
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3570
+msgid "Log File Locations"
+msgstr "ログ・ファイル位置"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2478
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5251
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2555
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5507
+msgid "Log File Size (MB)"
+msgstr "ログ・ファイル・サイズ(MB)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:595
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:2095
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:641
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:2324
+msgid "Log file size: "
+msgstr "ログ・ファイル・サイズ: "
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4236
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4481
+msgid "Manually select features you wish to install"
+msgstr "インストールしたい機能を手動で選択"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4251
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4496
+msgid "Manually select the components to be installed"
+msgstr "インストールするコンポーネントを選択"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4941
+msgid "Maximum Database Size"
+msgstr "データベースの最大サイズ"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5389
+msgid "Maximum Parallel _Threads"
+msgstr "最大並列スレッド数(_T)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipdata.c:261
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipdata.c:287
+msgid "Maximum database size"
+msgstr "最大データベース・サイズ"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipdata.c:320
+msgid "Maximum parallel threads"
+msgstr "最大並列スレッド数"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:1691
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:1695
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:1711
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:1715
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:1720
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:1928
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:3326
+msgid "Modify"
+msgstr "変更"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1252
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1302
+msgid "Modify Components"
+msgstr "コンポーネントを変更"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1628
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1678
+msgid ""
+"Multiple instances of Ingres have been detected on your machine.\n"
+"\n"
+"Select an option to proceed"
+msgstr ""
+"Ingresの複数のインスタンスをこのマシンで検出しました。\n"
+"\n"
+"続けるには、オプションを選択してください"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1216
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1264
+msgid "New Instance"
+msgstr "新しいインスタンス"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:1964
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:2157
+msgid ""
+"New version:\n"
+"\t"
+msgstr ""
+"新しいバージョン:\n"
+"\t"
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gipmsg.h:52
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:54
+msgid "No"
+msgstr "いいえ"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:1955
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:2148
+msgid ""
+"Old version:\n"
+"\t"
+msgstr ""
+"古いバージョン:\n"
+"\t"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4376
+msgid "Only the Client components of VectorWise will be installed"
+msgstr "VectorWiseのクライアント・コンポーネントのみをインストール"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5890
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6166
+msgid "Ot_her (specify)"
+msgstr "その他(_h) (指定)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3156
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6714
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3242
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6970
+msgid "Output"
+msgstr "出力"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6283
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6537
+msgid "Password"
+msgstr "パスワード"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2910
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2990
+msgid "Please review your settings below"
+msgstr "以下の設定を確認してください"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5085
+msgid "Processing Memory"
+msgstr "処理用メモリー"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipdata.c:239
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipdata.c:265
+msgid "Processing memory"
+msgstr "処理用メモリー"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix/ingpkgqry.py:606
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix/ingpkgqry.py:625
+#, python-format
+msgid "Querying %s database..."
+msgstr "Querying %s database..."
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix/ingpkgqry.py:594
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix/ingpkgqry.py:613
+msgid "Querying saveset..."
+msgstr "Querying saveset..."
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gipmsg.h:50
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:52
+msgid "Question"
+msgstr "質問"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6923
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:7215
+msgid "Quit the Ingres installation process"
+msgstr "Ingresインストール処理を中止"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3249
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3369
+msgid "Quit the VectorWise installation process"
+msgstr "VectorWiseインストール処理を中止"
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gipmsg.h:37
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:39
+msgid "Quit?"
+msgstr "中止?"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:3308
+msgid "Remove"
+msgstr "削除"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1897
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1966
+msgid "Remove all _files"
+msgstr "全てのファイルを削除(_f)"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1829
+msgid ""
+"Remove all database, configuration and all other files relating to the "
+"instance. Only packaged, non-generated files are removed by default."
+msgstr ""
+"すべてのデータベース、構成、その他のこのインスタンスに関係するすべてのファイ"
+"ルを削除。デフォルトでは、パッケージからのファイルのみ、生成されたファイル以"
+"外が削除されます。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:1988
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:2179
+msgid "Remove all files: "
+msgstr "全てのファイルを削除: "
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1867
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1935
+msgid ""
+"Remove all installed components for the selected instance.\n"
+"NOTE: Database, configuration and other generated files will NOT be removed."
+msgstr ""
+"選択したインスタンスの全インストール済みコンポーネントを削除します。\n"
+"注意: データベース、構成やその他の生成されたファイルは削除されません。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:411
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:458
+msgid "Response File Summary"
+msgstr "応答ファイルのサマリー"
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gipmsg.h:48
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:50
+#, c-format
+msgid ""
+"Response file creation failed with:\n"
+"\t%s"
+msgstr ""
+"応答ファイルの作成に失敗しました:\n"
+"\t%s"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3179
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6844
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3282
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:7120
+msgid "Return to the previous screen..."
+msgstr "前の画面に戻る..."
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3560
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3677
+msgid "Review Settings"
+msgstr "設定の確認"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2708
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5608
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2787
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5881
+msgid ""
+"SQL92 Compliance\n"
+"\n"
+"The Ingres DBMS can be configured to be strictly compliant with the ANSI/ISO "
+"entry-level SQL-92 standard. If you need information about this standard, "
+"please refer to the Ingres SQL Reference Manual.\n"
+"\n"
+"Strict ANSI/ISO SQL-92 compliance causes some Ingres features to operate in "
+"a non-default mode, such as uppercase identifiers and subquery semantics "
+"changes. Strict compliance should only be selected if you are sure that you "
+"require it. "
+msgstr ""
+"SQL92遵守\n"
+"\n"
+"Ingres DBMSは、ANSI/ISOエントリー・レベルSQL92規格に厳密に準拠するように構成"
+"することができます。この規格について詳しくは、Ingres SQL Referenceを参照して"
+"ください。\n"
+"\n"
+"ANSI/ISO SQL-92の厳密な準拠を行うと、Ingresのいくつかに機能について、動作がデ"
+"フォルトとは異なります。たとえば、大文字の識別子や、副問合せの動作の変更など"
+"があります。厳密な準拠は、必要な場合だけ選択するようにしてください。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gipmsg.h:42
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:44
+msgid "Save Response File"
+msgstr "応答ファイルの保存"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6895
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:7187
+msgid "Save the response file"
+msgstr "応答ファイルの保存"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3810
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3937
+msgid "Select a configuration type from the list below"
+msgstr "構成タイプを以下のリストから選択"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1812
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1879
+msgid "Select an action"
+msgstr "動作を選択"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3953
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4076
+msgid "Select an installation mode"
+msgstr "インストール・モードを選択"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4959
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5097
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5170
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5280
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5382
+msgid "Select an option to change its value from the default"
+msgstr "オプションを選択しデフォルト値から変更"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3618
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3743
+msgid "Select the platform you want to create a response file for"
+msgstr "応答ファイルを作成するプラットフォームを選択:"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4181
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4297
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4421
+msgid "Select the set of components to install."
+msgstr "インストールするコンポーネントを選択"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5779
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6054
+msgid "Select the user account & group that will own the instance"
+msgstr "インスタンスを所有するユーザー・アカウントとグループを選択"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:59
+#, c-format
+msgid ""
+"Settings for Processing Memory and Buffer Pool Memory exceed 90% of\n"
+"physical system memory. This may cause the VectorWise Server to swap\n"
+"heavily or fail on startup. Reduce one or both settings"
+msgstr ""
+"処理用メモリーとバッファ・プール・メモリーの設定が、物理システム・メモ\n"
+"リーの90%を超えています。VectorWiseサーバーは、激しいスワップが発生する\n"
+"か、起動できないかもしれません。片方または両方の設定を減らしてください。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3662
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3676
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3787
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3801
+msgid "Simple, default configuration for those new to Ingres"
+msgstr "シンプル、デフォルトの構成でIngres初心者向け"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3969
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4119
+msgid "Simple, default configuration for those new to VectorWise"
+msgstr "シンプル、デフォルトの構成でVectorWise初心者向け"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4047
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4168
+msgid "Specify a custom name or accept the default"
+msgstr "デフォルトのままか、インスタンス名を指定"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6257
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6511
+msgid "Start Ingres under _built-in System account"
+msgstr "Ingresを組み込みシステム・アカウントで開始(_b)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6264
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6518
+msgid "Start Ingres under _user account"
+msgstr "Ingresをユーザ・アカウントで開始(_u)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6436
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6685
+msgid "Start Ingres when your computer starts up"
+msgstr "Ingresをコンピュータの開始時に開始"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:731
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:777
+msgid "Start instance with computer: "
+msgstr "インスタンスをコンピュータと一緒に開始: "
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:647
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:2145
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:693
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:2374
+msgid "Strict SQL-92 Compliance: "
+msgstr "厳密なSQL-92の遵守: "
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1336
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3506
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1386
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3615
+msgid "Summary"
+msgstr "サマリー"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:56
+#, c-format
+msgid ""
+"System parameter 'kernel.shmmax' is currently %ld Mb,\n"
+"which is insufficient for %s.\n"
+"Increasing to %ld Mb, see the Getting Started\n"
+"Guide for more information."
+msgstr ""
+"システム・パラメーター 'kernel.shmmax' が現在 %ld MBです。\n"
+"この値は、%s には不足しています。\n"
+"%ld MBにしてください。詳しくは、Getting Started Guideを\n"
+"参照してください。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2220
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4641
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2297
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4895
+msgid "Temporar_y"
+msgstr "作業用(_y)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipdata.c:165
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipdata.c:191
+msgid "Temporary"
+msgstr "作業用"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5723
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6340
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5997
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6594
+msgid "Terminal Type"
+msgstr "端末タイプ"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2353
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2365
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2377
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4774
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4786
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4798
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2430
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2442
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2454
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5071
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5081
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5091
+msgid ""
+"The Default Backup, Journal and Dump Locations\n"
+"\n"
+"The Ingres variables II_CHECKPOINT, II_JOURNAL, and II_DUMP are used to "
+"store the default locations used for full and incremental on-line backup "
+"files. It is essential that II_CHECKPOINT, II_JOURNAL and II_DUMP not be "
+"assigned to the same physical device as II_DATABASE. If this restriction is "
+"ignored, you will be unable to recover lost data in the event that the "
+"II_DATABASE location fails.\n"
+"\n"
+"Once assigned, the values of II_CHECKPOINT, II_JOURNAL, and II_DUMP can only "
+"be changed by removing and re-installing Ingres. Refer to the Ingres "
+"Database Administrator's Guide for information on moving the default backup "
+"locations.\n"
+"\n"
+"Refer to the chapter on \"Backup and Recovery\" in the Ingres Database "
+"Administrator's Guide for instructions on backup and recovery of Ingres "
+"databases.\n"
+"\n"
+"NOTE: This location must exist and be writable by the instance owner."
+msgstr ""
+"デフォルトのバックアップ、ジャーナル、ダンプ位置\n"
+"\n"
+"Ingres変数II_CHECKPOINT, II_JOURNAL, II_DUMPは、フル・オンライン・バックアッ"
+"プまたは増分オンライン・バックアップで使用されるデフォルトの位置を設定しま"
+"す。II_CHECKPOINT, II_JOURNAL, II_DUMPで指定する位置は、II_DATABASEで指定され"
+"た位置とは異なる物理デバイスを指定することが非常に重要です。これが守られない"
+"と、II_DATABASEで指定された位置のデバイスが故障すると、データを復旧できなくな"
+"ります。\n"
+"\n"
+"一旦、値がI_CHECKPOINT, II_JOURNAL, II_DUMPII_DATABASEに設定されると、変更す"
+"るためには、Ingresをアンインストールし、再度、インストールしなおさなければな"
+"りません。デフォルトのバックアップ位置の移動については、Ingres Database "
+"Administrator's Guideを参照してください。\n"
+"\n"
+"Ingresデータベースのバックアップと復旧の方法については、Ingres Database "
+"Administrator's Guideの\"Backup and Recovery\"の章を参照してください。\n"
+"\n"
+"注意: この位置は存在しインスタンス所有者が書き込みできること"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2341
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4762
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2418
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5051
+msgid ""
+"The Default Database Location\n"
+"\n"
+"The Ingres variable II_DATABASE stores the default location used to store "
+"Ingres database files.\n"
+"\n"
+"Once a value has been assigned to II_DATABASE, you can change it only by "
+"removing and re-installing Ingres. Refer to the Ingres Database "
+"Administrator's Guide for information on moving the default database file "
+"location. \n"
+"\n"
+"NOTE: This location must exist and be writable by the instance owner."
+msgstr ""
+"デフォルトのデータベース位置\n"
+"\n"
+"Ingres変数II_DATABASEは、Ingresデータベース・ファイルを格納するためのデフォル"
+"トの位置を設定します。\n"
+"\n"
+"一旦、値がII_DATABASEに設定されると、変更するためには、Ingresをアンインストー"
+"ルし、再度、インストールしなおさなければなりません。デフォルトのデータベー"
+"ス・ファイル位置の移動については、Ingres Administrator's Guideを参照してくだ"
+"さい。\n"
+"\n"
+"注意: この位置は存在しインスタンス所有者が書き込みできること"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2389
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4810
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2466
+msgid ""
+"The Default Temporary Work Location\n"
+"\n"
+"The Ingres variable II_WORK stores the default location used for all "
+"temporary files created during external sorts and other DBMS server "
+"operations that require large amounts of temporary file space. Ingres lets "
+"you designate a separate storage device as the default location for these "
+"files.\n"
+"\n"
+"When choosing the II_WORK location, be aware that temporary files tend to "
+"increase fragmentation on storage devices, which can lead to decreased "
+"performance. For this reason, you should assign II_WORK to a physical device "
+"which does not contain database, checkpoint, journal, or dump files, if "
+"possible. Your choice of the default work location does not affect your "
+"ability to recover lost data in the event of a storage device failure, "
+"although it may affect performance.\n"
+"\n"
+"Once assigned, the value of II_WORK can only be changed by removing and re-"
+"installing Ingres. Refer to the Ingres Database Administrator's Guide for "
+"instructions on moving the default work location in this manner. \n"
+"\n"
+"NOTE: This location must exist and be writable by the instance owner."
+msgstr ""
+"デフォルトの作業位置\n"
+"\n"
+"Ingres変数II_WORKは、大量の一時的なファイル領域が必要になる外部ソートやその他"
+"のDBMSサーバー操作の間作成される一時的なファイルが作成されるデフォルトの位置"
+"を指定します。これらのファイルを格納するデフォルトの位置として、他とは別の専"
+"用のデバイスが指定できます。\n"
+"\n"
+"II_WORKの位置を選定するにあたり、一時的なファイルは、ストレージ・デバイス上で"
+"フラグメンテーションを増大させる傾向が強いことに注意してください。フラグメン"
+"テーションが増大すると、性能劣化を招くことがあります。このためII_WORKには、"
+"データベース、チェックポイント、ジャーナル、ダンプの各ファイルが含まれない物"
+"理デバイスを指定すべきです(可能であれば）。このデフォルトの作業位置の選定は、"
+"ストレージ・デバイスの故障が発生した際のデータの復旧には、影響しません。しか"
+"し、性能には影響することがあります\n"
+"\n"
+"一旦、値がII_WORKに設定されると、変更するためには、Ingresをアンインストール"
+"し、再度、インストールしなおさなければなりません。デフォルトの作業位置の移動"
+"については、Ingres Administrator's Guideを参照してください。\n"
+"\n"
+"注意: この位置は存在インスタンス所有者が書き込みできること"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5101
+msgid ""
+"The Default Temporary Work Location\n"
+"\n"
+"The Ingres variable II_WORK stores the default location used for all "
+"temporary files created during external sorts and other DBMS server "
+"operations that require large amounts of temporary file space. Ingres lets "
+"you designate a separate storage device as the default location for these "
+"files.\n"
+"\n"
+"When choosing the II_WORK location, be aware that temporary files tend to "
+"increase fragmentation on storage devices, which can lead to decreased "
+"performance. For this reason, you should assign II_WORK to a physical device "
+"which does not contain database, checkpoint, journal, or dump files, if "
+"possible. Your choice of the default work location does not affect your "
+"ability to recover lost data in the event of a storage device failure, "
+"although it may affect performance.\\n\\nOnce assigned, the value of II_WORK "
+"can only be changed by removing and re-installing Ingres. Refer to the "
+"Ingres Database Administrator's Guide for instructions on moving the default "
+"work location in this manner. \n"
+"\n"
+"NOTE: This location must exist and be writable by the instance owner."
+msgstr ""
+"デフォルトの一時作業位置\n"
+"\n"
+"Ingres変数 II_WORK は、大きなサイズの一時ファイル領域が必要となる外部ソートと"
+"その他のDBMSサーバー操作の間作成される全ての一時ファイルのデフォルトの位置を"
+"格納します。Ingresは、ユーザが、これらのファイルのデフォルトの位置として、別"
+"個のストレージを指定することができるようにしています。\n"
+"\n"
+"II_WORK 位置を選択する際には、一時ファイルは、ストレージ・デバイス上でフラグ"
+"メンテーションを起こしやすいことに注意してください。これは、性能劣化の一因と"
+"なりえます。このため、可能ならば、II_WORK には、データベース、チェックポイン"
+"ト、ジャーナル、ダンプ・ファイルを含まない物理デバイスを指定すべきです。デ"
+"フォルトの作業位置の選択は、ストレージ・デバイスの故障の際の損傷データのリカ"
+"バリーの能力に影響を与えませんが、性能に影響を与えるかもしれません。\\n\\n一"
+"旦設定を行ったならば、II_WORK の値は、Ingresを削除し、再インストールすること"
+"でしか変更することはできません。この方法によるデフォルト作業位置の変更につい"
+"ては Ingres Database Administrator's Guide を参照してください。\n"
+"\n"
+"注意: この位置は存在しインスタンス所有者が書き込みできること"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3070
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6622
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3153
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6876
+msgid ""
+"The Ingres \"Lauch Pad\" is GUI utility designed to assist you in getting "
+"started with Ingres. It will show you what's new in this release, help you "
+"with database administration or developing an application or just point you "
+"to the documentation"
+msgstr ""
+"Ingres \"Lauch Pad\"は、GUIユーティリティで、Ingres初心者むけに設計されていま"
+"す。このリリースでの新機能を表示し、データベース管理作業やアプリケーションの"
+"開発の手助けをします。また、ドキュメントを案内します。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gipmsg.h:49
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:51
+#, c-format
+msgid ""
+"The Ingres %s instance appears to be running. It must be shutdown for the "
+"installation to continue, do you want to shut it down now?"
+msgstr ""
+"Ingres %s インスタンスが動作中のようです。処理を継続するためには、シャットダ"
+"ウンしなければなりません。シャットダウンしますか?"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4883
+msgid ""
+"The VectorWise Database Location\n"
+"\n"
+"The VectorWise variable II_VWDATA stores the default location used to "
+"store the VectorWise database files.\n"
+"\n"
+"NOTE: This location must exist and be writable by the instance owner."
+msgstr ""
+"VectorWiseデータベース位置\n"
+"\n"
+"VectorWise変数II_VWDATAはVectorWiseデータベース・ファイルのデフォルト"
+"の格納位置を指定します。\n"
+"\n"
+"注意: この位置は存在インスタンス所有者が書き込みできること"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5061
+msgid ""
+"The VectorWise Database Location\n"
+"\n"
+"The VectorWise variable II_VWDATA stores the default location used to "
+"store the VectorWise database files.\n"
+"\n"
+"NOTE: This location must exist and be writable by the instance owner. "
+"Defaults to II_DATABASE"
+msgstr ""
+"VectorWiseデータベース位置\n"
+"\n"
+"VectorWise変数 II_VWDATA は、VectorWiseデータベース・ファイルを格納す"
+"る位置のデフォルトを設定します。\n"
+"\n"
+"注意: この位置は存在しインスタンス所有者が書き込みできることDefaults to "
+"II_DATABASE"
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gip.h:329
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gip.h:275
+#, c-format
+msgid ""
+"The following instances have been detected, please select the instance\n"
+"you wish to %s"
+msgstr ""
+"以下のインスタンスが見つかりました。%sしたいインスタンスを\n"
+"選択してください"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1728
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1778
+msgid ""
+"The following instances have been detected, please select the instance\n"
+"you wish to modify."
+msgstr ""
+"以下のインスタンスが検出されました。変更したいインスタンスを選択して\n"
+"ください。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:460
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:507
+msgid ""
+"The installation log file location:\n"
+"\t"
+msgstr ""
+"インストール・ログ・ファイル位置:\n"
+"\t"
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gipmsg.h:34
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:36
+msgid ""
+"The installation process did not\n"
+"complete successfully"
+msgstr ""
+"インストール処理が\n"
+"失敗しました"
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gipmsg.h:41
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:43
+msgid ""
+"The instance name you have\n"
+"selected is already in use."
+msgstr ""
+"このインスタンス名は、既に\n"
+"使用されています"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6802
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:7076
+msgid ""
+"The response file has been successfully.\n"
+"\n"
+"To change your setting click \"<b>Back</b>\"\n"
+"To write it to a file click \"<b>Save</b>\"\n"
+"To exit click \"<b>Finish</b>\""
+msgstr ""
+"応答ファイルが作成されました。\n"
+"\n"
+"設定を変更するには、\"<b>戻る</b>\"をクリックします\n"
+"ファイルを保存するには、\"<b>保存</b>\"をクリックします\n"
+"終了するには、\"<b>完了</b>\"をクリックします"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4525
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4778
+msgid "This value is stored in the environment variable _II__SYSTEM"
+msgstr "この値は環境変数II__SYSTEMに設定されます。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3585
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3710
+msgid ""
+"This wizard will guide you through creating an Ingres installer response "
+"file\n"
+"\n"
+"Click 'Next' to begin."
+msgstr ""
+"このウィザードはIngresインストール・レスポンス・ファイルの作成をガイドしま"
+"す。\n"
+"\n"
+"'次へ'をクリックして開始してください。"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3846
+msgid ""
+"This wizard will guide you through installing and setting up Ingres. \n"
+"\n"
+"Click 'Next' to begin."
+msgstr ""
+"このウィザードは、Ingresのインストールと設定をガイドします。\n"
+"\n"
+"'次へ'をクリックして開始してください。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3721
+msgid ""
+"This wizard will guide you through installing and settting up Ingres. \n"
+"\n"
+"Click 'Next' to begin."
+msgstr ""
+"このウィザードはIngresのインストールと設定をガイドします。\n"
+"\n"
+"'次へ'をクリックして開始してください。"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1437
+msgid ""
+"This wizard will guide you through upgrading or removing an\n"
+"existing Ingres instance, or installing a new one.\n"
+"\n"
+"Click Next to begin."
+msgstr ""
+"このウィザードは、既存のIngres インスタンスのアップグレード\n"
+"と削除をガイドします。新しくインストールすることもできます。\n"
+"\n"
+"'次へ'をクリックして開始してください。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1387
+msgid ""
+"This wizard will guide you through upgrading, modifying or removing an\n"
+"existing Ingres instance, or installing a new one.\n"
+"\n"
+"Click Next to begin."
+msgstr ""
+"このウィザードは既存のIngresインスタンスのアップグレード、変更、削除\n"
+"または、新しいインスタンスをインストールをガイドします。\n"
+"\n"
+"'次へ'をクリックして開始してください。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5566
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6108
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5826
+msgid "Time_zone"
+msgstr "タイムゾーン(_z)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5481
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5739
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6022
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6412
+msgid ""
+"Timezone Info\n"
+"\n"
+"You must now specify the time zone this installation is located in. To "
+"specify a time zone, you must first select the region of the world this "
+"installation is located in. You will then be prompted with a list of the "
+"time zones in that region. "
+msgstr ""
+"タイムゾーン\n"
+"\n"
+"このインスタンスを稼働させる場所のタイムゾーンを指定してください。タイムゾー"
+"ンを指定するには、最初に、このインスタンスを稼働させる地域を選択します。次"
+"に、その地域のタイムゾーンから、適切なものを選択します。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:680
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:726
+msgid "Timezone: "
+msgstr "タイムゾーン: "
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3052
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3135
+msgid "To exit click \"Finish\""
+msgstr "\"完了\"をクリックします"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1293
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1343
+msgid "Transaction Log"
+msgstr "トランザクション・ログ"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipdata.c:199
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipdata.c:225
+msgid "Transaction log location"
+msgstr "トランザクション・ログ位置"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4241
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4486
+msgid "Typical _Client"
+msgstr "標準的なクライアント(_C)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gipmsg.h:40
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:42
+#, c-format
+msgid ""
+"Unable to shutdown the Ingres %s instance. The instance must be shutdown "
+"before the installation can continue."
+msgstr ""
+"Ingres %sインスタンスをシャットダウンできません。インストールを続けるには、こ"
+"のインスタンスをシャットダウンしてください。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1344
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:1691
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:1695
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:1711
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:1715
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:1720
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:1928
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1394
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:3297
+msgid "Upgrade"
+msgstr "アップグレード"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:1973
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:2166
+msgid "Upgrade user databases: "
+msgstr "ユーザ・データベースのアップグレード: "
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix/ingpkgqry.py:170
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix/ingpkgqry.py:180
+#, python-format
+msgid ""
+"Usage:\n"
+"    %s -s <pkgdir> [-o <filename>][-p]"
+msgstr ""
+"使用法:\n"
+"    %s -s <pkgdir> [-o <filename>][-p]"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5827
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6103
+msgid "User"
+msgstr "ユーザー"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:713
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:759
+msgid "User Group: "
+msgstr "ユーザー・グループ: "
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6275
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6529
+msgid "Username"
+msgstr "ユーザー名"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:705
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:751
+msgid "Username: "
+msgstr "ユーザー名: "
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipdata.c:179
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipdata.c:205
+msgid "VectorWise"
+msgstr "VectorWise"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5400
+msgid ""
+"VectorWise CPU Configuration - Maximum Parallel Threads\n"
+"\n"
+"Defines the maximum number of threads used by a single query. A value of 1 "
+"disables parallel query execution.\n"
+"\n"
+"Used to set max_parallelism_level and num_cores in VectorWise "
+"configuration file.\n"
+"\n"
+"For more information, see the VectorWise User guide.\n"
+"\n"
+"Default: Number of CPU cores on the machine or 8, whichever is smaller."
+msgstr ""
+"VectorWise CPU構成 - 最大並列スレッド数\n"
+"\n"
+"単一の問合せで使用されるスレッド数の最大を定義します。値として 1 を指定する"
+"と、並列問合せ実行は行われません。\n"
+"\n"
+"VectorWise構成ファイル中の max_parallelism_level と num_cores の設定に"
+"使用されます。\n"
+"\n"
+"詳しくは、VectorWiseユーザー・ガイドを参照ください。\n"
+"\n"
+"デフォルト: そのマシンのCPUコア数か 8 のうちの小さい数。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3416
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3555
+msgid "VectorWise Configuration"
+msgstr "VectorWise構成"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4890
+msgid "VectorWise Data"
+msgstr "VectorWiseデータ"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5059
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5234
+msgid ""
+"VectorWise Data Configuration - Data Block Group Size\n"
+"\n"
+"Specifies the number of blocks to handle in every disk request.\n"
+"\n"
+"Used to set the default value for group_size in the VectorWise "
+"configuration file.\n"
+"\n"
+"For more information, see the VectorWise User guide.\n"
+"\n"
+"Default: 8 blocks"
+msgstr ""
+"VectorWiseデータ構成 - データ・ブロック・グループ・サイズ\n"
+"\n"
+"毎回のディスクの要求において、処理するブロック数を指定します。\n"
+"\n"
+"VectorWise構成ファイル中のgroup_sizeのデフォルトの値として使用されま"
+"す。\n"
+"\n"
+"より詳しくは、VectorWiseユーザー・ガイドを参照。\n"
+"\n"
+"デフォルト: 8ブロック"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5047
+msgid ""
+"VectorWise Data Configuration - Data Block Size\n"
+"\n"
+"Specifies the minimum I/O granularity. This option is the most important for "
+"I/O performance.\n"
+"\n"
+"Used to set the default value for block_size in the VectorWise "
+"configuration file.\n"
+"\n"
+"For more information, see the VectorWise User guide. \n"
+"\n"
+"Default: 512K"
+msgstr ""
+"VectorWiseデータ構成 - データ・ブロック・サイズ\n"
+"\n"
+"最小の入出力の単位を指定します。このオプションは、入出力の性能についてもっと"
+"も重要です。\n"
+"\n"
+"VectorWise構成ファイル中のblock_sizeのデフォルトの値として使用されま"
+"す。\n"
+"\n"
+"より詳しくは、VectorWiseユーザー・ガイドを参照。\n"
+"\n"
+"デフォルト: 512K"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5221
+msgid ""
+"VectorWise Data Configuration - Data Block Size\n"
+"\n"
+"Specifies the minimum I/O granularity. This option is the most important for "
+"I/O performance.\n"
+"\n"
+"Used to set the default value for block_size in the VectorWise "
+"configuration file.\n"
+"\n"
+"For more information, see the VectorWise User guide. \n"
+"\n"
+"Default: 512Kb\n"
+"Maximum: 64Mb"
+msgstr ""
+"VectorWiseデータ構成 - データ・ブロック・サイズ\n"
+"\n"
+"最小の I/O の粒度を指定します。I/O の性能にとって、もっとも重要なオプションで"
+"す。\n"
+"\n"
+"VectorWise構成ファイル中の block_size のデフォルト値の設定に使用されま"
+"す。\n"
+"\n"
+"詳しくは、VectorWiseユーザー・ガイドを参照ください。\n"
+"\n"
+"デフォルト: 512KB\n"
+"最大値:      64MB"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5035
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5839
+msgid ""
+"VectorWise Data Configuration - Maximum Database Size\n"
+"\n"
+"Specifies the maximum database size in bytes.\n"
+"\n"
+"Used to set the default value for columnspace_size in the VectorWise "
+"configuration file.\n"
+"\n"
+"For more information, see the VectorWise User guide.\n"
+"\n"
+"Default: 512G"
+msgstr ""
+"VectorWiseデータ構成 - 最大データベース・サイズ\n"
+"\n"
+"データベースの最大のサイズをバイト数で指定します。\n"
+"\n"
+"VectorWise構成ファイル中のcolumnspace_sizeのデフォルトの値として使用さ"
+"れます。\n"
+"\n"
+"より詳しくは、VectorWiseユーザー・ガイドを参照。\n"
+"\n"
+"デフォルト: 512G"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5164
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5348
+#, c-format
+msgid ""
+"VectorWise Memory Configuration - Buffer Pool Memory\n"
+"\n"
+"Specifies the buffer pool size in bytes (that is, disk cache). The setting "
+"can be changed without reloading data.\n"
+"\n"
+"Used to set the default value for bufferpool_size in the VectorWise "
+"configuration file\n"
+"\n"
+"For more information, see the VectorWise User guide.\n"
+"\n"
+"Default: 25% of the physical system memory"
+msgstr ""
+"VectorWiseメモリー構成 - バッファ・プール・メモリー\n"
+"\n"
+"バッファ・プール・サイズ（ディスクのキャッシュ）をバイト数で指定します。この"
+"設定は、データを再ロードしなくても変更できます。\n"
+"\n"
+"VectorWise構成ファイル中のbufferpool_sizeのデフォルトの値として使用さ"
+"れます。\n"
+"\n"
+"より詳しくは、VectorWiseユーザー・ガイドを参照。\n"
+"\n"
+"デフォルト: 物理システムメモリーの25%"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5152
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5335
+#, c-format
+msgid ""
+"VectorWise Memory Configuration - Processing Memory\n"
+"\n"
+"Specifies the amount of the total memory used for query execution.\n"
+"\n"
+"Used to set the default value for max_memory_size in the VectorWise "
+"configuration file.\n"
+"\n"
+"For more information, see the VectorWise User guide.\n"
+"\n"
+"Default: 50% of the physical system memory\n"
+"\n"
+msgstr ""
+"VectorWiseメモリー構成 - 処理メモリー\n"
+"\n"
+"検索実行に使用される合計のメモリー量を指定します。\n"
+"\n"
+"VectorWise構成ファイル中のmax_memory_sizeのデフォルトの値として使用さ"
+"れます。\n"
+"\n"
+"より詳しくは、VectorWiseユーザー・ガイドを参照。\n"
+"\n"
+"デフォルト: 物理システムメモリーの50%\n"
+"\n"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3041
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3124
+msgid "Ingres has been successfully upgraded.\n"
+msgstr "Ingresのアップグレードは完了しました。\n"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4041
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4162
+msgid ""
+"Ingres supports multiple instances installed on the same machine. Each\n"
+"instance is uniquely identified by an instance name. "
+msgstr ""
+"Ingresは同一マシンに複数のインスタンスをインストールできます。\n"
+"各インスタンスはインスタンス名で区別します。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1722
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1772
+msgid ""
+"Ingres supports multiple instances installed on the same server. Each\n"
+"instance is uniquely identified by an instance name."
+msgstr ""
+"Ingresは同一マシンに複数のインスタンスをインストールできます。\n"
+"各インスタンスはインスタンス名で区別します。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4847
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5136
+msgid ""
+"VectorWise-specific options can be configured here\n"
+"To accept the default values,click Next"
+msgstr ""
+"VectorWise特有のオプションをここで構成します。\n"
+"デフォルトでよければ、'次へ'をクリックします。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:2259
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:2488
+msgid "Version"
+msgstr "バージョン"
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gipmsg.h:45
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:47
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/giputil.h:116
+msgid "Warning"
+msgstr "警告"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:55
+msgid "Warning: Failed to initialize the system info\n"
+msgstr "警告: システム情報の初期化に失敗\n"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1182
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3294
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1229
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3429
+msgid "Welcome"
+msgstr "ようこそ"
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gipmsg.h:51
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gipmsg.h:53
+msgid "Yes"
+msgstr "はい"
+
+#: /devsrc/ivw1.00/jay/src/front/st/hdr/gip.h:332
+#: /devsrc/svn/codev/ivwgui/src/front/st/hdr/gip.h:278
+#, c-format
+msgid "You are now ready to %s your %s instance."
+msgstr "%sインスタンスを%sする準備が完了しました"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6745
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:7018
+msgid ""
+"You are now ready to generate a respose file. Review your settings below\n"
+"and click <b>Next</b> to proceed."
+msgstr ""
+"応答ファイルの作成の準備が完了しました。以下の設定内容を確認して、\n"
+"<b>次に</b>をクリックして続行してください。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6471
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6720
+msgid ""
+"You are now ready to install Ingres. Review your settings below\n"
+"and click <b>Install</b> to proceed with the installation."
+msgstr ""
+"Ingresのインストール準備が完了しました。設定を以下で確認し\n"
+"<b>インストール</b>をクリックしてインストールを開始します。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2904
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2984
+msgid "You are now ready to upgrade your Ingres instance."
+msgstr "Ingresインスタンスのアップグレードの準備が完了しました。"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4094
+msgid ""
+"You have complete control over the installation configuration.\n"
+"For advanced users only."
+msgstr ""
+"インストールと構成について、詳しくコントロールできます。\n"
+"上級ユーザーのみ。"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6047
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6080
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6324
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6357
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6426
+msgid ""
+"Your Ingres instance will be configured to startup and shutdown with your "
+"system. If you want to start and stop Ingres independently of your computer, "
+"uncheck this option."
+msgstr ""
+"Ingresインスタンスは、システムにあわせて開始、終了するように構成されました。"
+"システムとは独立して、Ingresを開始、終了したい場合は、このオプションの選択を"
+"外してください"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3975
+msgid "_Advanced"
+msgstr "詳細(_A)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1756
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1802
+msgid "_Automatically upgrade all user databases in the selected instance"
+msgstr "選択したインスタンスの全ユーザ・データベースをアップグレード(_A)"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4322
+msgid "_Client Only"
+msgstr "クライアントのみ(_C)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4126
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4187
+msgid "_Custom instance name:"
+msgstr "インスタンス名を指定(_C):"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4102
+msgid "_Customize"
+msgstr "カスタマイズ(_C)"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1489
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3899
+msgid "_Decline"
+msgstr "同意しません(_D)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4117
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4195
+msgid "_Default instance name:"
+msgstr "デフォルトのインスタンス名(_D):"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2129
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2206
+msgid "_Default to installation location (II__SYSTEM)"
+msgstr "デフォルトのインストール位置(II__SYSTEM)(_D)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2737
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2816
+msgid "_Enable strict SQL-92 Compliance (Entry Level)"
+msgstr "厳格なSQL-92(エントリー・レベル)の遵守を有効化(_E)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3963
+msgid "_Express"
+msgstr "高速(_E)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3241
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6915
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3361
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:7207
+msgid "_Finish"
+msgstr "完了(_F)"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4332
+msgid "_Full Server"
+msgstr "フル・サーバー(_F)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6431
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6680
+msgid "_Include Ingres in Windows PATH"
+msgstr "WindowsのPATHにIngresを含める(_I)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6888
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4113
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:7180
+msgid "_Install"
+msgstr "インストール(_I)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1591
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1641
+msgid "_Install a new Ingres Instance"
+msgstr "新しいIngresインスタンスをインストール(_I)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1502
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1552
+msgid "_Install a new Ingres instance"
+msgstr "新しいIngresインスタンスをインストール(_I)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1685
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1735
+msgid "_Install a new instance"
+msgstr "新しいインスタンスをインストール(_I)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2185
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4607
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2262
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4867
+msgid "_Journal"
+msgstr "ジャーナル(_J)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3670
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3795
+msgid "_Linux"
+msgstr "_Linux"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2538
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5311
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2616
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5568
+msgid "_Log Location"
+msgstr "ログ位置(_L)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:1677
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:1726
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:3327
+msgid "_Modify"
+msgstr "変更(_M)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1844
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1912
+msgid "_Modify installed components"
+msgstr "インストール済みのコンポーネントを変更(_M)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1511
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1676
+msgid "_Modify or remove an existing Ingres instance"
+msgstr "既存のIngresインスタンスを変更または削除(_M)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3200
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6866
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3320
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:7158
+msgid "_Next"
+msgstr "次へ(_N)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5836
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6112
+msgid "_Other (specify)"
+msgstr "その他(_O) (指定)"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5268
+msgid "_Processing Memory"
+msgstr "処理用メモリー(_P)"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:3309
+msgid "_Remove"
+msgstr "削除(_R)"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1822
+msgid "_Remove ALL files"
+msgstr "全てのファイルを削除(_R)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1881
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1950
+msgid "_Remove all components"
+msgstr "すべてのコンポーネントを削除(_R)"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1561
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1726
+msgid "_Remove an existing Ingres instance"
+msgstr "既存のIngresインスタンスを削除(_R)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3061
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6609
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3144
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6863
+msgid "_Run Ingres \"Launch Pad\" now"
+msgstr "Ingres \"Launch Pad\"をすぐに実行(_R)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6232
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6485
+msgid "_Start Ingres automatically at system startup"
+msgstr "システム開始時に自動的にIngresを開始(_S)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6015
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6095
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6292
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6372
+msgid "_Start instance with computer"
+msgstr "コンピュータ開始でインスタンスを開始(_S)"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6385
+msgid "_Timezone"
+msgstr "タイムゾーン(_T)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4284
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4529
+msgid "_Typical Server"
+msgstr "標準的なサーバー(_T)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3221
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:1677
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:1726
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3341
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:3298
+msgid "_Upgrade"
+msgstr "アップグレード(_U)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1582
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1667
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1632
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1717
+msgid "_Upgrade an existing Ingres instance"
+msgstr "既存のIngresインスタンスをアップグレード(_U)"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4909
+msgid "_VectorWise Data"
+msgstr "VectorWiseデータ(_V)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3656
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3781
+msgid "_Windows"
+msgstr "_Windows"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5858
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6134
+msgid "i_ngres (default)"
+msgstr "i_ngres (デフォルト)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5881
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6157
+msgid "in_gres (default)"
+msgstr "in_gres (デフォルト)"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1402
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3736
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1452
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3861
+msgid "label271"
+msgstr "label271"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3019
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6570
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3102
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6824
+msgid "label275"
+msgstr "label275"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3094
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6646
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3179
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6902
+msgid "label276"
+msgstr "label276"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6507
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6759
+msgid "label329"
+msgstr "label329"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4151
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4271
+msgid "label415"
+msgstr "label415"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:4829
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5118
+msgid "label417"
+msgstr "label417"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5444
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5702
+msgid "label419"
+msgstr "label419"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5696
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5970
+msgid "label420"
+msgstr "label420"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1704
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1754
+msgid "label441"
+msgstr "label441"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1782
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1848
+msgid "label442"
+msgstr "label442"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1531
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1581
+msgid "label443"
+msgstr "label443"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1610
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1660
+msgid "label444"
+msgstr "label444"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3251
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3387
+msgid "label460"
+msgstr "label460"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6925
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:7233
+msgid "label461"
+msgstr "label461"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2956
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3037
+msgid "label552"
+msgstr "label552"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6192
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6445
+msgid "label560"
+msgstr "label560"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2057
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2134
+msgid "label567"
+msgstr "label567"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3600
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3725
+msgid "label679"
+msgstr "label679"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3691
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3816
+msgid "label682"
+msgstr "label682"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6780
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:7054
+msgid "label696"
+msgstr "label696"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:5181
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:5437
+msgid "label697"
+msgstr "label697"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6449
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6698
+msgid "label711"
+msgstr "label711"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:1451
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:1501
+msgid "label718"
+msgstr "label718"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6723
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:6996
+msgid "label721"
+msgstr "label721"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2408
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2485
+msgid "label739"
+msgstr "label739"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2668
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2747
+msgid "label752"
+msgstr "label752"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:2886
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:2966
+msgid "label766"
+msgstr "label766"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3928
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4055
+msgid "label778"
+msgstr "label778"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3785
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3912
+msgid "label792"
+msgstr "label792"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:4704
+msgid "label815"
+msgstr ""
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:1703
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:1707
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:1935
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:3325
+msgid "modified"
+msgstr "変更"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:1673
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:1699
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:3324
+msgid "modify"
+msgstr "変更"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:3165
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:3268
+msgid "page 14"
+msgstr "page 14"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/gipinterf.c:6830
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/gipinterf.c:7106
+msgid "page 20"
+msgstr "page 20"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:3306
+msgid "remove"
+msgstr "削除"
+
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:3307
+msgid "removed"
+msgstr "削除"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:1673
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:1699
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:3295
+msgid "upgrade"
+msgstr "アップグレード"
+
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:1703
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:1707
+#: /devsrc/ivw1.00/jay/src/front/st/gtkinstall_unix_win/giputil.c:1935
+#: /devsrc/svn/codev/ivwgui/src/front/st/gtkinstall_unix_win/giputil.c:3296
+msgid "upgraded"
+msgstr "アップグレード"
+
+#: /devsrc/ingres/main_codev_merge/src/front/st/gtkinstall_unix_win/gipinterf.c:3297
+#: /devsrc/ingres/main_codev_merge/src/front/st/gtkinstall_unix_win/gipinterf.c:7135
+#: /devsrc/ingres/main_codev_merge/src/front/st/gtkinstall_unix_win/gipinterf.c:3297
+#: /devsrc/ingres/main_codev_merge/src/front/st/gtkinstall_unix_win/gipinterf.c:7135
+msgid "_Back"
+msgstr "戻る(_B)"
+
+#: /devsrc/ingres/main_codev_merge/src/front/st/gtkinstall_unix_win/gipinterf.c:3383
+#: /devsrc/ingres/main_codev_merge/src/front/st/gtkinstall_unix_win/gipinterf.c:7229
+msgid "_Quit"
+msgstr "終了(_Q)"
+

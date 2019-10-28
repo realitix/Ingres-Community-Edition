@@ -1,0 +1,44 @@
+#
+# Jamfile file for back!dmf!lk
+#
+# History :
+#       16-Sep-2005 (hweho01)
+#           Remove IINOOPTIM for the files that are no longer needed on
+#           AIX.
+#	16-oct-2006 (abbjo03)
+#	    Remove obsolete lknode.c and lkcsp.c.
+#	16-oct-2009 (hweho01)
+#	    Remove IINOOPTIM entry for obsolete lknode.c.
+#	    Remove IINOOPTIM entries that were generated incorrectly.
+#	16-Oct-2009 (bonro01)
+#	    Update build for static codev library
+
+
+SubDir ING_SRC back dmf lk ;
+
+IISUBSYS back dmf lk ;
+
+IINOOPTIM lkrqst.c : i64_aix rs4_us5 r64_us5 i64_hpu ;
+IINOOPTIM lkrlse.c : rs4_us5 i64_aix r64_us5 ;
+IINOOPTIM lkevent.c : rs4_us5 i64_aix r64_us5 ;
+IINOOPTIM lkclist.c : rs4_us5 i64_aix r64_us5 ;
+
+IIBINEXE lkevtst : lkevtst.c ;
+
+# Circular reference between x100lib and dmflib until we get the windows
+# build un-dll'ed and x100 data back into x100lib.
+IINEEDLIBS lkevtst : SCFLIB UDTLIB QEFLIB X100LIB DMFLIB X100LIB CUFLIB
+	OPFLIB PSFLIB RDFLIB ULFLIB GCFLIB SXFLIB GWFLIB QSFLIB ADFLIB
+	TPFLIB RQFLIB COMPATLIB MALLOCLIB ;
+if $(BUILD_IVW)
+{
+    IINEEDLIBS lkevtst : X100CLIENTLIB ;
+}
+
+
+IILIBRARY DMFLIB : lksize.c lkshow.c lkrqst.c lkrlse.c
+	lkmutex.c lkmo.c lkinit.c lkevent.c lkdlock.c
+	lkclist.c lkcbmem.c lkcback.c lkalter.c ;
+
+IILIBRARY IMPDMFLIBDATA : lkdata.c ;
+

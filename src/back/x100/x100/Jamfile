@@ -1,0 +1,20 @@
+#
+# Jamfile file for back!x100!x100
+#
+#	26-May-2011 (kschendel) m1260
+#	    Added x100ll.c.
+#	06-Jun-2011 (drivi01)
+#	    Added x100lldata.c which now exports
+#	    x100_global_ctx.
+
+
+SubDir ING_SRC back x100 x100 ;
+
+IISUBSYS back x100 x100 ;
+
+
+IILIBRARY X100LIB : x100.c x100client.c x100ll.c iitableconv.c vwerror.c ;
+
+# This is just dmflib on non-Windows
+
+IILIBRARY IMPDMFLIBDATA : x100lldata.c ;

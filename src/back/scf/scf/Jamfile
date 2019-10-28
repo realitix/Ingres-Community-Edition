@@ -1,0 +1,17 @@
+#
+# Jamfile file for back!scf!scf
+#
+#	29-Aug-2011 (kschendel) b125701
+#	    Don't compile scftest, doesn't compile now because CTHREAD
+#	    defn removed, hasn't actually worked for a long time because
+#	    sscb_interrupt isn't set when CUT signals.
+
+SubDir ING_SRC back scf scf ;
+
+IISUBSYS back scf scf ;
+
+
+IILIBRARY SCFLIB : scfinitdbg.c scfcall.c ;
+
+IILIBRARY IMPSCFLIBDATA : scfmaincb.c ;
+
